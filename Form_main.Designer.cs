@@ -34,8 +34,8 @@
             System.Windows.Forms.Label quantityLabel;
             System.Windows.Forms.Label priceLabel;
             System.Windows.Forms.Label descriptionLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             System.Windows.Forms.Label photoLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.statusStrip_main = new System.Windows.Forms.StatusStrip();
             this.toolStripSplitButton_change_user = new System.Windows.Forms.ToolStripSplitButton();
             this.редактироватьУчетнуюЗаписьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,10 +102,9 @@
             // 
             title_GoodLabel.AutoSize = true;
             title_GoodLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            title_GoodLabel.Location = new System.Drawing.Point(13, 38);
-            title_GoodLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            title_GoodLabel.Location = new System.Drawing.Point(17, 47);
             title_GoodLabel.Name = "title_GoodLabel";
-            title_GoodLabel.Size = new System.Drawing.Size(65, 16);
+            title_GoodLabel.Size = new System.Drawing.Size(79, 19);
             title_GoodLabel.TabIndex = 6;
             title_GoodLabel.Text = "Название:";
             // 
@@ -113,10 +112,9 @@
             // 
             weightLabel.AutoSize = true;
             weightLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            weightLabel.Location = new System.Drawing.Point(15, 67);
-            weightLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            weightLabel.Location = new System.Drawing.Point(20, 82);
             weightLabel.Name = "weightLabel";
-            weightLabel.Size = new System.Drawing.Size(32, 16);
+            weightLabel.Size = new System.Drawing.Size(41, 19);
             weightLabel.TabIndex = 8;
             weightLabel.Text = "Вес:";
             // 
@@ -124,10 +122,9 @@
             // 
             quantityLabel.AutoSize = true;
             quantityLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            quantityLabel.Location = new System.Drawing.Point(13, 94);
-            quantityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            quantityLabel.Location = new System.Drawing.Point(17, 116);
             quantityLabel.Name = "quantityLabel";
-            quantityLabel.Size = new System.Drawing.Size(79, 16);
+            quantityLabel.Size = new System.Drawing.Size(98, 19);
             quantityLabel.TabIndex = 10;
             quantityLabel.Text = "Количество:";
             // 
@@ -135,10 +132,9 @@
             // 
             priceLabel.AutoSize = true;
             priceLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            priceLabel.Location = new System.Drawing.Point(15, 127);
-            priceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            priceLabel.Location = new System.Drawing.Point(20, 156);
             priceLabel.Name = "priceLabel";
-            priceLabel.Size = new System.Drawing.Size(76, 16);
+            priceLabel.Size = new System.Drawing.Size(92, 19);
             priceLabel.TabIndex = 12;
             priceLabel.Text = "Цена за ед.:";
             // 
@@ -146,22 +142,31 @@
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            descriptionLabel.Location = new System.Drawing.Point(13, 157);
-            descriptionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            descriptionLabel.Location = new System.Drawing.Point(17, 193);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(68, 16);
+            descriptionLabel.Size = new System.Drawing.Size(81, 19);
             descriptionLabel.TabIndex = 16;
             descriptionLabel.Text = "Описание:";
+            // 
+            // photoLabel
+            // 
+            photoLabel.AutoSize = true;
+            photoLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            photoLabel.Location = new System.Drawing.Point(505, 14);
+            photoLabel.Name = "photoLabel";
+            photoLabel.Size = new System.Drawing.Size(109, 19);
+            photoLabel.TabIndex = 20;
+            photoLabel.Text = "Изображение:";
             // 
             // statusStrip_main
             // 
             this.statusStrip_main.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip_main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSplitButton_change_user});
-            this.statusStrip_main.Location = new System.Drawing.Point(0, 326);
+            this.statusStrip_main.Location = new System.Drawing.Point(0, 400);
             this.statusStrip_main.Name = "statusStrip_main";
-            this.statusStrip_main.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-            this.statusStrip_main.Size = new System.Drawing.Size(788, 27);
+            this.statusStrip_main.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
+            this.statusStrip_main.Size = new System.Drawing.Size(1051, 34);
             this.statusStrip_main.TabIndex = 5;
             this.statusStrip_main.Text = "statusStrip_main";
             // 
@@ -175,19 +180,19 @@
             this.toolStripSplitButton_change_user.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton_change_user.Image")));
             this.toolStripSplitButton_change_user.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton_change_user.Name = "toolStripSplitButton_change_user";
-            this.toolStripSplitButton_change_user.Size = new System.Drawing.Size(189, 25);
+            this.toolStripSplitButton_change_user.Size = new System.Drawing.Size(240, 32);
             this.toolStripSplitButton_change_user.Text = "Сменить пользователя";
             // 
             // редактироватьУчетнуюЗаписьToolStripMenuItem
             // 
             this.редактироватьУчетнуюЗаписьToolStripMenuItem.Name = "редактироватьУчетнуюЗаписьToolStripMenuItem";
-            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
+            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Size = new System.Drawing.Size(374, 32);
             this.редактироватьУчетнуюЗаписьToolStripMenuItem.Text = "Редактировать учетную запись";
             // 
             // сменитьПользователяToolStripMenuItem
             // 
             this.сменитьПользователяToolStripMenuItem.Name = "сменитьПользователяToolStripMenuItem";
-            this.сменитьПользователяToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
+            this.сменитьПользователяToolStripMenuItem.Size = new System.Drawing.Size(374, 32);
             this.сменитьПользователяToolStripMenuItem.Text = "Сменить пользователя";
             this.сменитьПользователяToolStripMenuItem.Click += new System.EventHandler(this.СменитьПользователяToolStripMenuItem_Click);
             // 
@@ -200,8 +205,8 @@
             this.оПрограммеToolStripMenuItem});
             this.menuStrip_main.Location = new System.Drawing.Point(0, 0);
             this.menuStrip_main.Name = "menuStrip_main";
-            this.menuStrip_main.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip_main.Size = new System.Drawing.Size(788, 29);
+            this.menuStrip_main.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip_main.Size = new System.Drawing.Size(1051, 36);
             this.menuStrip_main.TabIndex = 4;
             this.menuStrip_main.Text = "menuStrip_main";
             // 
@@ -219,67 +224,67 @@
             this.сырьеToolStripMenuItem,
             this.товарыToolStripMenuItem});
             this.таблицыToolStripMenuItem.Name = "таблицыToolStripMenuItem";
-            this.таблицыToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
+            this.таблицыToolStripMenuItem.Size = new System.Drawing.Size(105, 32);
             this.таблицыToolStripMenuItem.Text = "Таблицы";
             // 
             // автомобилиToolStripMenuItem
             // 
             this.автомобилиToolStripMenuItem.Name = "автомобилиToolStripMenuItem";
-            this.автомобилиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.автомобилиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.автомобилиToolStripMenuItem.Text = "Автомобили";
             // 
             // дисконтныеКартыToolStripMenuItem
             // 
             this.дисконтныеКартыToolStripMenuItem.Name = "дисконтныеКартыToolStripMenuItem";
-            this.дисконтныеКартыToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.дисконтныеКартыToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.дисконтныеКартыToolStripMenuItem.Text = "Дисконтные карты";
             // 
             // запросыНаПоставкуСырьяToolStripMenuItem
             // 
             this.запросыНаПоставкуСырьяToolStripMenuItem.Name = "запросыНаПоставкуСырьяToolStripMenuItem";
-            this.запросыНаПоставкуСырьяToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.запросыНаПоставкуСырьяToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.запросыНаПоставкуСырьяToolStripMenuItem.Text = "Запросы на поставку сырья";
             // 
             // персоналToolStripMenuItem
             // 
             this.персоналToolStripMenuItem.Name = "персоналToolStripMenuItem";
-            this.персоналToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.персоналToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.персоналToolStripMenuItem.Text = "Персонал";
             // 
             // покупателиToolStripMenuItem
             // 
             this.покупателиToolStripMenuItem.Name = "покупателиToolStripMenuItem";
-            this.покупателиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.покупателиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.покупателиToolStripMenuItem.Text = "Покупатели";
             // 
             // поставщикиToolStripMenuItem
             // 
             this.поставщикиToolStripMenuItem.Name = "поставщикиToolStripMenuItem";
-            this.поставщикиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.поставщикиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.поставщикиToolStripMenuItem.Text = "Поставщики";
             // 
             // продажиToolStripMenuItem
             // 
             this.продажиToolStripMenuItem.Name = "продажиToolStripMenuItem";
-            this.продажиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.продажиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.продажиToolStripMenuItem.Text = "Продажи";
             // 
             // рецептыToolStripMenuItem
             // 
             this.рецептыToolStripMenuItem.Name = "рецептыToolStripMenuItem";
-            this.рецептыToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.рецептыToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.рецептыToolStripMenuItem.Text = "Рецепты";
             // 
             // сырьеToolStripMenuItem
             // 
             this.сырьеToolStripMenuItem.Name = "сырьеToolStripMenuItem";
-            this.сырьеToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.сырьеToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.сырьеToolStripMenuItem.Text = "Сырье";
             // 
             // товарыToolStripMenuItem
             // 
             this.товарыToolStripMenuItem.Name = "товарыToolStripMenuItem";
-            this.товарыToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.товарыToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.товарыToolStripMenuItem.Text = "Товары";
             // 
             // оПрограммеToolStripMenuItem
@@ -288,19 +293,19 @@
             this.ифнормацияToolStripMenuItem,
             this.помощьToolStripMenuItem});
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 25);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(148, 32);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             // 
             // ифнормацияToolStripMenuItem
             // 
             this.ифнормацияToolStripMenuItem.Name = "ифнормацияToolStripMenuItem";
-            this.ифнормацияToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.ифнормацияToolStripMenuItem.Size = new System.Drawing.Size(213, 32);
             this.ифнормацияToolStripMenuItem.Text = "Информация";
             // 
             // помощьToolStripMenuItem
             // 
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(213, 32);
             this.помощьToolStripMenuItem.Text = "Помощь";
             // 
             // chuck_TimeDataSet
@@ -365,7 +370,7 @@
             this.goodsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.goodsBindingNavigator.Name = "goodsBindingNavigator";
             this.goodsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.goodsBindingNavigator.Size = new System.Drawing.Size(788, 27);
+            this.goodsBindingNavigator.Size = new System.Drawing.Size(1051, 27);
             this.goodsBindingNavigator.TabIndex = 6;
             this.goodsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -381,7 +386,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -422,7 +427,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(49, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -467,30 +472,30 @@
             // 
             this.title_GoodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Title_Good", true));
             this.title_GoodTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.title_GoodTextBox.Location = new System.Drawing.Point(94, 36);
-            this.title_GoodTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.title_GoodTextBox.Location = new System.Drawing.Point(125, 44);
+            this.title_GoodTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.title_GoodTextBox.Name = "title_GoodTextBox";
-            this.title_GoodTextBox.Size = new System.Drawing.Size(216, 23);
+            this.title_GoodTextBox.Size = new System.Drawing.Size(287, 27);
             this.title_GoodTextBox.TabIndex = 7;
             // 
             // weightTextBox
             // 
             this.weightTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Weight", true));
             this.weightTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.weightTextBox.Location = new System.Drawing.Point(94, 65);
-            this.weightTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.weightTextBox.Location = new System.Drawing.Point(125, 80);
+            this.weightTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.weightTextBox.Name = "weightTextBox";
-            this.weightTextBox.Size = new System.Drawing.Size(216, 23);
+            this.weightTextBox.Size = new System.Drawing.Size(287, 27);
             this.weightTextBox.TabIndex = 9;
             // 
             // priceTextBox
             // 
             this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Price", true));
             this.priceTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.priceTextBox.Location = new System.Drawing.Point(94, 125);
-            this.priceTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.priceTextBox.Location = new System.Drawing.Point(125, 154);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(216, 23);
+            this.priceTextBox.Size = new System.Drawing.Size(287, 27);
             this.priceTextBox.TabIndex = 13;
             // 
             // photoPictureBox
@@ -498,10 +503,10 @@
             this.photoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.photoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.photoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.goodsBindingSource, "Photo", true));
-            this.photoPictureBox.Location = new System.Drawing.Point(347, 38);
-            this.photoPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.photoPictureBox.Location = new System.Drawing.Point(463, 47);
+            this.photoPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.photoPictureBox.Name = "photoPictureBox";
-            this.photoPictureBox.Size = new System.Drawing.Size(427, 240);
+            this.photoPictureBox.Size = new System.Drawing.Size(569, 295);
             this.photoPictureBox.TabIndex = 15;
             this.photoPictureBox.TabStop = false;
             // 
@@ -513,19 +518,19 @@
             // 
             this.quantityNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.goodsBindingSource, "Quantity", true));
             this.quantityNumericUpDown.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.quantityNumericUpDown.Location = new System.Drawing.Point(94, 94);
-            this.quantityNumericUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quantityNumericUpDown.Location = new System.Drawing.Point(125, 116);
+            this.quantityNumericUpDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.quantityNumericUpDown.Name = "quantityNumericUpDown";
-            this.quantityNumericUpDown.Size = new System.Drawing.Size(215, 23);
+            this.quantityNumericUpDown.Size = new System.Drawing.Size(287, 27);
             this.quantityNumericUpDown.TabIndex = 19;
             // 
             // descriptionRichTextBox
             // 
             this.descriptionRichTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Description", true));
-            this.descriptionRichTextBox.Location = new System.Drawing.Point(94, 157);
-            this.descriptionRichTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.descriptionRichTextBox.Location = new System.Drawing.Point(125, 193);
+            this.descriptionRichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.descriptionRichTextBox.Name = "descriptionRichTextBox";
-            this.descriptionRichTextBox.Size = new System.Drawing.Size(216, 121);
+            this.descriptionRichTextBox.Size = new System.Drawing.Size(287, 148);
             this.descriptionRichTextBox.TabIndex = 20;
             this.descriptionRichTextBox.Text = "";
             // 
@@ -546,43 +551,37 @@
             this.panel_customer_main.Controls.Add(this.title_GoodTextBox);
             this.panel_customer_main.Controls.Add(weightLabel);
             this.panel_customer_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_customer_main.Location = new System.Drawing.Point(0, 29);
+            this.panel_customer_main.Location = new System.Drawing.Point(0, 36);
+            this.panel_customer_main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_customer_main.Name = "panel_customer_main";
-            this.panel_customer_main.Size = new System.Drawing.Size(788, 297);
+            this.panel_customer_main.Size = new System.Drawing.Size(1051, 364);
             this.panel_customer_main.TabIndex = 21;
             // 
             // button_image
             // 
-            this.button_image.Location = new System.Drawing.Point(464, 6);
-            this.button_image.Margin = new System.Windows.Forms.Padding(2);
+            this.button_image.Location = new System.Drawing.Point(619, 7);
+            this.button_image.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_image.Name = "button_image";
-            this.button_image.Size = new System.Drawing.Size(94, 23);
+            this.button_image.Size = new System.Drawing.Size(125, 28);
             this.button_image.TabIndex = 21;
             this.button_image.Text = "Обзор...";
             this.button_image.UseVisualStyleBackColor = true;
             // 
-            // photoLabel
-            // 
-            photoLabel.AutoSize = true;
-            photoLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            photoLabel.Location = new System.Drawing.Point(379, 11);
-            photoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            photoLabel.Name = "photoLabel";
-            photoLabel.Size = new System.Drawing.Size(89, 16);
-            photoLabel.TabIndex = 20;
-            photoLabel.Text = "Изображение:";
-            // 
             // Form_main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 353);
+            this.ClientSize = new System.Drawing.Size(1051, 434);
             this.Controls.Add(this.panel_customer_main);
             this.Controls.Add(this.statusStrip_main);
             this.Controls.Add(this.menuStrip_main);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form_main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Пекарня \"ЧакТайм\"";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_main_FormClosing);
             this.Load += new System.EventHandler(this.Form_main_Load);
