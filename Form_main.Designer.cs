@@ -152,7 +152,7 @@
             // 
             photoLabel.AutoSize = true;
             photoLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            photoLabel.Location = new System.Drawing.Point(505, 14);
+            photoLabel.Location = new System.Drawing.Point(462, 4);
             photoLabel.Name = "photoLabel";
             photoLabel.Size = new System.Drawing.Size(109, 19);
             photoLabel.TabIndex = 20;
@@ -559,7 +559,7 @@
             // 
             // button_image
             // 
-            this.button_image.Location = new System.Drawing.Point(619, 7);
+            this.button_image.Location = new System.Drawing.Point(573, -1);
             this.button_image.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_image.Name = "button_image";
             this.button_image.Size = new System.Drawing.Size(125, 28);
