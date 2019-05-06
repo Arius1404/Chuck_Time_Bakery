@@ -17,7 +17,7 @@ namespace Chuck_Time_Bakery
         {
             InitializeComponent();
         }
-
+        
         private void Button_login_guest_Click(object sender, EventArgs e)
         {
             Hide();
@@ -29,6 +29,7 @@ namespace Chuck_Time_Bakery
 
         private void Button_login_Click(object sender, EventArgs e)
         {
+            
             SqlConnection con = new SqlConnection("Data Source=Arius;Initial Catalog=Chuck_Time;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             SqlDataAdapter sda = new SqlDataAdapter("SELECT Role FROM Login WHERE Login = '" + textBox_login.Text + "' and Password = '" + textBox_password.Text + "'", con);
             DataTable dt = new System.Data.DataTable();

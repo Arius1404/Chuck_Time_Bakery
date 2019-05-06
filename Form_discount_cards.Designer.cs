@@ -1,6 +1,6 @@
 ﻿namespace Chuck_Time_Bakery
 {
-    partial class Form_Seller
+    partial class Form_discount_cards
     {
         /// <summary>
         /// Required designer variable.
@@ -29,38 +29,36 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Seller));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_discount_cards));
             this.chuck_TimeDataSet = new Chuck_Time_Bakery.Chuck_TimeDataSet();
-            this.salesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.salesTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.SalesTableAdapter();
+            this.discount_cardsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.discount_cardsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.Discount_cardsTableAdapter();
             this.tableAdapterManager = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager();
-            this.salesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.discount_cardsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.salesDataGridView = new System.Windows.Forms.DataGridView();
+            this.discount_cardsDataGridView = new System.Windows.Forms.DataGridView();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.salesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.discount_cardsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.CustomersTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salesBindingNavigator)).BeginInit();
-            this.salesBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.discount_cardsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.discount_cardsBindingNavigator)).BeginInit();
+            this.discount_cardsBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.discount_cardsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,20 +67,20 @@
             this.chuck_TimeDataSet.DataSetName = "Chuck_TimeDataSet";
             this.chuck_TimeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // salesBindingSource
+            // discount_cardsBindingSource
             // 
-            this.salesBindingSource.DataMember = "Sales";
-            this.salesBindingSource.DataSource = this.chuck_TimeDataSet;
+            this.discount_cardsBindingSource.DataMember = "Discount_cards";
+            this.discount_cardsBindingSource.DataSource = this.chuck_TimeDataSet;
             // 
-            // salesTableAdapter
+            // discount_cardsTableAdapter
             // 
-            this.salesTableAdapter.ClearBeforeFill = true;
+            this.discount_cardsTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
-            this.tableAdapterManager.Discount_cardsTableAdapter = null;
+            this.tableAdapterManager.Discount_cardsTableAdapter = this.discount_cardsTableAdapter;
             this.tableAdapterManager.GoodsTableAdapter = null;
             this.tableAdapterManager.LoginTableAdapter = null;
             this.tableAdapterManager.MaterialsTableAdapter = null;
@@ -91,20 +89,20 @@
             this.tableAdapterManager.Request_MaterialsTableAdapter = null;
             this.tableAdapterManager.Requested_goodsTableAdapter = null;
             this.tableAdapterManager.RequestsTableAdapter = null;
-            this.tableAdapterManager.SalesTableAdapter = this.salesTableAdapter;
+            this.tableAdapterManager.SalesTableAdapter = null;
             this.tableAdapterManager.Staff_SalesTableAdapter = null;
             this.tableAdapterManager.StaffTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VehiclesTableAdapter = null;
             this.tableAdapterManager.VendorTableAdapter = null;
             // 
-            // salesBindingNavigator
+            // discount_cardsBindingNavigator
             // 
-            this.salesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.salesBindingNavigator.BindingSource = this.salesBindingSource;
-            this.salesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.salesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.salesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.discount_cardsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.discount_cardsBindingNavigator.BindingSource = this.discount_cardsBindingSource;
+            this.discount_cardsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.discount_cardsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.discount_cardsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -116,17 +114,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.salesBindingNavigatorSaveItem});
-            this.salesBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.salesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.salesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.salesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.salesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.salesBindingNavigator.Name = "salesBindingNavigator";
-            this.salesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.salesBindingNavigator.Size = new System.Drawing.Size(832, 25);
-            this.salesBindingNavigator.TabIndex = 0;
-            this.salesBindingNavigator.Text = "bindingNavigator1";
+            this.discount_cardsBindingNavigatorSaveItem});
+            this.discount_cardsBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.discount_cardsBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.discount_cardsBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.discount_cardsBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.discount_cardsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.discount_cardsBindingNavigator.Name = "discount_cardsBindingNavigator";
+            this.discount_cardsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.discount_cardsBindingNavigator.Size = new System.Drawing.Size(643, 25);
+            this.discount_cardsBindingNavigator.TabIndex = 0;
+            this.discount_cardsBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorSeparator
             // 
@@ -159,23 +157,21 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // salesDataGridView
+            // discount_cardsDataGridView
             // 
-            this.salesDataGridView.AutoGenerateColumns = false;
-            this.salesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.salesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.discount_cardsDataGridView.AutoGenerateColumns = false;
+            this.discount_cardsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.discount_cardsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
-            this.dataGridViewCheckBoxColumn1,
-            this.dataGridViewTextBoxColumn5});
-            this.salesDataGridView.DataSource = this.salesBindingSource;
-            this.salesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.salesDataGridView.Location = new System.Drawing.Point(0, 25);
-            this.salesDataGridView.Name = "salesDataGridView";
-            this.salesDataGridView.Size = new System.Drawing.Size(832, 425);
-            this.salesDataGridView.TabIndex = 1;
+            this.dataGridViewCheckBoxColumn1});
+            this.discount_cardsDataGridView.DataSource = this.discount_cardsBindingSource;
+            this.discount_cardsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.discount_cardsDataGridView.Location = new System.Drawing.Point(0, 25);
+            this.discount_cardsDataGridView.Name = "discount_cardsDataGridView";
+            this.discount_cardsDataGridView.Size = new System.Drawing.Size(643, 425);
+            this.discount_cardsDataGridView.TabIndex = 1;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -231,14 +227,14 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
-            // salesBindingNavigatorSaveItem
+            // discount_cardsBindingNavigatorSaveItem
             // 
-            this.salesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.salesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("salesBindingNavigatorSaveItem.Image")));
-            this.salesBindingNavigatorSaveItem.Name = "salesBindingNavigatorSaveItem";
-            this.salesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.salesBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.salesBindingNavigatorSaveItem.Click += new System.EventHandler(this.SalesBindingNavigatorSaveItem_Click);
+            this.discount_cardsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.discount_cardsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("discount_cardsBindingNavigatorSaveItem.Image")));
+            this.discount_cardsBindingNavigatorSaveItem.Name = "discount_cardsBindingNavigatorSaveItem";
+            this.discount_cardsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.discount_cardsBindingNavigatorSaveItem.Text = "Сохранить данные";
+            this.discount_cardsBindingNavigatorSaveItem.Click += new System.EventHandler(this.Discount_cardsBindingNavigatorSaveItem_Click);
             // 
             // customersBindingSource
             // 
@@ -251,66 +247,53 @@
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Sale_ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Номер заказа";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Card_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Номер карты";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 140;
+            this.dataGridViewTextBoxColumn1.Width = 150;
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Order_date";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Дата заказа";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ID_Customer";
+            this.dataGridViewTextBoxColumn2.DataSource = this.customersBindingSource;
+            this.dataGridViewTextBoxColumn2.DisplayMember = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Имя владельца";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn2.ValueMember = "ID_Customer";
             this.dataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Price";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Стоимость";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Customer_ID";
-            this.dataGridViewTextBoxColumn4.DataSource = this.customersBindingSource;
-            this.dataGridViewTextBoxColumn4.DisplayMember = "Name";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Заказчик";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Activation_date";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Дата активации";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn4.ValueMember = "ID_Customer";
             this.dataGridViewTextBoxColumn4.Width = 150;
             // 
             // dataGridViewCheckBoxColumn1
             // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Delivery";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Доставка";
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Status";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Статус";
             this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Width = 150;
             // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Plate_number";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Номер автомобиля";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 150;
-            // 
-            // Form_Seller
+            // Form_discount_cards
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 450);
-            this.Controls.Add(this.salesDataGridView);
-            this.Controls.Add(this.salesBindingNavigator);
-            this.Name = "Form_Seller";
-            this.Text = "Продажи";
-            this.Load += new System.EventHandler(this.Form_Seller_Load);
+            this.ClientSize = new System.Drawing.Size(643, 450);
+            this.Controls.Add(this.discount_cardsDataGridView);
+            this.Controls.Add(this.discount_cardsBindingNavigator);
+            this.Name = "Form_discount_cards";
+            this.Text = "Скидочные карты";
+            this.Load += new System.EventHandler(this.Form_discount_cards_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salesBindingNavigator)).EndInit();
-            this.salesBindingNavigator.ResumeLayout(false);
-            this.salesBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.discount_cardsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.discount_cardsBindingNavigator)).EndInit();
+            this.discount_cardsBindingNavigator.ResumeLayout(false);
+            this.discount_cardsBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.discount_cardsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -320,10 +303,10 @@
         #endregion
 
         private Chuck_TimeDataSet chuck_TimeDataSet;
-        private System.Windows.Forms.BindingSource salesBindingSource;
-        private Chuck_TimeDataSetTableAdapters.SalesTableAdapter salesTableAdapter;
+        private System.Windows.Forms.BindingSource discount_cardsBindingSource;
+        private Chuck_TimeDataSetTableAdapters.Discount_cardsTableAdapter discount_cardsTableAdapter;
         private Chuck_TimeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator salesBindingNavigator;
+        private System.Windows.Forms.BindingNavigator discount_cardsBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -335,15 +318,13 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton salesBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView salesDataGridView;
+        private System.Windows.Forms.ToolStripButton discount_cardsBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView discount_cardsDataGridView;
         private Chuck_TimeDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
         private System.Windows.Forms.BindingSource customersBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }

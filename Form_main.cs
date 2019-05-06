@@ -82,14 +82,6 @@ namespace Chuck_Time_Bakery
 
         }
 
-        private void GoodsBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.goodsBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
-
-        }
-
         private void Form_main_Load(object sender, EventArgs e)
         {            
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Goods". При необходимости она может быть перемещена или удалена.
@@ -109,6 +101,7 @@ namespace Chuck_Time_Bakery
                 bindingNavigatorAddNewItem.Visible = false;
                 bindingNavigatorDeleteItem.Visible = false;
                 button_image.Visible = false;
+                tabControl_main.TabPages.Remove(tabPage_seller);
             }
             else
                 if (status == "Продавец-кассир") // продавец-кассир
@@ -119,10 +112,24 @@ namespace Chuck_Time_Bakery
                 поставщикиToolStripMenuItem.Visible = false;
                 запросыНаПоставкуСырьяToolStripMenuItem.Visible = false;
                 сырьеToolStripMenuItem.Visible = false;
-                panel_customer_main.Visible = false;
-               
+                tabControl_main.TabPages.Remove(tabPage_customer);
+
             }
         }
 
+        private void Button_sales_Click(object sender, EventArgs e)
+        {
+            Form_Seller.fs.Show();
+        }
+
+        private void Button_discount_cards_Click(object sender, EventArgs e)
+        {
+            Form_discount_cards.fdc.Show();
+        }
+
+        private void Button_goods_Click(object sender, EventArgs e)
+        {
+            Form_goods.fg.Show();
+        }
     }
 }
