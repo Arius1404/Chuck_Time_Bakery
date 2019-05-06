@@ -51,5 +51,10 @@ namespace Chuck_Time_Bakery
                 textBox_login.Focus();
             }
         }
+
+        private void Form_Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        }
     }
 }

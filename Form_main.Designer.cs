@@ -74,12 +74,12 @@
             this.goodsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.title_GoodTextBox = new System.Windows.Forms.TextBox();
             this.weightTextBox = new System.Windows.Forms.TextBox();
-            this.quantityTextBox = new System.Windows.Forms.TextBox();
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.photoPictureBox = new System.Windows.Forms.PictureBox();
-            this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.button_image = new System.Windows.Forms.Button();
             this.openFileDialogPhoto = new System.Windows.Forms.OpenFileDialog();
+            this.quantityNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.descriptionRichTextBox = new System.Windows.Forms.RichTextBox();
             title_GoodLabel = new System.Windows.Forms.Label();
             weightLabel = new System.Windows.Forms.Label();
             quantityLabel = new System.Windows.Forms.Label();
@@ -93,59 +93,66 @@
             ((System.ComponentModel.ISupportInitialize)(this.goodsBindingNavigator)).BeginInit();
             this.goodsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quantityNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // title_GoodLabel
             // 
             title_GoodLabel.AutoSize = true;
+            title_GoodLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             title_GoodLabel.Location = new System.Drawing.Point(25, 80);
             title_GoodLabel.Name = "title_GoodLabel";
-            title_GoodLabel.Size = new System.Drawing.Size(76, 17);
+            title_GoodLabel.Size = new System.Drawing.Size(79, 19);
             title_GoodLabel.TabIndex = 6;
             title_GoodLabel.Text = "Название:";
             // 
             // weightLabel
             // 
             weightLabel.AutoSize = true;
-            weightLabel.Location = new System.Drawing.Point(25, 108);
+            weightLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            weightLabel.Location = new System.Drawing.Point(28, 116);
             weightLabel.Name = "weightLabel";
-            weightLabel.Size = new System.Drawing.Size(36, 17);
+            weightLabel.Size = new System.Drawing.Size(41, 19);
             weightLabel.TabIndex = 8;
             weightLabel.Text = "Вес:";
             // 
             // quantityLabel
             // 
             quantityLabel.AutoSize = true;
-            quantityLabel.Location = new System.Drawing.Point(25, 136);
+            quantityLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            quantityLabel.Location = new System.Drawing.Point(25, 149);
             quantityLabel.Name = "quantityLabel";
-            quantityLabel.Size = new System.Drawing.Size(90, 17);
+            quantityLabel.Size = new System.Drawing.Size(98, 19);
             quantityLabel.TabIndex = 10;
             quantityLabel.Text = "Количество:";
             // 
             // priceLabel
             // 
             priceLabel.AutoSize = true;
-            priceLabel.Location = new System.Drawing.Point(25, 164);
+            priceLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            priceLabel.Location = new System.Drawing.Point(28, 190);
             priceLabel.Name = "priceLabel";
-            priceLabel.Size = new System.Drawing.Size(90, 17);
+            priceLabel.Size = new System.Drawing.Size(92, 19);
             priceLabel.TabIndex = 12;
             priceLabel.Text = "Цена за ед.:";
             // 
             // photoLabel
             // 
             photoLabel.AutoSize = true;
+            photoLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             photoLabel.Location = new System.Drawing.Point(460, 49);
             photoLabel.Name = "photoLabel";
-            photoLabel.Size = new System.Drawing.Size(102, 17);
+            photoLabel.Size = new System.Drawing.Size(109, 19);
             photoLabel.TabIndex = 14;
             photoLabel.Text = "Изображение:";
             // 
             // descriptionLabel
             // 
             descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(25, 192);
+            descriptionLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            descriptionLabel.Location = new System.Drawing.Point(25, 227);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(78, 17);
+            descriptionLabel.Size = new System.Drawing.Size(81, 19);
             descriptionLabel.TabIndex = 16;
             descriptionLabel.Text = "Описание:";
             // 
@@ -154,7 +161,7 @@
             this.statusStrip_main.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip_main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSplitButton_change_user});
-            this.statusStrip_main.Location = new System.Drawing.Point(0, 510);
+            this.statusStrip_main.Location = new System.Drawing.Point(0, 513);
             this.statusStrip_main.Name = "statusStrip_main";
             this.statusStrip_main.Size = new System.Drawing.Size(1012, 34);
             this.statusStrip_main.TabIndex = 5;
@@ -336,6 +343,7 @@
             this.goodsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.goodsBindingNavigator.BindingSource = this.goodsBindingSource;
             this.goodsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.goodsBindingNavigator.CountItemFormat = "из {0}";
             this.goodsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.goodsBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.goodsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -374,8 +382,8 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
-            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorDeleteItem
@@ -459,55 +467,44 @@
             // title_GoodTextBox
             // 
             this.title_GoodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Title_Good", true));
-            this.title_GoodTextBox.Location = new System.Drawing.Point(126, 77);
+            this.title_GoodTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.title_GoodTextBox.Location = new System.Drawing.Point(133, 77);
             this.title_GoodTextBox.Name = "title_GoodTextBox";
-            this.title_GoodTextBox.Size = new System.Drawing.Size(227, 22);
+            this.title_GoodTextBox.Size = new System.Drawing.Size(287, 27);
             this.title_GoodTextBox.TabIndex = 7;
             // 
             // weightTextBox
             // 
             this.weightTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Weight", true));
-            this.weightTextBox.Location = new System.Drawing.Point(126, 105);
+            this.weightTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.weightTextBox.Location = new System.Drawing.Point(133, 113);
             this.weightTextBox.Name = "weightTextBox";
-            this.weightTextBox.Size = new System.Drawing.Size(227, 22);
+            this.weightTextBox.Size = new System.Drawing.Size(287, 27);
             this.weightTextBox.TabIndex = 9;
-            // 
-            // quantityTextBox
-            // 
-            this.quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Quantity", true));
-            this.quantityTextBox.Location = new System.Drawing.Point(126, 133);
-            this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.Size = new System.Drawing.Size(227, 22);
-            this.quantityTextBox.TabIndex = 11;
             // 
             // priceTextBox
             // 
             this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Price", true));
-            this.priceTextBox.Location = new System.Drawing.Point(126, 161);
+            this.priceTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.priceTextBox.Location = new System.Drawing.Point(133, 187);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(227, 22);
+            this.priceTextBox.Size = new System.Drawing.Size(287, 27);
             this.priceTextBox.TabIndex = 13;
             // 
             // photoPictureBox
             // 
+            this.photoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.photoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.photoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.goodsBindingSource, "Photo", true));
             this.photoPictureBox.Location = new System.Drawing.Point(463, 77);
             this.photoPictureBox.Name = "photoPictureBox";
-            this.photoPictureBox.Size = new System.Drawing.Size(496, 360);
+            this.photoPictureBox.Size = new System.Drawing.Size(523, 416);
             this.photoPictureBox.TabIndex = 15;
             this.photoPictureBox.TabStop = false;
             // 
-            // descriptionTextBox
-            // 
-            this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(126, 189);
-            this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(227, 22);
-            this.descriptionTextBox.TabIndex = 17;
-            // 
             // button_image
             // 
-            this.button_image.Location = new System.Drawing.Point(568, 43);
+            this.button_image.Location = new System.Drawing.Point(573, 43);
             this.button_image.Name = "button_image";
             this.button_image.Size = new System.Drawing.Size(127, 28);
             this.button_image.TabIndex = 18;
@@ -519,24 +516,42 @@
             // 
             this.openFileDialogPhoto.FileName = "openFileDialog";
             // 
+            // quantityNumericUpDown
+            // 
+            this.quantityNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.goodsBindingSource, "Quantity", true));
+            this.quantityNumericUpDown.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.quantityNumericUpDown.Location = new System.Drawing.Point(133, 149);
+            this.quantityNumericUpDown.Name = "quantityNumericUpDown";
+            this.quantityNumericUpDown.Size = new System.Drawing.Size(287, 27);
+            this.quantityNumericUpDown.TabIndex = 19;
+            // 
+            // descriptionRichTextBox
+            // 
+            this.descriptionRichTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Description", true));
+            this.descriptionRichTextBox.Location = new System.Drawing.Point(133, 227);
+            this.descriptionRichTextBox.Name = "descriptionRichTextBox";
+            this.descriptionRichTextBox.Size = new System.Drawing.Size(287, 266);
+            this.descriptionRichTextBox.TabIndex = 20;
+            this.descriptionRichTextBox.Text = "";
+            // 
             // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1012, 544);
+            this.ClientSize = new System.Drawing.Size(1012, 547);
+            this.Controls.Add(this.descriptionRichTextBox);
+            this.Controls.Add(this.quantityNumericUpDown);
             this.Controls.Add(this.button_image);
             this.Controls.Add(title_GoodLabel);
             this.Controls.Add(this.title_GoodTextBox);
             this.Controls.Add(weightLabel);
             this.Controls.Add(this.weightTextBox);
             this.Controls.Add(quantityLabel);
-            this.Controls.Add(this.quantityTextBox);
             this.Controls.Add(priceLabel);
             this.Controls.Add(this.priceTextBox);
             this.Controls.Add(photoLabel);
             this.Controls.Add(this.photoPictureBox);
             this.Controls.Add(descriptionLabel);
-            this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.goodsBindingNavigator);
             this.Controls.Add(this.statusStrip_main);
             this.Controls.Add(this.menuStrip_main);
@@ -555,6 +570,7 @@
             this.goodsBindingNavigator.ResumeLayout(false);
             this.goodsBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quantityNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -567,7 +583,6 @@
         public System.Windows.Forms.ToolStripMenuItem редактироватьУчетнуюЗаписьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сменитьПользователяToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip_main;
-        private System.Windows.Forms.ToolStripMenuItem таблицыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem автомобилиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem дисконтныеКартыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem запросыНаПоставкуСырьяToolStripMenuItem;
@@ -586,9 +601,7 @@
         private Chuck_TimeDataSetTableAdapters.GoodsTableAdapter goodsTableAdapter;
         private Chuck_TimeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator goodsBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
@@ -600,11 +613,14 @@
         private System.Windows.Forms.ToolStripButton goodsBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox title_GoodTextBox;
         private System.Windows.Forms.TextBox weightTextBox;
-        private System.Windows.Forms.TextBox quantityTextBox;
         private System.Windows.Forms.TextBox priceTextBox;
         private System.Windows.Forms.PictureBox photoPictureBox;
-        private System.Windows.Forms.TextBox descriptionTextBox;
         private System.Windows.Forms.Button button_image;
         private System.Windows.Forms.OpenFileDialog openFileDialogPhoto;
+        public System.Windows.Forms.ToolStripMenuItem таблицыToolStripMenuItem;
+        private System.Windows.Forms.NumericUpDown quantityNumericUpDown;
+        public System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        public System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.RichTextBox descriptionRichTextBox;
     }
 }

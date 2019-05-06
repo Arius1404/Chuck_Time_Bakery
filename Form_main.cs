@@ -18,6 +18,7 @@ namespace Chuck_Time_Bakery
         }
 
         public string status;
+        public int prog_exit;
 
         private static Form_main f;
         public static Form_main fm
@@ -37,13 +38,17 @@ namespace Chuck_Time_Bakery
 
         private void СменитьПользователяToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            prog_exit = 0;
+            Application.Restart();           
         }
 
         private void Form_main_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Вы действительно хотите выйти?", "Внимание", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                Environment.Exit(0);
+            {
+                if (prog_exit != 0)
+                    Environment.Exit(0);
+            }
             else
                 e.Cancel = true;
         }
@@ -86,10 +91,26 @@ namespace Chuck_Time_Bakery
         }
 
         private void Form_main_Load(object sender, EventArgs e)
-        {
+        {            
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Goods". При необходимости она может быть перемещена или удалена.
             this.goodsTableAdapter.Fill(this.chuck_TimeDataSet.Goods);
+            prog_exit = 1;
+            toolStripSplitButton_change_user.Text = status;
+            if (status == "Вы вошли как гость!")
+            {                
+                title_GoodTextBox.ReadOnly = true;
+                weightTextBox.ReadOnly = true;
+                quantityNumericUpDown.ReadOnly = true;
+                priceTextBox.ReadOnly = true;
+                descriptionRichTextBox.ReadOnly = true;
 
+                таблицыToolStripMenuItem.Visible = false;
+                goodsBindingNavigatorSaveItem.Visible = false;
+                bindingNavigatorAddNewItem.Visible = false;
+                bindingNavigatorDeleteItem.Visible = false;
+
+                button_image.Visible = false;
+            }
         }
 
     }
