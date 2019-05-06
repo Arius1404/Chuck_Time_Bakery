@@ -96,8 +96,8 @@ namespace Chuck_Time_Bakery
             this.goodsTableAdapter.Fill(this.chuck_TimeDataSet.Goods);
             prog_exit = 1;
             toolStripSplitButton_change_user.Text = status;
-            if (status == "Вы вошли как гость!")
-            {                
+            if (status == "Вы вошли как гость!")//покупатель
+            {
                 title_GoodTextBox.ReadOnly = true;
                 weightTextBox.ReadOnly = true;
                 quantityNumericUpDown.ReadOnly = true;
@@ -108,8 +108,19 @@ namespace Chuck_Time_Bakery
                 goodsBindingNavigatorSaveItem.Visible = false;
                 bindingNavigatorAddNewItem.Visible = false;
                 bindingNavigatorDeleteItem.Visible = false;
-
                 button_image.Visible = false;
+            }
+            else
+                if (status == "Продавец-кассир") // продавец-кассир
+            {
+                покупателиToolStripMenuItem.Visible = false;
+                автомобилиToolStripMenuItem.Visible = false;
+                рецептыToolStripMenuItem.Visible = false;
+                поставщикиToolStripMenuItem.Visible = false;
+                запросыНаПоставкуСырьяToolStripMenuItem.Visible = false;
+                сырьеToolStripMenuItem.Visible = false;
+                panel_customer_main.Visible = false;
+               
             }
         }
 
