@@ -100,54 +100,54 @@
             title_GoodLabel.AutoSize = true;
             title_GoodLabel.Location = new System.Drawing.Point(25, 80);
             title_GoodLabel.Name = "title_GoodLabel";
-            title_GoodLabel.Size = new System.Drawing.Size(78, 17);
+            title_GoodLabel.Size = new System.Drawing.Size(76, 17);
             title_GoodLabel.TabIndex = 6;
-            title_GoodLabel.Text = "Title Good:";
+            title_GoodLabel.Text = "Название:";
             // 
             // weightLabel
             // 
             weightLabel.AutoSize = true;
             weightLabel.Location = new System.Drawing.Point(25, 108);
             weightLabel.Name = "weightLabel";
-            weightLabel.Size = new System.Drawing.Size(56, 17);
+            weightLabel.Size = new System.Drawing.Size(36, 17);
             weightLabel.TabIndex = 8;
-            weightLabel.Text = "Weight:";
+            weightLabel.Text = "Вес:";
             // 
             // quantityLabel
             // 
             quantityLabel.AutoSize = true;
             quantityLabel.Location = new System.Drawing.Point(25, 136);
             quantityLabel.Name = "quantityLabel";
-            quantityLabel.Size = new System.Drawing.Size(65, 17);
+            quantityLabel.Size = new System.Drawing.Size(90, 17);
             quantityLabel.TabIndex = 10;
-            quantityLabel.Text = "Quantity:";
+            quantityLabel.Text = "Количество:";
             // 
             // priceLabel
             // 
             priceLabel.AutoSize = true;
             priceLabel.Location = new System.Drawing.Point(25, 164);
             priceLabel.Name = "priceLabel";
-            priceLabel.Size = new System.Drawing.Size(44, 17);
+            priceLabel.Size = new System.Drawing.Size(90, 17);
             priceLabel.TabIndex = 12;
-            priceLabel.Text = "Price:";
+            priceLabel.Text = "Цена за ед.:";
             // 
             // photoLabel
             // 
             photoLabel.AutoSize = true;
-            photoLabel.Location = new System.Drawing.Point(408, 80);
+            photoLabel.Location = new System.Drawing.Point(460, 49);
             photoLabel.Name = "photoLabel";
-            photoLabel.Size = new System.Drawing.Size(49, 17);
+            photoLabel.Size = new System.Drawing.Size(102, 17);
             photoLabel.TabIndex = 14;
-            photoLabel.Text = "Photo:";
+            photoLabel.Text = "Изображение:";
             // 
             // descriptionLabel
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Location = new System.Drawing.Point(25, 192);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(83, 17);
+            descriptionLabel.Size = new System.Drawing.Size(78, 17);
             descriptionLabel.TabIndex = 16;
-            descriptionLabel.Text = "Description:";
+            descriptionLabel.Text = "Описание:";
             // 
             // statusStrip_main
             // 
@@ -459,7 +459,7 @@
             // title_GoodTextBox
             // 
             this.title_GoodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Title_Good", true));
-            this.title_GoodTextBox.Location = new System.Drawing.Point(114, 77);
+            this.title_GoodTextBox.Location = new System.Drawing.Point(126, 77);
             this.title_GoodTextBox.Name = "title_GoodTextBox";
             this.title_GoodTextBox.Size = new System.Drawing.Size(227, 22);
             this.title_GoodTextBox.TabIndex = 7;
@@ -467,7 +467,7 @@
             // weightTextBox
             // 
             this.weightTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Weight", true));
-            this.weightTextBox.Location = new System.Drawing.Point(114, 105);
+            this.weightTextBox.Location = new System.Drawing.Point(126, 105);
             this.weightTextBox.Name = "weightTextBox";
             this.weightTextBox.Size = new System.Drawing.Size(227, 22);
             this.weightTextBox.TabIndex = 9;
@@ -475,7 +475,7 @@
             // quantityTextBox
             // 
             this.quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Quantity", true));
-            this.quantityTextBox.Location = new System.Drawing.Point(114, 133);
+            this.quantityTextBox.Location = new System.Drawing.Point(126, 133);
             this.quantityTextBox.Name = "quantityTextBox";
             this.quantityTextBox.Size = new System.Drawing.Size(227, 22);
             this.quantityTextBox.TabIndex = 11;
@@ -483,7 +483,7 @@
             // priceTextBox
             // 
             this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Price", true));
-            this.priceTextBox.Location = new System.Drawing.Point(114, 161);
+            this.priceTextBox.Location = new System.Drawing.Point(126, 161);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(227, 22);
             this.priceTextBox.TabIndex = 13;
@@ -500,16 +500,16 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(114, 189);
+            this.descriptionTextBox.Location = new System.Drawing.Point(126, 189);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(227, 22);
             this.descriptionTextBox.TabIndex = 17;
             // 
             // button_image
             // 
-            this.button_image.Location = new System.Drawing.Point(382, 105);
+            this.button_image.Location = new System.Drawing.Point(568, 43);
             this.button_image.Name = "button_image";
-            this.button_image.Size = new System.Drawing.Size(75, 38);
+            this.button_image.Size = new System.Drawing.Size(127, 28);
             this.button_image.TabIndex = 18;
             this.button_image.Text = "Обзор...";
             this.button_image.UseVisualStyleBackColor = true;
@@ -540,6 +540,7 @@
             this.Controls.Add(this.goodsBindingNavigator);
             this.Controls.Add(this.statusStrip_main);
             this.Controls.Add(this.menuStrip_main);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_main";
             this.Text = "Пекарня \"ЧакТайм\"";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_main_FormClosing);

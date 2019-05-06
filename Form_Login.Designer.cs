@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Login));
             this.button_login_guest = new System.Windows.Forms.Button();
             this.button_login = new System.Windows.Forms.Button();
             this.linkLabel_forgot_pas = new System.Windows.Forms.LinkLabel();
@@ -112,10 +113,12 @@
             this.label_login.TabIndex = 8;
             this.label_login.Text = "Логин: ";
             // 
-            // Form1
+            // Form_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Chuck_Time_Bakery.Properties.Resources.background_login;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(590, 266);
             this.Controls.Add(this.button_login_guest);
             this.Controls.Add(this.button_login);
@@ -124,7 +127,8 @@
             this.Controls.Add(this.textBox_login);
             this.Controls.Add(this.label_password);
             this.Controls.Add(this.label_login);
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form_Login";
             this.Text = "Вход в систему";
             this.ResumeLayout(false);
             this.PerformLayout();
