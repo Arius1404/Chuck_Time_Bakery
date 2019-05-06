@@ -82,14 +82,6 @@ namespace Chuck_Time_Bakery
 
         }
 
-        private void GoodsBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.goodsBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
-
-        }
-
         private void Form_main_Load(object sender, EventArgs e)
         {            
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Goods". При необходимости она может быть перемещена или удалена.
@@ -123,6 +115,5 @@ namespace Chuck_Time_Bakery
                
             }
         }
-
     }
 }

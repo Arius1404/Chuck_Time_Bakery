@@ -466,7 +466,7 @@
             this.goodsBindingNavigatorSaveItem.Name = "goodsBindingNavigatorSaveItem";
             this.goodsBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.goodsBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.goodsBindingNavigatorSaveItem.Click += new System.EventHandler(this.GoodsBindingNavigatorSaveItem_Click_1);
+            this.goodsBindingNavigatorSaveItem.Click += new System.EventHandler(this.GoodsBindingNavigatorSaveItem_Click);
             // 
             // title_GoodTextBox
             // 
@@ -552,7 +552,7 @@
             this.panel_customer_main.Controls.Add(weightLabel);
             this.panel_customer_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_customer_main.Location = new System.Drawing.Point(0, 36);
-            this.panel_customer_main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_customer_main.Margin = new System.Windows.Forms.Padding(4);
             this.panel_customer_main.Name = "panel_customer_main";
             this.panel_customer_main.Size = new System.Drawing.Size(1051, 364);
             this.panel_customer_main.TabIndex = 21;
@@ -566,6 +566,7 @@
             this.button_image.TabIndex = 21;
             this.button_image.Text = "Обзор...";
             this.button_image.UseVisualStyleBackColor = true;
+            this.button_image.Click += new System.EventHandler(this.Button_image_Click);
             // 
             // Form_main
             // 
