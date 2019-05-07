@@ -69,6 +69,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Chuck_TimeDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Form_cars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_cars.Designer.cs">
+      <DependentUpon>Form_cars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_customers.Designer.cs">
+      <DependentUpon>Form_customers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_discount_cards.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,11 +105,41 @@
     <Compile Include="Form_main.Designer.cs">
       <DependentUpon>Form_main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_materials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_materials.Designer.cs">
+      <DependentUpon>Form_materials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_recipes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_recipes.Designer.cs">
+      <DependentUpon>Form_recipes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_requests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_requests.Designer.cs">
+      <DependentUpon>Form_requests.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Seller.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Seller.Designer.cs">
       <DependentUpon>Form_Seller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_staff.Designer.cs">
+      <DependentUpon>Form_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_vendor.Designer.cs">
+      <DependentUpon>Form_vendor.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

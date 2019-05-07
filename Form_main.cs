@@ -102,6 +102,7 @@ namespace Chuck_Time_Bakery
                 bindingNavigatorDeleteItem.Visible = false;
                 button_image.Visible = false;
                 tabControl_main.TabPages.Remove(tabPage_seller);
+                tabControl_main.TabPages.Remove(tabPage_admin);
             }
             else
                 if (status == "Продавец-кассир") // продавец-кассир
@@ -113,7 +114,14 @@ namespace Chuck_Time_Bakery
                 запросыНаПоставкуСырьяToolStripMenuItem.Visible = false;
                 сырьеToolStripMenuItem.Visible = false;
                 tabControl_main.TabPages.Remove(tabPage_customer);
+                tabControl_main.TabPages.Remove(tabPage_admin);
 
+            }
+            else
+                if (status == "Администратор") // админ
+            {                
+                tabControl_main.TabPages.Remove(tabPage_customer);
+                tabControl_main.TabPages.Remove(tabPage_seller);
             }
         }
 
@@ -130,6 +138,11 @@ namespace Chuck_Time_Bakery
         private void Button_goods_Click(object sender, EventArgs e)
         {
             Form_goods.fg.Show();
+        }
+
+        private void ТаблицыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
