@@ -127,7 +127,7 @@ namespace Chuck_Time_Bakery
 
         private void Button_sales_Click(object sender, EventArgs e)
         {
-            Form_Seller.fs.Show();
+            Form_seller.fs.Show();
         }
 
         private void Button_discount_cards_Click(object sender, EventArgs e)
@@ -140,9 +140,39 @@ namespace Chuck_Time_Bakery
             Form_goods.fg.Show();
         }
 
-        private void ТаблицыToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Button_cars_adm_Click(object sender, EventArgs e)
         {
+            Form_cars.fc.Show();
+        }
 
+        private void Button_requests_adm_Click(object sender, EventArgs e)
+        {
+            Form_requests.fr.Show();
+        }
+
+        private void Button_staff_adm_Click(object sender, EventArgs e)
+        {
+            Form_staff.fs.Show();
+        }
+
+        private void Button_customers_adm_Click(object sender, EventArgs e)
+        {
+            Form_customers.fc.Show();
+        }
+
+        private void Button_vendor_adm_Click(object sender, EventArgs e)
+        {
+            Form_vendor.fv.Show();
+        }
+
+        private void Button_recipes_adm_Click(object sender, EventArgs e)
+        {
+            Form_recipes.fr.Show();
+        }
+
+        private void Button_materials_adm_Click(object sender, EventArgs e)
+        {
+            Form_materials.fm.Show();
         }
     }
 }

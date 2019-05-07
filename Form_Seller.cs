@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Chuck_Time_Bakery
 {
-    public partial class Form_Seller : Form
+    public partial class Form_seller : Form
     {
-        public Form_Seller()
+        public Form_seller()
         {
             InitializeComponent();
         }
@@ -34,12 +34,12 @@ namespace Chuck_Time_Bakery
 
         }
 
-        private static Form_Seller f;
-        public static Form_Seller fs
+        private static Form_seller f;
+        public static Form_seller fs
         {
             get
             {
-                if (f == null || f.IsDisposed) f = new Form_Seller();
+                if (f == null || f.IsDisposed) f = new Form_seller();
                 return f;
             }
         }

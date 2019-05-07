@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Chuck_Time_Bakery
 {
-    public partial class Form_Login : Form
+    public partial class Form_login : Form
     {
-        public Form_Login()
+        public Form_login()
         {
             InitializeComponent();
         }

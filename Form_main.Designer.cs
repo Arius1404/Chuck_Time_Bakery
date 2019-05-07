@@ -37,9 +37,6 @@
             System.Windows.Forms.Label weightLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.statusStrip_main = new System.Windows.Forms.StatusStrip();
-            this.toolStripSplitButton_change_user = new System.Windows.Forms.ToolStripSplitButton();
-            this.редактироватьУчетнуюЗаписьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сменитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip_main = new System.Windows.Forms.MenuStrip();
             this.таблицыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.автомобилиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,21 +63,13 @@
             this.button_image = new System.Windows.Forms.Button();
             this.descriptionRichTextBox = new System.Windows.Forms.RichTextBox();
             this.goodsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.goodsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.quantityNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.photoPictureBox = new System.Windows.Forms.PictureBox();
             this.weightTextBox = new System.Windows.Forms.TextBox();
             this.title_GoodTextBox = new System.Windows.Forms.TextBox();
             this.tabPage_seller = new System.Windows.Forms.TabPage();
@@ -93,13 +82,24 @@
             this.button_discount_cards_adm = new System.Windows.Forms.Button();
             this.button_goods_adm = new System.Windows.Forms.Button();
             this.button_sales_adm = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.button_cars_adm = new System.Windows.Forms.Button();
+            this.button_requests_adm = new System.Windows.Forms.Button();
+            this.button_staff_adm = new System.Windows.Forms.Button();
+            this.button_customers_adm = new System.Windows.Forms.Button();
+            this.button_vendor_adm = new System.Windows.Forms.Button();
+            this.button_recipes_adm = new System.Windows.Forms.Button();
+            this.button_materials_adm = new System.Windows.Forms.Button();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.goodsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.photoPictureBox = new System.Windows.Forms.PictureBox();
+            this.toolStripSplitButton_change_user = new System.Windows.Forms.ToolStripSplitButton();
+            this.редактироватьУчетнуюЗаписьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сменитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             descriptionLabel = new System.Windows.Forms.Label();
             photoLabel = new System.Windows.Forms.Label();
             priceLabel = new System.Windows.Forms.Label();
@@ -116,9 +116,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.goodsBindingNavigator)).BeginInit();
             this.goodsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantityNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).BeginInit();
             this.tabPage_seller.SuspendLayout();
             this.tabPage_admin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // descriptionLabel
@@ -193,32 +193,6 @@
             this.statusStrip_main.TabIndex = 5;
             this.statusStrip_main.Text = "statusStrip_main";
             // 
-            // toolStripSplitButton_change_user
-            // 
-            this.toolStripSplitButton_change_user.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripSplitButton_change_user.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.редактироватьУчетнуюЗаписьToolStripMenuItem,
-            this.сменитьПользователяToolStripMenuItem});
-            this.toolStripSplitButton_change_user.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.toolStripSplitButton_change_user.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton_change_user.Image")));
-            this.toolStripSplitButton_change_user.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripSplitButton_change_user.Name = "toolStripSplitButton_change_user";
-            this.toolStripSplitButton_change_user.Size = new System.Drawing.Size(240, 32);
-            this.toolStripSplitButton_change_user.Text = "Сменить пользователя";
-            // 
-            // редактироватьУчетнуюЗаписьToolStripMenuItem
-            // 
-            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Name = "редактироватьУчетнуюЗаписьToolStripMenuItem";
-            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Size = new System.Drawing.Size(374, 32);
-            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Text = "Редактировать учетную запись";
-            // 
-            // сменитьПользователяToolStripMenuItem
-            // 
-            this.сменитьПользователяToolStripMenuItem.Name = "сменитьПользователяToolStripMenuItem";
-            this.сменитьПользователяToolStripMenuItem.Size = new System.Drawing.Size(374, 32);
-            this.сменитьПользователяToolStripMenuItem.Text = "Сменить пользователя";
-            this.сменитьПользователяToolStripMenuItem.Click += new System.EventHandler(this.СменитьПользователяToolStripMenuItem_Click);
-            // 
             // menuStrip_main
             // 
             this.menuStrip_main.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -250,13 +224,13 @@
             this.таблицыToolStripMenuItem.Name = "таблицыToolStripMenuItem";
             this.таблицыToolStripMenuItem.Size = new System.Drawing.Size(105, 32);
             this.таблицыToolStripMenuItem.Text = "Таблицы";
-            this.таблицыToolStripMenuItem.Click += new System.EventHandler(this.ТаблицыToolStripMenuItem_Click);
             // 
             // автомобилиToolStripMenuItem
             // 
             this.автомобилиToolStripMenuItem.Name = "автомобилиToolStripMenuItem";
             this.автомобилиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.автомобилиToolStripMenuItem.Text = "Автомобили";
+            this.автомобилиToolStripMenuItem.Click += new System.EventHandler(this.Button_cars_adm_Click);
             // 
             // дисконтныеКартыToolStripMenuItem
             // 
@@ -270,24 +244,28 @@
             this.запросыНаПоставкуСырьяToolStripMenuItem.Name = "запросыНаПоставкуСырьяToolStripMenuItem";
             this.запросыНаПоставкуСырьяToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.запросыНаПоставкуСырьяToolStripMenuItem.Text = "Запросы на поставку сырья";
+            this.запросыНаПоставкуСырьяToolStripMenuItem.Click += new System.EventHandler(this.Button_requests_adm_Click);
             // 
             // персоналToolStripMenuItem
             // 
             this.персоналToolStripMenuItem.Name = "персоналToolStripMenuItem";
             this.персоналToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.персоналToolStripMenuItem.Text = "Персонал";
+            this.персоналToolStripMenuItem.Click += new System.EventHandler(this.Button_staff_adm_Click);
             // 
             // покупателиToolStripMenuItem
             // 
             this.покупателиToolStripMenuItem.Name = "покупателиToolStripMenuItem";
             this.покупателиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.покупателиToolStripMenuItem.Text = "Покупатели";
+            this.покупателиToolStripMenuItem.Click += new System.EventHandler(this.Button_customers_adm_Click);
             // 
             // поставщикиToolStripMenuItem
             // 
             this.поставщикиToolStripMenuItem.Name = "поставщикиToolStripMenuItem";
             this.поставщикиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.поставщикиToolStripMenuItem.Text = "Поставщики";
+            this.поставщикиToolStripMenuItem.Click += new System.EventHandler(this.Button_vendor_adm_Click);
             // 
             // продажиToolStripMenuItem
             // 
@@ -301,12 +279,14 @@
             this.рецептыToolStripMenuItem.Name = "рецептыToolStripMenuItem";
             this.рецептыToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.рецептыToolStripMenuItem.Text = "Рецепты";
+            this.рецептыToolStripMenuItem.Click += new System.EventHandler(this.Button_recipes_adm_Click);
             // 
             // сырьеToolStripMenuItem
             // 
             this.сырьеToolStripMenuItem.Name = "сырьеToolStripMenuItem";
             this.сырьеToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.сырьеToolStripMenuItem.Text = "Сырье";
+            this.сырьеToolStripMenuItem.Click += new System.EventHandler(this.Button_materials_adm_Click);
             // 
             // товарыToolStripMenuItem
             // 
@@ -475,48 +455,12 @@
             this.goodsBindingNavigator.TabIndex = 6;
             this.goodsBindingNavigator.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator
             // 
@@ -537,37 +481,10 @@
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
-            // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // goodsBindingNavigatorSaveItem
-            // 
-            this.goodsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.goodsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("goodsBindingNavigatorSaveItem.Image")));
-            this.goodsBindingNavigatorSaveItem.Name = "goodsBindingNavigatorSaveItem";
-            this.goodsBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
-            this.goodsBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.goodsBindingNavigatorSaveItem.Click += new System.EventHandler(this.GoodsBindingNavigatorSaveItem_Click);
             // 
             // priceTextBox
             // 
@@ -588,19 +505,6 @@
             this.quantityNumericUpDown.Name = "quantityNumericUpDown";
             this.quantityNumericUpDown.Size = new System.Drawing.Size(287, 27);
             this.quantityNumericUpDown.TabIndex = 19;
-            // 
-            // photoPictureBox
-            // 
-            this.photoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.photoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.photoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.goodsBindingSource, "Photo", true));
-            this.photoPictureBox.Location = new System.Drawing.Point(463, 47);
-            this.photoPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.photoPictureBox.Name = "photoPictureBox";
-            this.photoPictureBox.Size = new System.Drawing.Size(569, 295);
-            this.photoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.photoPictureBox.TabIndex = 15;
-            this.photoPictureBox.TabStop = false;
             // 
             // weightTextBox
             // 
@@ -671,13 +575,13 @@
             // 
             // tabPage_admin
             // 
-            this.tabPage_admin.Controls.Add(this.button7);
-            this.tabPage_admin.Controls.Add(this.button6);
-            this.tabPage_admin.Controls.Add(this.button5);
-            this.tabPage_admin.Controls.Add(this.button4);
-            this.tabPage_admin.Controls.Add(this.button3);
-            this.tabPage_admin.Controls.Add(this.button2);
-            this.tabPage_admin.Controls.Add(this.button1);
+            this.tabPage_admin.Controls.Add(this.button_materials_adm);
+            this.tabPage_admin.Controls.Add(this.button_recipes_adm);
+            this.tabPage_admin.Controls.Add(this.button_vendor_adm);
+            this.tabPage_admin.Controls.Add(this.button_customers_adm);
+            this.tabPage_admin.Controls.Add(this.button_staff_adm);
+            this.tabPage_admin.Controls.Add(this.button_requests_adm);
+            this.tabPage_admin.Controls.Add(this.button_cars_adm);
             this.tabPage_admin.Controls.Add(this.button_discount_cards_adm);
             this.tabPage_admin.Controls.Add(this.button_goods_adm);
             this.tabPage_admin.Controls.Add(this.button_sales_adm);
@@ -736,75 +640,184 @@
             this.button_sales_adm.UseVisualStyleBackColor = true;
             this.button_sales_adm.Click += new System.EventHandler(this.Button_sales_Click);
             // 
-            // button1
+            // button_cars_adm
             // 
-            this.button1.Location = new System.Drawing.Point(60, 70);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 88);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Автомобили";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_cars_adm.Location = new System.Drawing.Point(60, 70);
+            this.button_cars_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_cars_adm.Name = "button_cars_adm";
+            this.button_cars_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_cars_adm.TabIndex = 6;
+            this.button_cars_adm.Text = "Автомобили";
+            this.button_cars_adm.UseVisualStyleBackColor = true;
+            this.button_cars_adm.Click += new System.EventHandler(this.Button_cars_adm_Click);
             // 
-            // button2
+            // button_requests_adm
             // 
-            this.button2.Location = new System.Drawing.Point(446, 70);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 88);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Запросы на поставку сырья";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_requests_adm.Location = new System.Drawing.Point(446, 70);
+            this.button_requests_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_requests_adm.Name = "button_requests_adm";
+            this.button_requests_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_requests_adm.TabIndex = 7;
+            this.button_requests_adm.Text = "Запросы на поставку сырья";
+            this.button_requests_adm.UseVisualStyleBackColor = true;
+            this.button_requests_adm.Click += new System.EventHandler(this.Button_requests_adm_Click);
             // 
-            // button3
+            // button_staff_adm
             // 
-            this.button3.Location = new System.Drawing.Point(648, 70);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 88);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Персонал";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_staff_adm.Location = new System.Drawing.Point(648, 70);
+            this.button_staff_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_staff_adm.Name = "button_staff_adm";
+            this.button_staff_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_staff_adm.TabIndex = 8;
+            this.button_staff_adm.Text = "Персонал";
+            this.button_staff_adm.UseVisualStyleBackColor = true;
+            this.button_staff_adm.Click += new System.EventHandler(this.Button_staff_adm_Click);
             // 
-            // button4
+            // button_customers_adm
             // 
-            this.button4.Location = new System.Drawing.Point(847, 70);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 88);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Покупатели";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button_customers_adm.Location = new System.Drawing.Point(847, 70);
+            this.button_customers_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_customers_adm.Name = "button_customers_adm";
+            this.button_customers_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_customers_adm.TabIndex = 9;
+            this.button_customers_adm.Text = "Покупатели";
+            this.button_customers_adm.UseVisualStyleBackColor = true;
+            this.button_customers_adm.Click += new System.EventHandler(this.Button_customers_adm_Click);
             // 
-            // button5
+            // button_vendor_adm
             // 
-            this.button5.Location = new System.Drawing.Point(60, 206);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(140, 88);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Поставщики";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button_vendor_adm.Location = new System.Drawing.Point(60, 206);
+            this.button_vendor_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_vendor_adm.Name = "button_vendor_adm";
+            this.button_vendor_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_vendor_adm.TabIndex = 10;
+            this.button_vendor_adm.Text = "Поставщики";
+            this.button_vendor_adm.UseVisualStyleBackColor = true;
+            this.button_vendor_adm.Click += new System.EventHandler(this.Button_vendor_adm_Click);
             // 
-            // button6
+            // button_recipes_adm
             // 
-            this.button6.Location = new System.Drawing.Point(446, 206);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(140, 88);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Рецепты";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button_recipes_adm.Location = new System.Drawing.Point(446, 206);
+            this.button_recipes_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_recipes_adm.Name = "button_recipes_adm";
+            this.button_recipes_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_recipes_adm.TabIndex = 11;
+            this.button_recipes_adm.Text = "Рецепты";
+            this.button_recipes_adm.UseVisualStyleBackColor = true;
+            this.button_recipes_adm.Click += new System.EventHandler(this.Button_recipes_adm_Click);
             // 
-            // button7
+            // button_materials_adm
             // 
-            this.button7.Location = new System.Drawing.Point(648, 206);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(140, 88);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "Сырье";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button_materials_adm.Location = new System.Drawing.Point(648, 206);
+            this.button_materials_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_materials_adm.Name = "button_materials_adm";
+            this.button_materials_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_materials_adm.TabIndex = 12;
+            this.button_materials_adm.Text = "Сырье";
+            this.button_materials_adm.UseVisualStyleBackColor = true;
+            this.button_materials_adm.Click += new System.EventHandler(this.Button_materials_adm_Click);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
+            // 
+            // goodsBindingNavigatorSaveItem
+            // 
+            this.goodsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.goodsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("goodsBindingNavigatorSaveItem.Image")));
+            this.goodsBindingNavigatorSaveItem.Name = "goodsBindingNavigatorSaveItem";
+            this.goodsBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
+            this.goodsBindingNavigatorSaveItem.Text = "Сохранить данные";
+            this.goodsBindingNavigatorSaveItem.Click += new System.EventHandler(this.GoodsBindingNavigatorSaveItem_Click);
+            // 
+            // photoPictureBox
+            // 
+            this.photoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.photoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.photoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.goodsBindingSource, "Photo", true));
+            this.photoPictureBox.Location = new System.Drawing.Point(463, 47);
+            this.photoPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.photoPictureBox.Name = "photoPictureBox";
+            this.photoPictureBox.Size = new System.Drawing.Size(569, 295);
+            this.photoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.photoPictureBox.TabIndex = 15;
+            this.photoPictureBox.TabStop = false;
+            // 
+            // toolStripSplitButton_change_user
+            // 
+            this.toolStripSplitButton_change_user.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripSplitButton_change_user.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.редактироватьУчетнуюЗаписьToolStripMenuItem,
+            this.сменитьПользователяToolStripMenuItem});
+            this.toolStripSplitButton_change_user.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripSplitButton_change_user.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton_change_user.Image")));
+            this.toolStripSplitButton_change_user.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripSplitButton_change_user.Name = "toolStripSplitButton_change_user";
+            this.toolStripSplitButton_change_user.Size = new System.Drawing.Size(240, 32);
+            this.toolStripSplitButton_change_user.Text = "Сменить пользователя";
+            // 
+            // редактироватьУчетнуюЗаписьToolStripMenuItem
+            // 
+            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Name = "редактироватьУчетнуюЗаписьToolStripMenuItem";
+            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Size = new System.Drawing.Size(374, 32);
+            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Text = "Редактировать учетную запись";
+            // 
+            // сменитьПользователяToolStripMenuItem
+            // 
+            this.сменитьПользователяToolStripMenuItem.Name = "сменитьПользователяToolStripMenuItem";
+            this.сменитьПользователяToolStripMenuItem.Size = new System.Drawing.Size(374, 32);
+            this.сменитьПользователяToolStripMenuItem.Text = "Сменить пользователя";
+            this.сменитьПользователяToolStripMenuItem.Click += new System.EventHandler(this.СменитьПользователяToolStripMenuItem_Click);
             // 
             // Form_main
             // 
@@ -817,6 +830,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Пекарня \"ЧакТайм\"";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_main_FormClosing);
             this.Load += new System.EventHandler(this.Form_main_Load);
@@ -834,9 +848,9 @@
             this.goodsBindingNavigator.ResumeLayout(false);
             this.goodsBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantityNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).EndInit();
             this.tabPage_seller.ResumeLayout(false);
             this.tabPage_admin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -901,12 +915,12 @@
         private System.Windows.Forms.Button button_discount_cards_adm;
         private System.Windows.Forms.Button button_goods_adm;
         private System.Windows.Forms.Button button_sales_adm;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button_vendor_adm;
+        private System.Windows.Forms.Button button_customers_adm;
+        private System.Windows.Forms.Button button_staff_adm;
+        private System.Windows.Forms.Button button_requests_adm;
+        private System.Windows.Forms.Button button_cars_adm;
+        private System.Windows.Forms.Button button_materials_adm;
+        private System.Windows.Forms.Button button_recipes_adm;
     }
 }

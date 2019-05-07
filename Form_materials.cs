@@ -16,5 +16,36 @@ namespace Chuck_Time_Bakery
         {
             InitializeComponent();
         }
+
+        private static Form_materials f;
+        public static Form_materials fm
+        {
+            get
+            {
+                if (f == null || f.IsDisposed) f = new Form_materials();
+                return f;
+            }
+        }
+
+        public void ShowForm()
+        {
+            Show();
+            Activate();
+        }
+
+        private void MaterialsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.materialsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
+
+        }
+
+        private void Form_materials_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Materials". При необходимости она может быть перемещена или удалена.
+            this.materialsTableAdapter.Fill(this.chuck_TimeDataSet.Materials);
+
+        }
     }
 }
