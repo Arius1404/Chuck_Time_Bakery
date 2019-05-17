@@ -41,11 +41,11 @@
             this.таблицыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.автомобилиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.дисконтныеКартыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.продажиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.запросыНаПоставкуСырьяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.персоналToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.покупателиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.поставщикиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.продажиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рецептыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сырьеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.товарыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,18 +77,16 @@
             this.button_goods = new System.Windows.Forms.Button();
             this.button_sales = new System.Windows.Forms.Button();
             this.tabPage_admin = new System.Windows.Forms.TabPage();
-            this.действияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.генерацияОтчетаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button_materials_adm = new System.Windows.Forms.Button();
+            this.button_recipes_adm = new System.Windows.Forms.Button();
+            this.button_vendor_adm = new System.Windows.Forms.Button();
+            this.button_customers_adm = new System.Windows.Forms.Button();
+            this.button_staff_adm = new System.Windows.Forms.Button();
+            this.button_requests_adm = new System.Windows.Forms.Button();
+            this.button_cars_adm = new System.Windows.Forms.Button();
             this.button_discount_cards_adm = new System.Windows.Forms.Button();
             this.button_goods_adm = new System.Windows.Forms.Button();
             this.button_sales_adm = new System.Windows.Forms.Button();
-            this.button_cars_adm = new System.Windows.Forms.Button();
-            this.button_requests_adm = new System.Windows.Forms.Button();
-            this.button_staff_adm = new System.Windows.Forms.Button();
-            this.button_customers_adm = new System.Windows.Forms.Button();
-            this.button_vendor_adm = new System.Windows.Forms.Button();
-            this.button_recipes_adm = new System.Windows.Forms.Button();
-            this.button_materials_adm = new System.Windows.Forms.Button();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -199,7 +197,6 @@
             this.menuStrip_main.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip_main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.таблицыToolStripMenuItem,
-            this.действияToolStripMenuItem,
             this.оПрограммеToolStripMenuItem});
             this.menuStrip_main.Location = new System.Drawing.Point(0, 0);
             this.menuStrip_main.Name = "menuStrip_main";
@@ -213,11 +210,11 @@
             this.таблицыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.автомобилиToolStripMenuItem,
             this.дисконтныеКартыToolStripMenuItem,
+            this.продажиToolStripMenuItem,
             this.запросыНаПоставкуСырьяToolStripMenuItem,
             this.персоналToolStripMenuItem,
             this.покупателиToolStripMenuItem,
             this.поставщикиToolStripMenuItem,
-            this.продажиToolStripMenuItem,
             this.рецептыToolStripMenuItem,
             this.сырьеToolStripMenuItem,
             this.товарыToolStripMenuItem});
@@ -238,6 +235,13 @@
             this.дисконтныеКартыToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.дисконтныеКартыToolStripMenuItem.Text = "Дисконтные карты";
             this.дисконтныеКартыToolStripMenuItem.Click += new System.EventHandler(this.Button_discount_cards_Click);
+            // 
+            // продажиToolStripMenuItem
+            // 
+            this.продажиToolStripMenuItem.Name = "продажиToolStripMenuItem";
+            this.продажиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
+            this.продажиToolStripMenuItem.Text = "Заказы";
+            this.продажиToolStripMenuItem.Click += new System.EventHandler(this.Button_sales_Click);
             // 
             // запросыНаПоставкуСырьяToolStripMenuItem
             // 
@@ -266,13 +270,6 @@
             this.поставщикиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.поставщикиToolStripMenuItem.Text = "Поставщики";
             this.поставщикиToolStripMenuItem.Click += new System.EventHandler(this.Button_vendor_adm_Click);
-            // 
-            // продажиToolStripMenuItem
-            // 
-            this.продажиToolStripMenuItem.Name = "продажиToolStripMenuItem";
-            this.продажиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
-            this.продажиToolStripMenuItem.Text = "Продажи";
-            this.продажиToolStripMenuItem.Click += new System.EventHandler(this.Button_sales_Click);
             // 
             // рецептыToolStripMenuItem
             // 
@@ -361,7 +358,7 @@
             this.tabControl_main.Controls.Add(this.tabPage_admin);
             this.tabControl_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl_main.Location = new System.Drawing.Point(0, 36);
-            this.tabControl_main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl_main.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl_main.Name = "tabControl_main";
             this.tabControl_main.SelectedIndex = 0;
             this.tabControl_main.Size = new System.Drawing.Size(1072, 396);
@@ -371,9 +368,9 @@
             // 
             this.tabPage_customer.Controls.Add(this.panel_customer_main);
             this.tabPage_customer.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_customer.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_customer.Name = "tabPage_customer";
-            this.tabPage_customer.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_customer.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage_customer.Size = new System.Drawing.Size(1064, 367);
             this.tabPage_customer.TabIndex = 0;
             this.tabPage_customer.Text = "Ассортимент";
@@ -397,7 +394,7 @@
             this.panel_customer_main.Controls.Add(weightLabel);
             this.panel_customer_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_customer_main.Location = new System.Drawing.Point(4, 4);
-            this.panel_customer_main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_customer_main.Margin = new System.Windows.Forms.Padding(4);
             this.panel_customer_main.Name = "panel_customer_main";
             this.panel_customer_main.Size = new System.Drawing.Size(1056, 359);
             this.panel_customer_main.TabIndex = 22;
@@ -532,9 +529,9 @@
             this.tabPage_seller.Controls.Add(this.button_goods);
             this.tabPage_seller.Controls.Add(this.button_sales);
             this.tabPage_seller.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_seller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_seller.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_seller.Name = "tabPage_seller";
-            this.tabPage_seller.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_seller.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage_seller.Size = new System.Drawing.Size(1064, 367);
             this.tabPage_seller.TabIndex = 1;
             this.tabPage_seller.Text = "Начало работы";
@@ -543,7 +540,7 @@
             // button_discount_cards
             // 
             this.button_discount_cards.Location = new System.Drawing.Point(700, 97);
-            this.button_discount_cards.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_discount_cards.Margin = new System.Windows.Forms.Padding(4);
             this.button_discount_cards.Name = "button_discount_cards";
             this.button_discount_cards.Size = new System.Drawing.Size(172, 151);
             this.button_discount_cards.TabIndex = 2;
@@ -554,7 +551,7 @@
             // button_goods
             // 
             this.button_goods.Location = new System.Drawing.Point(163, 97);
-            this.button_goods.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_goods.Margin = new System.Windows.Forms.Padding(4);
             this.button_goods.Name = "button_goods";
             this.button_goods.Size = new System.Drawing.Size(171, 151);
             this.button_goods.TabIndex = 1;
@@ -565,11 +562,11 @@
             // button_sales
             // 
             this.button_sales.Location = new System.Drawing.Point(433, 97);
-            this.button_sales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_sales.Margin = new System.Windows.Forms.Padding(4);
             this.button_sales.Name = "button_sales";
             this.button_sales.Size = new System.Drawing.Size(171, 151);
             this.button_sales.TabIndex = 0;
-            this.button_sales.Text = "Продажи";
+            this.button_sales.Text = "Заказы";
             this.button_sales.UseVisualStyleBackColor = true;
             this.button_sales.Click += new System.EventHandler(this.Button_sales_Click);
             // 
@@ -593,19 +590,82 @@
             this.tabPage_admin.Text = "Начало работы";
             this.tabPage_admin.UseVisualStyleBackColor = true;
             // 
-            // действияToolStripMenuItem
+            // button_materials_adm
             // 
-            this.действияToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.генерацияОтчетаToolStripMenuItem});
-            this.действияToolStripMenuItem.Name = "действияToolStripMenuItem";
-            this.действияToolStripMenuItem.Size = new System.Drawing.Size(110, 32);
-            this.действияToolStripMenuItem.Text = "Действия";
+            this.button_materials_adm.Location = new System.Drawing.Point(648, 206);
+            this.button_materials_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_materials_adm.Name = "button_materials_adm";
+            this.button_materials_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_materials_adm.TabIndex = 12;
+            this.button_materials_adm.Text = "Сырье";
+            this.button_materials_adm.UseVisualStyleBackColor = true;
+            this.button_materials_adm.Click += new System.EventHandler(this.Button_materials_adm_Click);
             // 
-            // генерацияОтчетаToolStripMenuItem
+            // button_recipes_adm
             // 
-            this.генерацияОтчетаToolStripMenuItem.Name = "генерацияОтчетаToolStripMenuItem";
-            this.генерацияОтчетаToolStripMenuItem.Size = new System.Drawing.Size(251, 32);
-            this.генерацияОтчетаToolStripMenuItem.Text = "Генерация отчета";
+            this.button_recipes_adm.Location = new System.Drawing.Point(446, 206);
+            this.button_recipes_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_recipes_adm.Name = "button_recipes_adm";
+            this.button_recipes_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_recipes_adm.TabIndex = 11;
+            this.button_recipes_adm.Text = "Рецепты";
+            this.button_recipes_adm.UseVisualStyleBackColor = true;
+            this.button_recipes_adm.Click += new System.EventHandler(this.Button_recipes_adm_Click);
+            // 
+            // button_vendor_adm
+            // 
+            this.button_vendor_adm.Location = new System.Drawing.Point(60, 206);
+            this.button_vendor_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_vendor_adm.Name = "button_vendor_adm";
+            this.button_vendor_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_vendor_adm.TabIndex = 10;
+            this.button_vendor_adm.Text = "Поставщики";
+            this.button_vendor_adm.UseVisualStyleBackColor = true;
+            this.button_vendor_adm.Click += new System.EventHandler(this.Button_vendor_adm_Click);
+            // 
+            // button_customers_adm
+            // 
+            this.button_customers_adm.Location = new System.Drawing.Point(847, 70);
+            this.button_customers_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_customers_adm.Name = "button_customers_adm";
+            this.button_customers_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_customers_adm.TabIndex = 9;
+            this.button_customers_adm.Text = "Покупатели";
+            this.button_customers_adm.UseVisualStyleBackColor = true;
+            this.button_customers_adm.Click += new System.EventHandler(this.Button_customers_adm_Click);
+            // 
+            // button_staff_adm
+            // 
+            this.button_staff_adm.Location = new System.Drawing.Point(648, 70);
+            this.button_staff_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_staff_adm.Name = "button_staff_adm";
+            this.button_staff_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_staff_adm.TabIndex = 8;
+            this.button_staff_adm.Text = "Персонал";
+            this.button_staff_adm.UseVisualStyleBackColor = true;
+            this.button_staff_adm.Click += new System.EventHandler(this.Button_staff_adm_Click);
+            // 
+            // button_requests_adm
+            // 
+            this.button_requests_adm.Location = new System.Drawing.Point(446, 70);
+            this.button_requests_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_requests_adm.Name = "button_requests_adm";
+            this.button_requests_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_requests_adm.TabIndex = 7;
+            this.button_requests_adm.Text = "Запросы на поставку сырья";
+            this.button_requests_adm.UseVisualStyleBackColor = true;
+            this.button_requests_adm.Click += new System.EventHandler(this.Button_requests_adm_Click);
+            // 
+            // button_cars_adm
+            // 
+            this.button_cars_adm.Location = new System.Drawing.Point(60, 70);
+            this.button_cars_adm.Margin = new System.Windows.Forms.Padding(4);
+            this.button_cars_adm.Name = "button_cars_adm";
+            this.button_cars_adm.Size = new System.Drawing.Size(140, 88);
+            this.button_cars_adm.TabIndex = 6;
+            this.button_cars_adm.Text = "Автомобили";
+            this.button_cars_adm.UseVisualStyleBackColor = true;
+            this.button_cars_adm.Click += new System.EventHandler(this.Button_cars_adm_Click);
             // 
             // button_discount_cards_adm
             // 
@@ -636,86 +696,9 @@
             this.button_sales_adm.Name = "button_sales_adm";
             this.button_sales_adm.Size = new System.Drawing.Size(140, 88);
             this.button_sales_adm.TabIndex = 3;
-            this.button_sales_adm.Text = "Продажи";
+            this.button_sales_adm.Text = "Заказы";
             this.button_sales_adm.UseVisualStyleBackColor = true;
             this.button_sales_adm.Click += new System.EventHandler(this.Button_sales_Click);
-            // 
-            // button_cars_adm
-            // 
-            this.button_cars_adm.Location = new System.Drawing.Point(60, 70);
-            this.button_cars_adm.Margin = new System.Windows.Forms.Padding(4);
-            this.button_cars_adm.Name = "button_cars_adm";
-            this.button_cars_adm.Size = new System.Drawing.Size(140, 88);
-            this.button_cars_adm.TabIndex = 6;
-            this.button_cars_adm.Text = "Автомобили";
-            this.button_cars_adm.UseVisualStyleBackColor = true;
-            this.button_cars_adm.Click += new System.EventHandler(this.Button_cars_adm_Click);
-            // 
-            // button_requests_adm
-            // 
-            this.button_requests_adm.Location = new System.Drawing.Point(446, 70);
-            this.button_requests_adm.Margin = new System.Windows.Forms.Padding(4);
-            this.button_requests_adm.Name = "button_requests_adm";
-            this.button_requests_adm.Size = new System.Drawing.Size(140, 88);
-            this.button_requests_adm.TabIndex = 7;
-            this.button_requests_adm.Text = "Запросы на поставку сырья";
-            this.button_requests_adm.UseVisualStyleBackColor = true;
-            this.button_requests_adm.Click += new System.EventHandler(this.Button_requests_adm_Click);
-            // 
-            // button_staff_adm
-            // 
-            this.button_staff_adm.Location = new System.Drawing.Point(648, 70);
-            this.button_staff_adm.Margin = new System.Windows.Forms.Padding(4);
-            this.button_staff_adm.Name = "button_staff_adm";
-            this.button_staff_adm.Size = new System.Drawing.Size(140, 88);
-            this.button_staff_adm.TabIndex = 8;
-            this.button_staff_adm.Text = "Персонал";
-            this.button_staff_adm.UseVisualStyleBackColor = true;
-            this.button_staff_adm.Click += new System.EventHandler(this.Button_staff_adm_Click);
-            // 
-            // button_customers_adm
-            // 
-            this.button_customers_adm.Location = new System.Drawing.Point(847, 70);
-            this.button_customers_adm.Margin = new System.Windows.Forms.Padding(4);
-            this.button_customers_adm.Name = "button_customers_adm";
-            this.button_customers_adm.Size = new System.Drawing.Size(140, 88);
-            this.button_customers_adm.TabIndex = 9;
-            this.button_customers_adm.Text = "Покупатели";
-            this.button_customers_adm.UseVisualStyleBackColor = true;
-            this.button_customers_adm.Click += new System.EventHandler(this.Button_customers_adm_Click);
-            // 
-            // button_vendor_adm
-            // 
-            this.button_vendor_adm.Location = new System.Drawing.Point(60, 206);
-            this.button_vendor_adm.Margin = new System.Windows.Forms.Padding(4);
-            this.button_vendor_adm.Name = "button_vendor_adm";
-            this.button_vendor_adm.Size = new System.Drawing.Size(140, 88);
-            this.button_vendor_adm.TabIndex = 10;
-            this.button_vendor_adm.Text = "Поставщики";
-            this.button_vendor_adm.UseVisualStyleBackColor = true;
-            this.button_vendor_adm.Click += new System.EventHandler(this.Button_vendor_adm_Click);
-            // 
-            // button_recipes_adm
-            // 
-            this.button_recipes_adm.Location = new System.Drawing.Point(446, 206);
-            this.button_recipes_adm.Margin = new System.Windows.Forms.Padding(4);
-            this.button_recipes_adm.Name = "button_recipes_adm";
-            this.button_recipes_adm.Size = new System.Drawing.Size(140, 88);
-            this.button_recipes_adm.TabIndex = 11;
-            this.button_recipes_adm.Text = "Рецепты";
-            this.button_recipes_adm.UseVisualStyleBackColor = true;
-            this.button_recipes_adm.Click += new System.EventHandler(this.Button_recipes_adm_Click);
-            // 
-            // button_materials_adm
-            // 
-            this.button_materials_adm.Location = new System.Drawing.Point(648, 206);
-            this.button_materials_adm.Margin = new System.Windows.Forms.Padding(4);
-            this.button_materials_adm.Name = "button_materials_adm";
-            this.button_materials_adm.Size = new System.Drawing.Size(140, 88);
-            this.button_materials_adm.TabIndex = 12;
-            this.button_materials_adm.Text = "Сырье";
-            this.button_materials_adm.UseVisualStyleBackColor = true;
-            this.button_materials_adm.Click += new System.EventHandler(this.Button_materials_adm_Click);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -811,6 +794,7 @@
             this.редактироватьУчетнуюЗаписьToolStripMenuItem.Name = "редактироватьУчетнуюЗаписьToolStripMenuItem";
             this.редактироватьУчетнуюЗаписьToolStripMenuItem.Size = new System.Drawing.Size(374, 32);
             this.редактироватьУчетнуюЗаписьToolStripMenuItem.Text = "Редактировать учетную запись";
+            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Click += new System.EventHandler(this.РедактироватьУчетнуюЗаписьToolStripMenuItem_Click);
             // 
             // сменитьПользователяToolStripMenuItem
             // 
@@ -909,8 +893,6 @@
         private System.Windows.Forms.Button button_discount_cards;
         private System.Windows.Forms.Button button_goods;
         private System.Windows.Forms.Button button_sales;
-        public System.Windows.Forms.ToolStripMenuItem действияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem генерацияОтчетаToolStripMenuItem;
         public System.Windows.Forms.TabPage tabPage_admin;
         private System.Windows.Forms.Button button_discount_cards_adm;
         private System.Windows.Forms.Button button_goods_adm;

@@ -99,6 +99,12 @@
     <Compile Include="Form_login.Designer.cs">
       <DependentUpon>Form_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_login_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_login_edit.Designer.cs">
+      <DependentUpon>Form_login_edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,11 +123,29 @@
     <Compile Include="Form_recipes.Designer.cs">
       <DependentUpon>Form_recipes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_recipes_materials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_recipes_materials.Designer.cs">
+      <DependentUpon>Form_recipes_materials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_requested_goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_requested_goods.Designer.cs">
+      <DependentUpon>Form_requested_goods.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_requests.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_requests.Designer.cs">
       <DependentUpon>Form_requests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_request_materials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_request_materials.Designer.cs">
+      <DependentUpon>Form_request_materials.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_seller.cs">
       <SubType>Form</SubType>
@@ -134,6 +158,12 @@
     </Compile>
     <Compile Include="Form_staff.Designer.cs">
       <DependentUpon>Form_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_staff_sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_staff_sales.Designer.cs">
+      <DependentUpon>Form_staff_sales.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_vendor.cs">
       <SubType>Form</SubType>
@@ -158,6 +188,9 @@
     <EmbeddedResource Include="Form_login.resx">
       <DependentUpon>Form_login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_login_edit.resx">
+      <DependentUpon>Form_login_edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_main.resx">
       <DependentUpon>Form_main.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,14 +200,26 @@
     <EmbeddedResource Include="Form_recipes.resx">
       <DependentUpon>Form_recipes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_recipes_materials.resx">
+      <DependentUpon>Form_recipes_materials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_requested_goods.resx">
+      <DependentUpon>Form_requested_goods.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_requests.resx">
       <DependentUpon>Form_requests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_request_materials.resx">
+      <DependentUpon>Form_request_materials.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_seller.resx">
       <DependentUpon>Form_seller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_staff.resx">
       <DependentUpon>Form_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_staff_sales.resx">
+      <DependentUpon>Form_staff_sales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_vendor.resx">
       <DependentUpon>Form_vendor.cs</DependentUpon>

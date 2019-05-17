@@ -35,12 +35,17 @@
             this.staffTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.StaffTableAdapter();
             this.tableAdapterManager = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager();
             this.staffBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.staffDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -48,16 +53,14 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.staffBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip_staff = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.показатьРецептыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingNavigator)).BeginInit();
             this.staffBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.staffDataGridView)).BeginInit();
+            this.contextMenuStrip_staff.SuspendLayout();
             this.SuspendLayout();
             // 
             // chuck_TimeDataSet
@@ -122,9 +125,16 @@
             this.staffBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.staffBindingNavigator.Name = "staffBindingNavigator";
             this.staffBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.staffBindingNavigator.Size = new System.Drawing.Size(800, 27);
+            this.staffBindingNavigator.Size = new System.Drawing.Size(1167, 27);
             this.staffBindingNavigator.TabIndex = 0;
             this.staffBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Text = "из {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorSeparator
             // 
@@ -140,21 +150,14 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
-            this.bindingNavigatorCountItem.Text = "из {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // staffDataGridView
@@ -167,13 +170,49 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
+            this.staffDataGridView.ContextMenuStrip = this.contextMenuStrip_staff;
             this.staffDataGridView.DataSource = this.staffBindingSource;
             this.staffDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.staffDataGridView.Location = new System.Drawing.Point(0, 27);
             this.staffDataGridView.Name = "staffDataGridView";
             this.staffDataGridView.RowTemplate.Height = 24;
-            this.staffDataGridView.Size = new System.Drawing.Size(800, 423);
+            this.staffDataGridView.Size = new System.Drawing.Size(1167, 423);
             this.staffDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Staff_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Номер сотрудника";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Full_name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "ФИО";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Position";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Должность";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Address";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Адрес проживания";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Phone_number";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Номер телефона";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 150;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -238,47 +277,30 @@
             this.staffBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.staffBindingNavigatorSaveItem.Click += new System.EventHandler(this.StaffBindingNavigatorSaveItem_Click);
             // 
-            // dataGridViewTextBoxColumn1
+            // contextMenuStrip_staff
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Staff_ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Номер сотрудника";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.contextMenuStrip_staff.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip_staff.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.показатьРецептыToolStripMenuItem});
+            this.contextMenuStrip_staff.Name = "contextMenuStrip_staff";
+            this.contextMenuStrip_staff.Size = new System.Drawing.Size(211, 56);
             // 
-            // dataGridViewTextBoxColumn2
+            // показатьРецептыToolStripMenuItem
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Full_name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "ФИО";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Position";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Должность";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Address";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Адрес проживания";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Phone_number";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Номер телефона";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 150;
+            this.показатьРецептыToolStripMenuItem.Name = "показатьРецептыToolStripMenuItem";
+            this.показатьРецептыToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.показатьРецептыToolStripMenuItem.Text = "Показать рецепты";
+            this.показатьРецептыToolStripMenuItem.Click += new System.EventHandler(this.ПоказатьРецептыToolStripMenuItem_Click);
             // 
             // Form_staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1167, 450);
             this.Controls.Add(this.staffDataGridView);
             this.Controls.Add(this.staffBindingNavigator);
             this.Name = "Form_staff";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Персонал";
             this.Load += new System.EventHandler(this.Form_staff_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).EndInit();
@@ -287,6 +309,7 @@
             this.staffBindingNavigator.ResumeLayout(false);
             this.staffBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.staffDataGridView)).EndInit();
+            this.contextMenuStrip_staff.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,5 +340,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_staff;
+        private System.Windows.Forms.ToolStripMenuItem показатьРецептыToolStripMenuItem;
     }
 }

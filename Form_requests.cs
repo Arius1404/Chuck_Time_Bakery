@@ -43,6 +43,8 @@ namespace Chuck_Time_Bakery
 
         private void Form_requests_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Materials". При необходимости она может быть перемещена или удалена.
+            this.materialsTableAdapter.Fill(this.chuck_TimeDataSet.Materials);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Vendor". При необходимости она может быть перемещена или удалена.
             this.vendorTableAdapter.Fill(this.chuck_TimeDataSet.Vendor);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Request_Materials". При необходимости она может быть перемещена или удалена.
@@ -50,6 +52,11 @@ namespace Chuck_Time_Bakery
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Requests". При необходимости она может быть перемещена или удалена.
             this.requestsTableAdapter.Fill(this.chuck_TimeDataSet.Requests);
 
+        }
+
+        private void ToolStripMenuItem_info_Click(object sender, EventArgs e)
+        {
+            Form_request_materials.frm.ShowForm();
         }
     }
 }

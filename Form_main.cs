@@ -174,5 +174,10 @@ namespace Chuck_Time_Bakery
         {
             Form_materials.fm.Show();
         }
+
+        private void РедактироватьУчетнуюЗаписьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_login_edit.fle.ShowForm();
+        }
     }
 }

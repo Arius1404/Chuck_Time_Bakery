@@ -34,35 +34,42 @@
             this.requestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.requestsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.RequestsTableAdapter();
             this.tableAdapterManager = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager();
-            this.requestsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.requestsDataGridView = new System.Windows.Forms.DataGridView();
             this.request_MaterialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.Request_MaterialsTableAdapter();
-            this.vendorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vendorTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.VendorTableAdapter();
-            this.fKRequestMaterialsRequestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.requestsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.requestsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.requestsDataGridView = new System.Windows.Forms.DataGridView();
+            this.materialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vendorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.contextMenuStrip_requests = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ToolStripMenuItem_info = new System.Windows.Forms.ToolStripMenuItem();
+            this.fKRequestMaterialsRequestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.materialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.отправитьЗаказToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestsBindingNavigator)).BeginInit();
             this.requestsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.requestsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendorBindingSource)).BeginInit();
+            this.contextMenuStrip_requests.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fKRequestMaterialsRequestsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,11 +107,20 @@
             this.tableAdapterManager.VehiclesTableAdapter = null;
             this.tableAdapterManager.VendorTableAdapter = this.vendorTableAdapter;
             // 
+            // request_MaterialsTableAdapter
+            // 
+            this.request_MaterialsTableAdapter.ClearBeforeFill = true;
+            // 
+            // vendorTableAdapter
+            // 
+            this.vendorTableAdapter.ClearBeforeFill = true;
+            // 
             // requestsBindingNavigator
             // 
             this.requestsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.requestsBindingNavigator.BindingSource = this.requestsBindingSource;
             this.requestsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.requestsBindingNavigator.CountItemFormat = "из {0}";
             this.requestsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.requestsBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.requestsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -131,73 +147,6 @@
             this.requestsBindingNavigator.TabIndex = 0;
             this.requestsBindingNavigator.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // requestsDataGridView
-            // 
-            this.requestsDataGridView.AutoGenerateColumns = false;
-            this.requestsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.requestsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.requestsDataGridView.DataSource = this.requestsBindingSource;
-            this.requestsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.requestsDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.requestsDataGridView.Name = "requestsDataGridView";
-            this.requestsDataGridView.RowTemplate.Height = 24;
-            this.requestsDataGridView.Size = new System.Drawing.Size(800, 423);
-            this.requestsDataGridView.TabIndex = 1;
-            // 
-            // request_MaterialsTableAdapter
-            // 
-            this.request_MaterialsTableAdapter.ClearBeforeFill = true;
-            // 
-            // vendorBindingSource
-            // 
-            this.vendorBindingSource.DataMember = "Vendor";
-            this.vendorBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // vendorTableAdapter
-            // 
-            this.vendorTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKRequestMaterialsRequestsBindingSource
-            // 
-            this.fKRequestMaterialsRequestsBindingSource.DataMember = "FK_Request_Materials_Requests";
-            this.fKRequestMaterialsRequestsBindingSource.DataSource = this.requestsBindingSource;
-            // 
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -206,6 +155,13 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Text = "из {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -234,6 +190,25 @@
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -252,6 +227,11 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
             // requestsBindingNavigatorSaveItem
             // 
             this.requestsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -260,6 +240,60 @@
             this.requestsBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.requestsBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.requestsBindingNavigatorSaveItem.Click += new System.EventHandler(this.RequestsBindingNavigatorSaveItem_Click);
+            // 
+            // requestsDataGridView
+            // 
+            this.requestsDataGridView.AutoGenerateColumns = false;
+            this.requestsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.requestsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.requestsDataGridView.ContextMenuStrip = this.contextMenuStrip_requests;
+            this.requestsDataGridView.DataSource = this.requestsBindingSource;
+            this.requestsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.requestsDataGridView.Location = new System.Drawing.Point(0, 27);
+            this.requestsDataGridView.Name = "requestsDataGridView";
+            this.requestsDataGridView.RowTemplate.Height = 24;
+            this.requestsDataGridView.Size = new System.Drawing.Size(800, 423);
+            this.requestsDataGridView.TabIndex = 1;
+            // 
+            // materialsBindingSource
+            // 
+            this.materialsBindingSource.DataMember = "Materials";
+            this.materialsBindingSource.DataSource = this.chuck_TimeDataSet;
+            // 
+            // vendorBindingSource
+            // 
+            this.vendorBindingSource.DataMember = "Vendor";
+            this.vendorBindingSource.DataSource = this.chuck_TimeDataSet;
+            // 
+            // contextMenuStrip_requests
+            // 
+            this.contextMenuStrip_requests.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip_requests.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem_info,
+            this.отправитьЗаказToolStripMenuItem});
+            this.contextMenuStrip_requests.Name = "contextMenuStrip_requests";
+            this.contextMenuStrip_requests.Size = new System.Drawing.Size(237, 52);
+            // 
+            // ToolStripMenuItem_info
+            // 
+            this.ToolStripMenuItem_info.Name = "ToolStripMenuItem_info";
+            this.ToolStripMenuItem_info.Size = new System.Drawing.Size(236, 24);
+            this.ToolStripMenuItem_info.Text = "Содержание запросов";
+            this.ToolStripMenuItem_info.Click += new System.EventHandler(this.ToolStripMenuItem_info_Click);
+            // 
+            // fKRequestMaterialsRequestsBindingSource
+            // 
+            this.fKRequestMaterialsRequestsBindingSource.DataMember = "FK_Request_Materials_Requests";
+            this.fKRequestMaterialsRequestsBindingSource.DataSource = this.requestsBindingSource;
+            // 
+            // materialsTableAdapter
+            // 
+            this.materialsTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -271,13 +305,14 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Raw_title";
-            this.dataGridViewTextBoxColumn2.DataSource = this.fKRequestMaterialsRequestsBindingSource;
+            this.dataGridViewTextBoxColumn2.DataSource = this.materialsBindingSource;
             this.dataGridViewTextBoxColumn2.DisplayMember = "Title_Material";
             this.dataGridViewTextBoxColumn2.HeaderText = "Сырье";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn2.ValueMember = "ID_Request";
+            this.dataGridViewTextBoxColumn2.ValueMember = "Title_Material";
+            this.dataGridViewTextBoxColumn2.Visible = false;
             this.dataGridViewTextBoxColumn2.Width = 150;
             // 
             // dataGridViewTextBoxColumn5
@@ -297,6 +332,7 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Quantity";
             this.dataGridViewTextBoxColumn3.HeaderText = "Количество";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -304,6 +340,12 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Дата создания запроса";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 200;
+            // 
+            // отправитьЗаказToolStripMenuItem
+            // 
+            this.отправитьЗаказToolStripMenuItem.Name = "отправитьЗаказToolStripMenuItem";
+            this.отправитьЗаказToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.отправитьЗаказToolStripMenuItem.Text = "Отправить заказ";
             // 
             // Form_requests
             // 
@@ -322,7 +364,9 @@
             this.requestsBindingNavigator.ResumeLayout(false);
             this.requestsBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.requestsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendorBindingSource)).EndInit();
+            this.contextMenuStrip_requests.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fKRequestMaterialsRequestsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -353,10 +397,15 @@
         private System.Windows.Forms.BindingSource fKRequestMaterialsRequestsBindingSource;
         private Chuck_TimeDataSetTableAdapters.VendorTableAdapter vendorTableAdapter;
         private System.Windows.Forms.BindingSource vendorBindingSource;
+        private System.Windows.Forms.BindingSource materialsBindingSource;
+        private Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter materialsTableAdapter;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_requests;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_info;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.ToolStripMenuItem отправитьЗаказToolStripMenuItem;
     }
 }

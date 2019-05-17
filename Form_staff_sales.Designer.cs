@@ -1,6 +1,6 @@
 ﻿namespace Chuck_Time_Bakery
 {
-    partial class Form_goods
+    partial class Form_staff_sales
     {
         /// <summary>
         /// Required designer variable.
@@ -29,38 +29,37 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_goods));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_staff_sales));
             this.chuck_TimeDataSet = new Chuck_Time_Bakery.Chuck_TimeDataSet();
-            this.goodsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.goodsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.GoodsTableAdapter();
+            this.staff_SalesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.staff_SalesTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.Staff_SalesTableAdapter();
             this.tableAdapterManager = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager();
-            this.goodsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.staff_SalesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.goodsDataGridView = new System.Windows.Forms.DataGridView();
+            this.staff_SalesDataGridView = new System.Windows.Forms.DataGridView();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.goodsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.staff_SalesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.staffBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.staffTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.StaffTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contextMenuStrip_goods = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.составИзделийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.goodsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.goodsBindingNavigator)).BeginInit();
-            this.goodsBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.goodsDataGridView)).BeginInit();
-            this.contextMenuStrip_goods.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.staff_SalesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staff_SalesBindingNavigator)).BeginInit();
+            this.staff_SalesBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.staff_SalesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // chuck_TimeDataSet
@@ -68,21 +67,21 @@
             this.chuck_TimeDataSet.DataSetName = "Chuck_TimeDataSet";
             this.chuck_TimeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // goodsBindingSource
+            // staff_SalesBindingSource
             // 
-            this.goodsBindingSource.DataMember = "Goods";
-            this.goodsBindingSource.DataSource = this.chuck_TimeDataSet;
+            this.staff_SalesBindingSource.DataMember = "Staff_Sales";
+            this.staff_SalesBindingSource.DataSource = this.chuck_TimeDataSet;
             // 
-            // goodsTableAdapter
+            // staff_SalesTableAdapter
             // 
-            this.goodsTableAdapter.ClearBeforeFill = true;
+            this.staff_SalesTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CustomersTableAdapter = null;
             this.tableAdapterManager.Discount_cardsTableAdapter = null;
-            this.tableAdapterManager.GoodsTableAdapter = this.goodsTableAdapter;
+            this.tableAdapterManager.GoodsTableAdapter = null;
             this.tableAdapterManager.LoginTableAdapter = null;
             this.tableAdapterManager.MaterialsTableAdapter = null;
             this.tableAdapterManager.Recipes_MaterialsTableAdapter = null;
@@ -91,21 +90,21 @@
             this.tableAdapterManager.Requested_goodsTableAdapter = null;
             this.tableAdapterManager.RequestsTableAdapter = null;
             this.tableAdapterManager.SalesTableAdapter = null;
-            this.tableAdapterManager.Staff_SalesTableAdapter = null;
-            this.tableAdapterManager.StaffTableAdapter = null;
+            this.tableAdapterManager.Staff_SalesTableAdapter = this.staff_SalesTableAdapter;
+            this.tableAdapterManager.StaffTableAdapter = this.staffTableAdapter;
             this.tableAdapterManager.UpdateOrder = Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VehiclesTableAdapter = null;
             this.tableAdapterManager.VendorTableAdapter = null;
             // 
-            // goodsBindingNavigator
+            // staff_SalesBindingNavigator
             // 
-            this.goodsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.goodsBindingNavigator.BindingSource = this.goodsBindingSource;
-            this.goodsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.goodsBindingNavigator.CountItemFormat = "из {0}";
-            this.goodsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.goodsBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.goodsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.staff_SalesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.staff_SalesBindingNavigator.BindingSource = this.staff_SalesBindingSource;
+            this.staff_SalesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.staff_SalesBindingNavigator.CountItemFormat = "из {0}";
+            this.staff_SalesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.staff_SalesBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.staff_SalesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -117,24 +116,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.goodsBindingNavigatorSaveItem});
-            this.goodsBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.goodsBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.goodsBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.goodsBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.goodsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.goodsBindingNavigator.Name = "goodsBindingNavigator";
-            this.goodsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.goodsBindingNavigator.Size = new System.Drawing.Size(1059, 27);
-            this.goodsBindingNavigator.TabIndex = 0;
-            this.goodsBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
-            this.bindingNavigatorCountItem.Text = "из {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            this.staff_SalesBindingNavigatorSaveItem});
+            this.staff_SalesBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.staff_SalesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.staff_SalesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.staff_SalesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.staff_SalesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.staff_SalesBindingNavigator.Name = "staff_SalesBindingNavigator";
+            this.staff_SalesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.staff_SalesBindingNavigator.Size = new System.Drawing.Size(800, 27);
+            this.staff_SalesBindingNavigator.TabIndex = 0;
+            this.staff_SalesBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorSeparator
             // 
@@ -146,38 +138,43 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Text = "из {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // goodsDataGridView
+            // staff_SalesDataGridView
             // 
-            this.goodsDataGridView.AutoGenerateColumns = false;
-            this.goodsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.goodsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.staff_SalesDataGridView.AutoGenerateColumns = false;
+            this.staff_SalesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.staff_SalesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
-            this.goodsDataGridView.ContextMenuStrip = this.contextMenuStrip_goods;
-            this.goodsDataGridView.DataSource = this.goodsBindingSource;
-            this.goodsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.goodsDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.goodsDataGridView.Margin = new System.Windows.Forms.Padding(4);
-            this.goodsDataGridView.Name = "goodsDataGridView";
-            this.goodsDataGridView.Size = new System.Drawing.Size(1059, 527);
-            this.goodsDataGridView.TabIndex = 1;
+            this.dataGridViewTextBoxColumn4});
+            this.staff_SalesDataGridView.DataSource = this.staff_SalesBindingSource;
+            this.staff_SalesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.staff_SalesDataGridView.Location = new System.Drawing.Point(0, 27);
+            this.staff_SalesDataGridView.Name = "staff_SalesDataGridView";
+            this.staff_SalesDataGridView.RowTemplate.Height = 24;
+            this.staff_SalesDataGridView.Size = new System.Drawing.Size(800, 423);
+            this.staff_SalesDataGridView.TabIndex = 1;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -233,84 +230,76 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
-            // goodsBindingNavigatorSaveItem
+            // staff_SalesBindingNavigatorSaveItem
             // 
-            this.goodsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.goodsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("goodsBindingNavigatorSaveItem.Image")));
-            this.goodsBindingNavigatorSaveItem.Name = "goodsBindingNavigatorSaveItem";
-            this.goodsBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
-            this.goodsBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.goodsBindingNavigatorSaveItem.Click += new System.EventHandler(this.GoodsBindingNavigatorSaveItem_Click);
+            this.staff_SalesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.staff_SalesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("staff_SalesBindingNavigatorSaveItem.Image")));
+            this.staff_SalesBindingNavigatorSaveItem.Name = "staff_SalesBindingNavigatorSaveItem";
+            this.staff_SalesBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
+            this.staff_SalesBindingNavigatorSaveItem.Text = "Сохранить данные";
+            this.staff_SalesBindingNavigatorSaveItem.Click += new System.EventHandler(this.Staff_SalesBindingNavigatorSaveItem_Click);
+            // 
+            // staffBindingSource
+            // 
+            this.staffBindingSource.DataMember = "Staff";
+            this.staffBindingSource.DataSource = this.chuck_TimeDataSet;
+            // 
+            // staffTableAdapter
+            // 
+            this.staffTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Title_Good";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Название";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 200;
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Weight";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Вес";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Sale_ID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Номер заказа";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 200;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Quantity";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Количество";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Staff_ID";
+            this.dataGridViewTextBoxColumn3.DataSource = this.staffBindingSource;
+            this.dataGridViewTextBoxColumn3.DisplayMember = "Full_name";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Продавец";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Visible = false;
+            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn3.ValueMember = "Staff_ID";
+            this.dataGridViewTextBoxColumn3.Width = 250;
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Price";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Цена за ед.";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Quantity";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Количество";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Visible = false;
             // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Description";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Описание";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 300;
-            // 
-            // contextMenuStrip_goods
-            // 
-            this.contextMenuStrip_goods.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip_goods.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.составИзделийToolStripMenuItem});
-            this.contextMenuStrip_goods.Name = "contextMenuStrip_goods";
-            this.contextMenuStrip_goods.Size = new System.Drawing.Size(211, 56);
-            // 
-            // составИзделийToolStripMenuItem
-            // 
-            this.составИзделийToolStripMenuItem.Name = "составИзделийToolStripMenuItem";
-            this.составИзделийToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.составИзделийToolStripMenuItem.Text = "Состав изделий";
-            this.составИзделийToolStripMenuItem.Click += new System.EventHandler(this.СоставИзделийToolStripMenuItem_Click);
-            // 
-            // Form_goods
+            // Form_staff_sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 554);
-            this.Controls.Add(this.goodsDataGridView);
-            this.Controls.Add(this.goodsBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form_goods";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.staff_SalesDataGridView);
+            this.Controls.Add(this.staff_SalesBindingNavigator);
+            this.Name = "Form_staff_sales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ассортимент";
-            this.Load += new System.EventHandler(this.Form_goods_Load);
+            this.Text = "Продажи продавцов";
+            this.Load += new System.EventHandler(this.Form_staff_sales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.goodsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.goodsBindingNavigator)).EndInit();
-            this.goodsBindingNavigator.ResumeLayout(false);
-            this.goodsBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.goodsDataGridView)).EndInit();
-            this.contextMenuStrip_goods.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.staff_SalesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staff_SalesBindingNavigator)).EndInit();
+            this.staff_SalesBindingNavigator.ResumeLayout(false);
+            this.staff_SalesBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.staff_SalesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,10 +308,10 @@
         #endregion
 
         private Chuck_TimeDataSet chuck_TimeDataSet;
-        private System.Windows.Forms.BindingSource goodsBindingSource;
-        private Chuck_TimeDataSetTableAdapters.GoodsTableAdapter goodsTableAdapter;
+        private System.Windows.Forms.BindingSource staff_SalesBindingSource;
+        private Chuck_TimeDataSetTableAdapters.Staff_SalesTableAdapter staff_SalesTableAdapter;
         private Chuck_TimeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator goodsBindingNavigator;
+        private System.Windows.Forms.BindingNavigator staff_SalesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -334,14 +323,13 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton goodsBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView goodsDataGridView;
+        private System.Windows.Forms.ToolStripButton staff_SalesBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView staff_SalesDataGridView;
+        private Chuck_TimeDataSetTableAdapters.StaffTableAdapter staffTableAdapter;
+        private System.Windows.Forms.BindingSource staffBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_goods;
-        private System.Windows.Forms.ToolStripMenuItem составИзделийToolStripMenuItem;
     }
 }

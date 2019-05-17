@@ -43,9 +43,16 @@ namespace Chuck_Time_Bakery
 
         private void Form_customers_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Discount_cards". При необходимости она может быть перемещена или удалена.
+            this.discount_cardsTableAdapter.Fill(this.chuck_TimeDataSet.Discount_cards);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Customers". При необходимости она может быть перемещена или удалена.
             this.customersTableAdapter.Fill(this.chuck_TimeDataSet.Customers);
 
+        }
+
+        private void СписокКартToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_discount_cards.fdc.ShowForm();
         }
     }
 }

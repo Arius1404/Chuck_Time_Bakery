@@ -49,5 +49,15 @@ namespace Chuck_Time_Bakery
             this.recipesTableAdapter.Fill(this.chuck_TimeDataSet.Recipes);
 
         }
+
+        private void СоставПродуктовToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_recipes_materials.frm.ShowForm();
+        }
+
+        private void Full_nameComboBox_TextChanged(object sender, EventArgs e)
+        {
+            // ТУТ ЗАПРОС ПО ТЕХНОЛОГУ
+        }
     }
 }

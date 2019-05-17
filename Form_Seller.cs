@@ -27,6 +27,8 @@ namespace Chuck_Time_Bakery
 
         private void Form_Seller_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Vehicles". При необходимости она может быть перемещена или удалена.
+            this.vehiclesTableAdapter.Fill(this.chuck_TimeDataSet.Vehicles);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Customers". При необходимости она может быть перемещена или удалена.
             this.customersTableAdapter.Fill(this.chuck_TimeDataSet.Customers);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Sales". При необходимости она может быть перемещена или удалена.
@@ -48,6 +50,21 @@ namespace Chuck_Time_Bakery
         {
             Show();
             Activate();
+        }
+
+        private void ToolStripMenuItem_info_Click(object sender, EventArgs e)
+        {
+            Form_requested_goods.frg.ShowForm();
+        }
+
+        private void ToolStripMenuItem_staff_sales_Click(object sender, EventArgs e)
+        {
+            Form_staff_sales.fss.ShowForm();
+        }
+
+        private void СозданиеОтчетаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // ТУТ ГЕНЕРАТОР ОТЧЕТА
         }
     }
 }

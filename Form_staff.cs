@@ -47,5 +47,10 @@ namespace Chuck_Time_Bakery
             this.staffTableAdapter.Fill(this.chuck_TimeDataSet.Staff);
 
         }
+
+        private void ПоказатьРецептыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_recipes.fr.ShowForm();
+        }
     }
 }

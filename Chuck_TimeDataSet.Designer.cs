@@ -97,6 +97,7 @@ namespace Chuck_Time_Bakery {
             base.Tables.CollectionChanged += schemaChangedHandler;
             base.Relations.CollectionChanged += schemaChangedHandler;
             this.EndInit();
+            this.InitExpressions();
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -108,6 +109,9 @@ namespace Chuck_Time_Bakery {
                 global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler1 = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
                 this.Tables.CollectionChanged += schemaChangedHandler1;
                 this.Relations.CollectionChanged += schemaChangedHandler1;
+                if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.ExcludeSchema)) {
+                    this.InitExpressions();
+                }
                 return;
             }
             string strSchema = ((string)(info.GetValue("XmlSchema", typeof(string))));
@@ -170,6 +174,7 @@ namespace Chuck_Time_Bakery {
             }
             else {
                 this.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
+                this.InitExpressions();
             }
             this.GetSerializationData(info, context);
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -371,6 +376,7 @@ namespace Chuck_Time_Bakery {
         public override global::System.Data.DataSet Clone() {
             Chuck_TimeDataSet cln = ((Chuck_TimeDataSet)(base.Clone()));
             cln.InitVars();
+            cln.InitExpressions();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
         }
@@ -604,7 +610,7 @@ namespace Chuck_Time_Bakery {
             base.Tables.Add(this.tableRecipes_Materials);
             this.tableRequest_Materials = new Request_MaterialsDataTable();
             base.Tables.Add(this.tableRequest_Materials);
-            this.tableRequested_goods = new Requested_goodsDataTable();
+            this.tableRequested_goods = new Requested_goodsDataTable(false);
             base.Tables.Add(this.tableRequested_goods);
             this.tableRequests = new RequestsDataTable();
             base.Tables.Add(this.tableRequests);
@@ -827,6 +833,12 @@ namespace Chuck_Time_Bakery {
             }
             xs.Add(dsSchema);
             return type;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitExpressions() {
+            this.Requested_goods.Final_costColumn.Expression = "Quantity*Item_cost";
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -3395,12 +3407,25 @@ namespace Chuck_Time_Bakery {
             
             private global::System.Data.DataColumn columnQuantity;
             
+            private global::System.Data.DataColumn columnItem_cost;
+            
+            private global::System.Data.DataColumn columnFinal_cost;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Requested_goodsDataTable() {
+            public Requested_goodsDataTable() : 
+                    this(false) {
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public Requested_goodsDataTable(bool initExpressions) {
                 this.TableName = "Requested_goods";
                 this.BeginInit();
                 this.InitClass();
+                if ((initExpressions == true)) {
+                    this.InitExpressions();
+                }
                 this.EndInit();
             }
             
@@ -3462,6 +3487,22 @@ namespace Chuck_Time_Bakery {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Item_costColumn {
+                get {
+                    return this.columnItem_cost;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Final_costColumn {
+                get {
+                    return this.columnFinal_cost;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -3497,13 +3538,37 @@ namespace Chuck_Time_Bakery {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Requested_goodsRow AddRequested_goodsRow(int ID, SalesRow parentSalesRowByFK_Requested_goods_Sales, GoodsRow parentGoodsRowByFK_Requested_goods_Goods, string Quantity) {
+            public Requested_goodsRow AddRequested_goodsRow(int ID, SalesRow parentSalesRowByFK_Requested_goods_Sales, GoodsRow parentGoodsRowByFK_Requested_goods_Goods, string Quantity, decimal Item_cost, decimal Final_cost) {
                 Requested_goodsRow rowRequested_goodsRow = ((Requested_goodsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
                         null,
                         null,
-                        Quantity};
+                        Quantity,
+                        Item_cost,
+                        Final_cost};
+                if ((parentSalesRowByFK_Requested_goods_Sales != null)) {
+                    columnValuesArray[1] = parentSalesRowByFK_Requested_goods_Sales[0];
+                }
+                if ((parentGoodsRowByFK_Requested_goods_Goods != null)) {
+                    columnValuesArray[2] = parentGoodsRowByFK_Requested_goods_Goods[0];
+                }
+                rowRequested_goodsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowRequested_goodsRow);
+                return rowRequested_goodsRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public Requested_goodsRow AddRequested_goodsRow(int ID, SalesRow parentSalesRowByFK_Requested_goods_Sales, GoodsRow parentGoodsRowByFK_Requested_goods_Goods, string Quantity, decimal Item_cost) {
+                Requested_goodsRow rowRequested_goodsRow = ((Requested_goodsRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        ID,
+                        null,
+                        null,
+                        Quantity,
+                        Item_cost,
+                        null};
                 if ((parentSalesRowByFK_Requested_goods_Sales != null)) {
                     columnValuesArray[1] = parentSalesRowByFK_Requested_goods_Sales[0];
                 }
@@ -3543,6 +3608,8 @@ namespace Chuck_Time_Bakery {
                 this.columnOrder_ID = base.Columns["Order_ID"];
                 this.columnTitle_Good = base.Columns["Title_Good"];
                 this.columnQuantity = base.Columns["Quantity"];
+                this.columnItem_cost = base.Columns["Item_cost"];
+                this.columnFinal_cost = base.Columns["Final_cost"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3556,6 +3623,10 @@ namespace Chuck_Time_Bakery {
                 base.Columns.Add(this.columnTitle_Good);
                 this.columnQuantity = new global::System.Data.DataColumn("Quantity", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnQuantity);
+                this.columnItem_cost = new global::System.Data.DataColumn("Item_cost", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnItem_cost);
+                this.columnFinal_cost = new global::System.Data.DataColumn("Final_cost", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFinal_cost);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AllowDBNull = false;
@@ -3563,6 +3634,8 @@ namespace Chuck_Time_Bakery {
                 this.columnOrder_ID.AllowDBNull = false;
                 this.columnTitle_Good.MaxLength = 50;
                 this.columnQuantity.MaxLength = 50;
+                this.columnItem_cost.ReadOnly = true;
+                this.columnFinal_cost.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3581,6 +3654,12 @@ namespace Chuck_Time_Bakery {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
                 return typeof(Requested_goodsRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitExpressions() {
+                this.Final_costColumn.Expression = "Quantity*Item_cost";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6788,6 +6867,38 @@ namespace Chuck_Time_Bakery {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal Item_cost {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableRequested_goods.Item_costColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Item_cost\' в таблице \'Requested_goods\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRequested_goods.Item_costColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public decimal Final_cost {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableRequested_goods.Final_costColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Final_cost\' в таблице \'Requested_goods\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRequested_goods.Final_costColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public GoodsRow GoodsRow {
                 get {
                     return ((GoodsRow)(this.GetParentRow(this.Table.ParentRelations["FK_Requested_goods_Goods"])));
@@ -6830,6 +6941,30 @@ namespace Chuck_Time_Bakery {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetQuantityNull() {
                 this[this.tableRequested_goods.QuantityColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsItem_costNull() {
+                return this.IsNull(this.tableRequested_goods.Item_costColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetItem_costNull() {
+                this[this.tableRequested_goods.Item_costColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsFinal_costNull() {
+                return this.IsNull(this.tableRequested_goods.Final_costColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetFinal_costNull() {
+                this[this.tableRequested_goods.Final_costColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -11623,6 +11758,7 @@ SELECT ID, ID_Request, Title_Material, Quantity FROM Request_Materials WHERE (ID
             tableMapping.ColumnMappings.Add("Order_ID", "Order_ID");
             tableMapping.ColumnMappings.Add("Title_Good", "Title_Good");
             tableMapping.ColumnMappings.Add("Quantity", "Quantity");
+            tableMapping.ColumnMappings.Add("Goods.Price", "Item_cost");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -11697,7 +11833,7 @@ SELECT ID, Order_ID, Title_Good, Quantity FROM Requested_goods WHERE (ID = @ID)"
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual Chuck_TimeDataSet.Requested_goodsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Chuck_TimeDataSet.Requested_goodsDataTable dataTable = new Chuck_TimeDataSet.Requested_goodsDataTable();
+            Chuck_TimeDataSet.Requested_goodsDataTable dataTable = new Chuck_TimeDataSet.Requested_goodsDataTable(true);
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
