@@ -49,7 +49,7 @@ namespace Chuck_Time_Bakery
                 if (prog_exit != 0)
                     Environment.Exit(0);
             }
-            else
+            else               
                 e.Cancel = true;
         }
 

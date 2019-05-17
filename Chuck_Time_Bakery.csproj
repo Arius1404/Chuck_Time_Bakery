@@ -147,6 +147,18 @@
     <Compile Include="Form_request_materials.Designer.cs">
       <DependentUpon>Form_request_materials.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_request_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_request_report.Designer.cs">
+      <DependentUpon>Form_request_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_sales_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_sales_report.Designer.cs">
+      <DependentUpon>Form_sales_report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_seller.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +223,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_request_materials.resx">
       <DependentUpon>Form_request_materials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_request_report.resx">
+      <DependentUpon>Form_request_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_sales_report.resx">
+      <DependentUpon>Form_sales_report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_seller.resx">
       <DependentUpon>Form_seller.cs</DependentUpon>

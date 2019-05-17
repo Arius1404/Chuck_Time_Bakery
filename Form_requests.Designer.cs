@@ -50,18 +50,19 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.requestsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.requestsDataGridView = new System.Windows.Forms.DataGridView();
-            this.materialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vendorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.contextMenuStrip_requests = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ToolStripMenuItem_info = new System.Windows.Forms.ToolStripMenuItem();
-            this.fKRequestMaterialsRequestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.materialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.materialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.vendorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip_requests = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ToolStripMenuItem_info = new System.Windows.Forms.ToolStripMenuItem();
             this.отправитьЗаказToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fKRequestMaterialsRequestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.materialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter();
+            this.ToolStripMenuItem_request_report = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestsBindingNavigator)).BeginInit();
@@ -260,41 +261,6 @@
             this.requestsDataGridView.Size = new System.Drawing.Size(800, 423);
             this.requestsDataGridView.TabIndex = 1;
             // 
-            // materialsBindingSource
-            // 
-            this.materialsBindingSource.DataMember = "Materials";
-            this.materialsBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // vendorBindingSource
-            // 
-            this.vendorBindingSource.DataMember = "Vendor";
-            this.vendorBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // contextMenuStrip_requests
-            // 
-            this.contextMenuStrip_requests.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip_requests.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_info,
-            this.отправитьЗаказToolStripMenuItem});
-            this.contextMenuStrip_requests.Name = "contextMenuStrip_requests";
-            this.contextMenuStrip_requests.Size = new System.Drawing.Size(237, 52);
-            // 
-            // ToolStripMenuItem_info
-            // 
-            this.ToolStripMenuItem_info.Name = "ToolStripMenuItem_info";
-            this.ToolStripMenuItem_info.Size = new System.Drawing.Size(236, 24);
-            this.ToolStripMenuItem_info.Text = "Содержание запросов";
-            this.ToolStripMenuItem_info.Click += new System.EventHandler(this.ToolStripMenuItem_info_Click);
-            // 
-            // fKRequestMaterialsRequestsBindingSource
-            // 
-            this.fKRequestMaterialsRequestsBindingSource.DataMember = "FK_Request_Materials_Requests";
-            this.fKRequestMaterialsRequestsBindingSource.DataSource = this.requestsBindingSource;
-            // 
-            // materialsTableAdapter
-            // 
-            this.materialsTableAdapter.ClearBeforeFill = true;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Request_ID";
@@ -315,6 +281,11 @@
             this.dataGridViewTextBoxColumn2.Visible = false;
             this.dataGridViewTextBoxColumn2.Width = 150;
             // 
+            // materialsBindingSource
+            // 
+            this.materialsBindingSource.DataMember = "Materials";
+            this.materialsBindingSource.DataSource = this.chuck_TimeDataSet;
+            // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Vendor_Title";
@@ -326,6 +297,11 @@
             this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewTextBoxColumn5.ValueMember = "Vendor_Title";
             this.dataGridViewTextBoxColumn5.Width = 150;
+            // 
+            // vendorBindingSource
+            // 
+            this.vendorBindingSource.DataMember = "Vendor";
+            this.vendorBindingSource.DataSource = this.chuck_TimeDataSet;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -341,11 +317,44 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 200;
             // 
+            // contextMenuStrip_requests
+            // 
+            this.contextMenuStrip_requests.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip_requests.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem_info,
+            this.отправитьЗаказToolStripMenuItem,
+            this.ToolStripMenuItem_request_report});
+            this.contextMenuStrip_requests.Name = "contextMenuStrip_requests";
+            this.contextMenuStrip_requests.Size = new System.Drawing.Size(237, 104);
+            // 
+            // ToolStripMenuItem_info
+            // 
+            this.ToolStripMenuItem_info.Name = "ToolStripMenuItem_info";
+            this.ToolStripMenuItem_info.Size = new System.Drawing.Size(236, 24);
+            this.ToolStripMenuItem_info.Text = "Содержание запросов";
+            this.ToolStripMenuItem_info.Click += new System.EventHandler(this.ToolStripMenuItem_info_Click);
+            // 
             // отправитьЗаказToolStripMenuItem
             // 
             this.отправитьЗаказToolStripMenuItem.Name = "отправитьЗаказToolStripMenuItem";
             this.отправитьЗаказToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.отправитьЗаказToolStripMenuItem.Text = "Отправить заказ";
+            // 
+            // fKRequestMaterialsRequestsBindingSource
+            // 
+            this.fKRequestMaterialsRequestsBindingSource.DataMember = "FK_Request_Materials_Requests";
+            this.fKRequestMaterialsRequestsBindingSource.DataSource = this.requestsBindingSource;
+            // 
+            // materialsTableAdapter
+            // 
+            this.materialsTableAdapter.ClearBeforeFill = true;
+            // 
+            // ToolStripMenuItem_request_report
+            // 
+            this.ToolStripMenuItem_request_report.Name = "ToolStripMenuItem_request_report";
+            this.ToolStripMenuItem_request_report.Size = new System.Drawing.Size(236, 24);
+            this.ToolStripMenuItem_request_report.Text = "Сформировать запрос";
+            this.ToolStripMenuItem_request_report.Click += new System.EventHandler(this.ToolStripMenuItem_request_report_Click);
             // 
             // Form_requests
             // 
@@ -407,5 +416,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.ToolStripMenuItem отправитьЗаказToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_request_report;
     }
 }

@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace Chuck_Time_Bakery
 {
-    public partial class Form_requests : Form
+    public partial class Form_request_report : Form
     {
-        public Form_requests()
+        public Form_request_report()
         {
             InitializeComponent();
         }
 
-        private static Form_requests f;
-        public static Form_requests fr
+        private static Form_request_report f;
+        public static Form_request_report frr
         {
             get
             {
-                if (f == null || f.IsDisposed) f = new Form_requests();
+                if (f == null || f.IsDisposed) f = new Form_request_report();
                 return f;
             }
         }
@@ -41,27 +41,20 @@ namespace Chuck_Time_Bakery
 
         }
 
-        private void Form_requests_Load(object sender, EventArgs e)
+        private void Form_request_report_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Materials". При необходимости она может быть перемещена или удалена.
-            this.materialsTableAdapter.Fill(this.chuck_TimeDataSet.Materials);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Vendor". При необходимости она может быть перемещена или удалена.
             this.vendorTableAdapter.Fill(this.chuck_TimeDataSet.Vendor);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Request_Materials". При необходимости она может быть перемещена или удалена.
-            this.request_MaterialsTableAdapter.Fill(this.chuck_TimeDataSet.Request_Materials);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Materials". При необходимости она может быть перемещена или удалена.
+            this.materialsTableAdapter.Fill(this.chuck_TimeDataSet.Materials);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Requests". При необходимости она может быть перемещена или удалена.
             this.requestsTableAdapter.Fill(this.chuck_TimeDataSet.Requests);
 
         }
 
-        private void ToolStripMenuItem_info_Click(object sender, EventArgs e)
+        private void Button_request_report_Click(object sender, EventArgs e)
         {
-            Form_request_materials.frm.ShowForm();
-        }
-
-        private void ToolStripMenuItem_request_report_Click(object sender, EventArgs e)
-        {
-            Form_request_report.frr.ShowForm();
+            // ГЕНЕРАТОР ОТЧЕТА
         }
     }
 }

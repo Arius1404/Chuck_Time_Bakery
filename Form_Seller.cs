@@ -64,7 +64,7 @@ namespace Chuck_Time_Bakery
 
         private void СозданиеОтчетаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // ТУТ ГЕНЕРАТОР ОТЧЕТА
+            Form_sales_report.fsr.ShowForm();
         }
     }
 }
