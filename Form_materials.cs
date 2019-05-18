@@ -45,7 +45,13 @@ namespace Chuck_Time_Bakery
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Materials". При необходимости она может быть перемещена или удалена.
             this.materialsTableAdapter.Fill(this.chuck_TimeDataSet.Materials);
-
+            if (Form_main.status == "Пекарь")
+            {
+                bindingNavigatorDeleteItem.Visible = false;
+                bindingNavigatorAddNewItem.Visible = false;
+                materialsBindingNavigatorSaveItem.Visible = false;
+                materialsDataGridView.ReadOnly = true;
+            }
         }
     }
 }

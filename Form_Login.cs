@@ -22,7 +22,7 @@ namespace Chuck_Time_Bakery
         {
             Hide();
             Form_main fm = new Form_main();
-            fm.status = "Вы вошли как гость!";
+            Form_main.status = "Вы вошли как гость!";
             fm.редактироватьУчетнуюЗаписьToolStripMenuItem.Visible = false;
             fm.Show();
         }
@@ -37,7 +37,7 @@ namespace Chuck_Time_Bakery
             {
                 Hide();
                 Form_main fm = new Form_main();
-                fm.status = dt.Rows[0][0].ToString();
+                Form_main.status = dt.Rows[0][0].ToString();
                 dt.Clear();
                 con.Close();
                 fm.Show();

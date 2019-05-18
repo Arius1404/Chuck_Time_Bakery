@@ -45,7 +45,20 @@ namespace Chuck_Time_Bakery
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Goods". При необходимости она может быть перемещена или удалена.
             this.goodsTableAdapter.Fill(this.chuck_TimeDataSet.Goods);
-
+            if (Form_main.status == "Продавец-кассир")
+            {
+                bindingNavigatorDeleteItem.Visible = false;
+                bindingNavigatorAddNewItem.Visible = false;
+                goodsBindingNavigatorSaveItem.Visible = false;
+                goodsDataGridView.ReadOnly = true;
+            }
+            else if (Form_main.status == "Пекарь")
+            {
+                bindingNavigatorDeleteItem.Visible = false;
+                bindingNavigatorAddNewItem.Visible = false;
+                goodsBindingNavigatorSaveItem.Visible = false;
+                goodsDataGridView.ReadOnly = true;
+            }
         }
 
         private void СоставИзделийToolStripMenuItem_Click(object sender, EventArgs e)

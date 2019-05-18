@@ -47,7 +47,8 @@ namespace Chuck_Time_Bakery
             this.customersTableAdapter.Fill(this.chuck_TimeDataSet.Customers);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Discount_cards". При необходимости она может быть перемещена или удалена.
             this.discount_cardsTableAdapter.Fill(this.chuck_TimeDataSet.Discount_cards);
-
+            if (Form_main.status == "Продавец-кассир")
+                bindingNavigatorDeleteItem.Visible = false;
         }
     }
 

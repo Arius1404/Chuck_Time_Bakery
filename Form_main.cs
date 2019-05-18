@@ -17,7 +17,7 @@ namespace Chuck_Time_Bakery
             InitializeComponent();
         }
 
-        public string status;
+        public static string status;
         public int prog_exit;
 
         private static Form_main f;
@@ -83,7 +83,11 @@ namespace Chuck_Time_Bakery
         }
 
         private void Form_main_Load(object sender, EventArgs e)
-        {            
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Staff". При необходимости она может быть перемещена или удалена.
+            this.staffTableAdapter.Fill(this.chuck_TimeDataSet.Staff);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Recipes". При необходимости она может быть перемещена или удалена.
+            this.recipesTableAdapter.Fill(this.chuck_TimeDataSet.Recipes);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Goods". При необходимости она может быть перемещена или удалена.
             this.goodsTableAdapter.Fill(this.chuck_TimeDataSet.Goods);
             prog_exit = 1;
@@ -103,25 +107,151 @@ namespace Chuck_Time_Bakery
                 button_image.Visible = false;
                 tabControl_main.TabPages.Remove(tabPage_seller);
                 tabControl_main.TabPages.Remove(tabPage_admin);
+                tabControl_main.TabPages.Remove(tabPage_cook);
+                tabControl_main.TabPages.Remove(tabPage_delivery);
+                tabControl_main.TabPages.Remove(tabPage_director);
+                tabControl_main.TabPages.Remove(tabPage_hr);
+                tabControl_main.TabPages.Remove(tabPage_tech);
+            }
+            else
+                if (status == "Директор") // админ
+            {
+                tabControl_main.TabPages.Remove(tabPage_seller);
+                tabControl_main.TabPages.Remove(tabPage_admin);
+                tabControl_main.TabPages.Remove(tabPage_cook);
+                tabControl_main.TabPages.Remove(tabPage_delivery);
+                tabControl_main.TabPages.Remove(tabPage_hr);
+                tabControl_main.TabPages.Remove(tabPage_tech);
+                tabControl_main.TabPages.Remove(tabPage_customer);
+            }
+            else
+                if (status == "Администратор") // админ
+            {
+                рецептыToolStripMenuItem.Visible = false;
+                tabControl_main.TabPages.Remove(tabPage_customer);
+                tabControl_main.TabPages.Remove(tabPage_seller);
+                tabControl_main.TabPages.Remove(tabPage_cook);
+                tabControl_main.TabPages.Remove(tabPage_delivery);
+                tabControl_main.TabPages.Remove(tabPage_director);
+                tabControl_main.TabPages.Remove(tabPage_hr);
+                tabControl_main.TabPages.Remove(tabPage_tech);
+            }
+            else
+                if (status == "Покупатель") // админ
+            {
+                title_GoodTextBox.ReadOnly = true;
+                weightTextBox.ReadOnly = true;
+                quantityNumericUpDown.ReadOnly = true;
+                priceTextBox.ReadOnly = true;
+                descriptionRichTextBox.ReadOnly = true;
+
+                таблицыToolStripMenuItem.Visible = false;
+                goodsBindingNavigatorSaveItem.Visible = false;
+                bindingNavigatorAddNewItem.Visible = false;
+                bindingNavigatorDeleteItem.Visible = false;
+                button_image.Visible = false;
+                tabControl_main.TabPages.Remove(tabPage_seller);
+                tabControl_main.TabPages.Remove(tabPage_cook);
+                tabControl_main.TabPages.Remove(tabPage_delivery);
+                tabControl_main.TabPages.Remove(tabPage_director);
+                tabControl_main.TabPages.Remove(tabPage_hr);
+                tabControl_main.TabPages.Remove(tabPage_tech);
+                tabControl_main.TabPages.Remove(tabPage_admin);
+            }
+            else
+                if (status == "Технолог") // админ
+            {
+                таблицыToolStripMenuItem.Visible = false;
+                tabControl_main.TabPages.Remove(tabPage_customer);
+                tabControl_main.TabPages.Remove(tabPage_seller);
+                tabControl_main.TabPages.Remove(tabPage_cook);
+                tabControl_main.TabPages.Remove(tabPage_delivery);
+                tabControl_main.TabPages.Remove(tabPage_director);
+                tabControl_main.TabPages.Remove(tabPage_hr);
+                tabControl_main.TabPages.Remove(tabPage_admin);
+            }
+            else
+                if (status == "Доставщик") // админ
+            {
+                дисконтныеКартыToolStripMenuItem.Visible = true;
+                покупателиToolStripMenuItem.Visible = true;
+
+                продажиToolStripMenuItem.Visible = false;
+                автомобилиToolStripMenuItem.Visible = false;
+                продажиToolStripMenuItem.Visible = false;
+                персоналToolStripMenuItem.Visible = false;
+                запросыНаПоставкуСырьяToolStripMenuItem.Visible = false;
+                поставщикиToolStripMenuItem.Visible = false;
+                рецептыToolStripMenuItem.Visible = false;
+                сырьеToolStripMenuItem.Visible = false;
+                товарыToolStripMenuItem.Visible = false;
+                
+                tabControl_main.TabPages.Remove(tabPage_customer);
+                tabControl_main.TabPages.Remove(tabPage_seller);
+                tabControl_main.TabPages.Remove(tabPage_cook);
+                tabControl_main.TabPages.Remove(tabPage_director);
+                tabControl_main.TabPages.Remove(tabPage_hr);
+                tabControl_main.TabPages.Remove(tabPage_admin);
+                tabControl_main.TabPages.Remove(tabPage_tech);
+            }
+            else
+                if (status == "Пекарь") // админ
+            {
+                дисконтныеКартыToolStripMenuItem.Visible = false;
+                покупателиToolStripMenuItem.Visible = false;
+                продажиToolStripMenuItem.Visible = false;
+                автомобилиToolStripMenuItem.Visible = false;
+                продажиToolStripMenuItem.Visible = false;
+                персоналToolStripMenuItem.Visible = false;
+                запросыНаПоставкуСырьяToolStripMenuItem.Visible = false;
+                поставщикиToolStripMenuItem.Visible = false;
+
+                рецептыToolStripMenuItem.Visible = true;
+                сырьеToolStripMenuItem.Visible = true;
+                товарыToolStripMenuItem.Visible = true;
+
+                tabControl_main.TabPages.Remove(tabPage_customer);
+                tabControl_main.TabPages.Remove(tabPage_seller);
+                tabControl_main.TabPages.Remove(tabPage_director);
+                tabControl_main.TabPages.Remove(tabPage_hr);
+                tabControl_main.TabPages.Remove(tabPage_admin);
+                tabControl_main.TabPages.Remove(tabPage_tech);
+                tabControl_main.TabPages.Remove(tabPage_delivery);
             }
             else
                 if (status == "Продавец-кассир") // продавец-кассир
             {
+                дисконтныеКартыToolStripMenuItem.Visible = true;//
                 покупателиToolStripMenuItem.Visible = false;
+                продажиToolStripMenuItem.Visible = false;
                 автомобилиToolStripMenuItem.Visible = false;
-                рецептыToolStripMenuItem.Visible = false;
-                поставщикиToolStripMenuItem.Visible = false;
+                продажиToolStripMenuItem.Visible = true;//
+                персоналToolStripMenuItem.Visible = false;
                 запросыНаПоставкуСырьяToolStripMenuItem.Visible = false;
+                поставщикиToolStripMenuItem.Visible = false;
+                рецептыToolStripMenuItem.Visible = false;
                 сырьеToolStripMenuItem.Visible = false;
-                tabControl_main.TabPages.Remove(tabPage_customer);
-                tabControl_main.TabPages.Remove(tabPage_admin);
+                товарыToolStripMenuItem.Visible = true;//
 
-            }
+                tabControl_main.TabPages.Remove(tabPage_customer);
+                tabControl_main.TabPages.Remove(tabPage_director);
+                tabControl_main.TabPages.Remove(tabPage_hr);
+                tabControl_main.TabPages.Remove(tabPage_admin);
+                tabControl_main.TabPages.Remove(tabPage_tech);
+                tabControl_main.TabPages.Remove(tabPage_delivery);
+                tabControl_main.TabPages.Remove(tabPage_cook);
+            }                     
             else
-                if (status == "Администратор") // админ
-            {                
+                if (status == "Кадровый отдел") // админ
+            {
+                таблицыToolStripMenuItem.Visible = false;
                 tabControl_main.TabPages.Remove(tabPage_customer);
                 tabControl_main.TabPages.Remove(tabPage_seller);
+                tabControl_main.TabPages.Remove(tabPage_admin);
+                tabControl_main.TabPages.Remove(tabPage_tech);
+                tabControl_main.TabPages.Remove(tabPage_delivery);
+                tabControl_main.TabPages.Remove(tabPage_cook);
+                tabControl_main.TabPages.Remove(tabPage_director);
             }
         }
 
@@ -178,6 +308,20 @@ namespace Chuck_Time_Bakery
         private void РедактироватьУчетнуюЗаписьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form_login_edit.fle.ShowForm();
+        }
+
+        private void ToolStripButton7_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.recipesBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
+        }
+
+        private void ToolStripButton14_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.staffBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
         }
     }
 }

@@ -47,7 +47,13 @@ namespace Chuck_Time_Bakery
             this.staffTableAdapter.Fill(this.chuck_TimeDataSet.Staff);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Recipes". При необходимости она может быть перемещена или удалена.
             this.recipesTableAdapter.Fill(this.chuck_TimeDataSet.Recipes);
-
+            if (Form_main.status == "Пекарь")
+            {
+                bindingNavigatorDeleteItem.Visible = false;
+                bindingNavigatorAddNewItem.Visible = false;
+                recipesBindingNavigatorSaveItem.Visible = false;
+                recipesDataGridView.ReadOnly = true;
+            }
         }
 
         private void СоставПродуктовToolStripMenuItem_Click(object sender, EventArgs e)
