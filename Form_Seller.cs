@@ -33,7 +33,11 @@ namespace Chuck_Time_Bakery
             this.customersTableAdapter.Fill(this.chuck_TimeDataSet.Customers);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "chuck_TimeDataSet.Sales". При необходимости она может быть перемещена или удалена.
             this.salesTableAdapter.Fill(this.chuck_TimeDataSet.Sales);
-
+            if (Form_main.status == "Продавец-кассир")
+            {
+                bindingNavigatorDeleteItem.Visible = false;
+                contextMenuStrip_seller.Visible = false;
+            }
         }
 
         private static Form_seller f;
@@ -66,5 +70,7 @@ namespace Chuck_Time_Bakery
         {
             Form_sales_report.fsr.ShowForm();
         }
+
+
     }
 }

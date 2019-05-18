@@ -49,27 +49,27 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.salesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.salesDataGridView = new System.Windows.Forms.DataGridView();
-            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.contextMenuStrip_seller = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem_info = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_staff_sales = new System.Windows.Forms.ToolStripMenuItem();
-            this.созданиеОтчетаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vehiclesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vehiclesTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.VehiclesTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.vehiclesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.contextMenuStrip_seller = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem_info = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_staff_sales = new System.Windows.Forms.ToolStripMenuItem();
+            this.созданиеОтчетаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vehiclesTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.VehiclesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesBindingNavigator)).BeginInit();
             this.salesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
-            this.contextMenuStrip_seller.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesBindingSource)).BeginInit();
+            this.contextMenuStrip_seller.SuspendLayout();
             this.SuspendLayout();
             // 
             // chuck_TimeDataSet
@@ -256,51 +256,6 @@
             this.salesDataGridView.Size = new System.Drawing.Size(1109, 527);
             this.salesDataGridView.TabIndex = 1;
             // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // contextMenuStrip_seller
-            // 
-            this.contextMenuStrip_seller.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip_seller.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_info,
-            this.ToolStripMenuItem_staff_sales,
-            this.созданиеОтчетаToolStripMenuItem});
-            this.contextMenuStrip_seller.Name = "contextMenuStrip_seller";
-            this.contextMenuStrip_seller.Size = new System.Drawing.Size(225, 76);
-            // 
-            // toolStripMenuItem_info
-            // 
-            this.toolStripMenuItem_info.Name = "toolStripMenuItem_info";
-            this.toolStripMenuItem_info.Size = new System.Drawing.Size(224, 24);
-            this.toolStripMenuItem_info.Text = "Подробнее о заказе";
-            this.toolStripMenuItem_info.Click += new System.EventHandler(this.ToolStripMenuItem_info_Click);
-            // 
-            // ToolStripMenuItem_staff_sales
-            // 
-            this.ToolStripMenuItem_staff_sales.Name = "ToolStripMenuItem_staff_sales";
-            this.ToolStripMenuItem_staff_sales.Size = new System.Drawing.Size(224, 24);
-            this.ToolStripMenuItem_staff_sales.Text = "Продажи продавцов";
-            this.ToolStripMenuItem_staff_sales.Click += new System.EventHandler(this.ToolStripMenuItem_staff_sales_Click);
-            // 
-            // созданиеОтчетаToolStripMenuItem
-            // 
-            this.созданиеОтчетаToolStripMenuItem.Name = "созданиеОтчетаToolStripMenuItem";
-            this.созданиеОтчетаToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
-            this.созданиеОтчетаToolStripMenuItem.Text = "Создание отчета";
-            this.созданиеОтчетаToolStripMenuItem.Click += new System.EventHandler(this.СозданиеОтчетаToolStripMenuItem_Click);
-            // 
-            // vehiclesBindingSource
-            // 
-            this.vehiclesBindingSource.DataMember = "Vehicles";
-            this.vehiclesBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // vehiclesTableAdapter
-            // 
-            this.vehiclesTableAdapter.ClearBeforeFill = true;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Sale_ID";
@@ -334,6 +289,11 @@
             this.dataGridViewTextBoxColumn4.ValueMember = "ID_Customer";
             this.dataGridViewTextBoxColumn4.Width = 150;
             // 
+            // customersBindingSource
+            // 
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.chuck_TimeDataSet;
+            // 
             // dataGridViewCheckBoxColumn1
             // 
             this.dataGridViewCheckBoxColumn1.DataPropertyName = "Delivery";
@@ -350,6 +310,46 @@
             this.dataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewTextBoxColumn5.Width = 150;
+            // 
+            // vehiclesBindingSource
+            // 
+            this.vehiclesBindingSource.DataMember = "Vehicles";
+            this.vehiclesBindingSource.DataSource = this.chuck_TimeDataSet;
+            // 
+            // contextMenuStrip_seller
+            // 
+            this.contextMenuStrip_seller.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip_seller.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem_info,
+            this.ToolStripMenuItem_staff_sales,
+            this.созданиеОтчетаToolStripMenuItem});
+            this.contextMenuStrip_seller.Name = "contextMenuStrip_seller";
+            this.contextMenuStrip_seller.Size = new System.Drawing.Size(225, 104);
+            // 
+            // toolStripMenuItem_info
+            // 
+            this.toolStripMenuItem_info.Name = "toolStripMenuItem_info";
+            this.toolStripMenuItem_info.Size = new System.Drawing.Size(224, 24);
+            this.toolStripMenuItem_info.Text = "Подробнее о заказе";
+            this.toolStripMenuItem_info.Click += new System.EventHandler(this.ToolStripMenuItem_info_Click);
+            // 
+            // ToolStripMenuItem_staff_sales
+            // 
+            this.ToolStripMenuItem_staff_sales.Name = "ToolStripMenuItem_staff_sales";
+            this.ToolStripMenuItem_staff_sales.Size = new System.Drawing.Size(224, 24);
+            this.ToolStripMenuItem_staff_sales.Text = "Продажи продавцов";
+            this.ToolStripMenuItem_staff_sales.Click += new System.EventHandler(this.ToolStripMenuItem_staff_sales_Click);
+            // 
+            // созданиеОтчетаToolStripMenuItem
+            // 
+            this.созданиеОтчетаToolStripMenuItem.Name = "созданиеОтчетаToolStripMenuItem";
+            this.созданиеОтчетаToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.созданиеОтчетаToolStripMenuItem.Text = "Создание отчета";
+            this.созданиеОтчетаToolStripMenuItem.Click += new System.EventHandler(this.СозданиеОтчетаToolStripMenuItem_Click);
+            // 
+            // vehiclesTableAdapter
+            // 
+            this.vehiclesTableAdapter.ClearBeforeFill = true;
             // 
             // Form_seller
             // 
@@ -370,8 +370,8 @@
             this.salesBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
-            this.contextMenuStrip_seller.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesBindingSource)).EndInit();
+            this.contextMenuStrip_seller.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,7 +386,6 @@
         private System.Windows.Forms.BindingNavigator salesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
@@ -399,7 +398,6 @@
         private System.Windows.Forms.DataGridView salesDataGridView;
         private Chuck_TimeDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
         private System.Windows.Forms.BindingSource customersBindingSource;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_seller;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_info;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_staff_sales;
         private System.Windows.Forms.ToolStripMenuItem созданиеОтчетаToolStripMenuItem;
@@ -411,5 +409,7 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn5;
+        public System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        public System.Windows.Forms.ContextMenuStrip contextMenuStrip_seller;
     }
 }
