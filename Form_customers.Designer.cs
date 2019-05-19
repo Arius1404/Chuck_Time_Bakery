@@ -48,15 +48,15 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.customersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.customersDataGridView = new System.Windows.Forms.DataGridView();
-            this.discountcardsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.discount_cardsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.Discount_cardsTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.discountcardsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip_customers = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.списокКартToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.discount_cardsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.Discount_cardsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingNavigator)).BeginInit();
@@ -245,15 +245,6 @@
             this.customersDataGridView.Size = new System.Drawing.Size(1059, 423);
             this.customersDataGridView.TabIndex = 1;
             // 
-            // discountcardsBindingSource
-            // 
-            this.discountcardsBindingSource.DataMember = "Discount_cards";
-            this.discountcardsBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // discount_cardsTableAdapter
-            // 
-            this.discount_cardsTableAdapter.ClearBeforeFill = true;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_Customer";
@@ -272,6 +263,11 @@
             this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewTextBoxColumn2.ValueMember = "Card_ID";
             this.dataGridViewTextBoxColumn2.Width = 200;
+            // 
+            // discountcardsBindingSource
+            // 
+            this.discountcardsBindingSource.DataMember = "Discount_cards";
+            this.discountcardsBindingSource.DataSource = this.chuck_TimeDataSet;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -300,7 +296,7 @@
             this.contextMenuStrip_customers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.списокКартToolStripMenuItem});
             this.contextMenuStrip_customers.Name = "contextMenuStrip_customers";
-            this.contextMenuStrip_customers.Size = new System.Drawing.Size(163, 28);
+            this.contextMenuStrip_customers.Size = new System.Drawing.Size(211, 56);
             // 
             // списокКартToolStripMenuItem
             // 
@@ -308,6 +304,10 @@
             this.списокКартToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.списокКартToolStripMenuItem.Text = "Список карт";
             this.списокКартToolStripMenuItem.Click += new System.EventHandler(this.СписокКартToolStripMenuItem_Click);
+            // 
+            // discount_cardsTableAdapter
+            // 
+            this.discount_cardsTableAdapter.ClearBeforeFill = true;
             // 
             // Form_customers
             // 

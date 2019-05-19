@@ -32,7 +32,6 @@
             System.Windows.Forms.Label descriptionLabel;
             System.Windows.Forms.Label photoLabel;
             System.Windows.Forms.Label priceLabel;
-            System.Windows.Forms.Label quantityLabel;
             System.Windows.Forms.Label title_GoodLabel;
             System.Windows.Forms.Label weightLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
@@ -59,6 +58,8 @@
             this.goodsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.goodsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.GoodsTableAdapter();
             this.tableAdapterManager = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager();
+            this.recipesTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.RecipesTableAdapter();
+            this.staffTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.StaffTableAdapter();
             this.openFileDialogPhoto = new System.Windows.Forms.OpenFileDialog();
             this.tabControl_main = new System.Windows.Forms.TabControl();
             this.tabPage_director = new System.Windows.Forms.TabPage();
@@ -100,7 +101,6 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.goodsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.priceTextBox = new System.Windows.Forms.TextBox();
-            this.quantityNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.photoPictureBox = new System.Windows.Forms.PictureBox();
             this.weightTextBox = new System.Windows.Forms.TextBox();
             this.title_GoodTextBox = new System.Windows.Forms.TextBox();
@@ -120,26 +120,23 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.recipesDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.staffBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage_delivery = new System.Windows.Forms.TabPage();
+            this.button_customers = new System.Windows.Forms.Button();
+            this.button_disc_cards_delivery = new System.Windows.Forms.Button();
             this.tabPage_cook = new System.Windows.Forms.TabPage();
+            this.button_materials_cook = new System.Windows.Forms.Button();
+            this.button_recipes_cook = new System.Windows.Forms.Button();
+            this.button_goods_cook = new System.Windows.Forms.Button();
             this.tabPage_seller = new System.Windows.Forms.TabPage();
             this.button_discount_cards = new System.Windows.Forms.Button();
             this.button_goods = new System.Windows.Forms.Button();
             this.button_sales = new System.Windows.Forms.Button();
             this.tabPage_hr = new System.Windows.Forms.TabPage();
-            this.recipesTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.RecipesTableAdapter();
-            this.staffBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.staffTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.StaffTableAdapter();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.button_customers = new System.Windows.Forms.Button();
-            this.button_disc_cards_delivery = new System.Windows.Forms.Button();
-            this.button_materials_cook = new System.Windows.Forms.Button();
-            this.button_recipes_cook = new System.Windows.Forms.Button();
-            this.button_goods_cook = new System.Windows.Forms.Button();
-            this.staffDataGridView = new System.Windows.Forms.DataGridView();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
@@ -153,15 +150,17 @@
             this.toolStripButton13 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton14 = new System.Windows.Forms.ToolStripButton();
+            this.staffDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip_recipes = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ToolStripMenuItem_materials = new System.Windows.Forms.ToolStripMenuItem();
             descriptionLabel = new System.Windows.Forms.Label();
             photoLabel = new System.Windows.Forms.Label();
             priceLabel = new System.Windows.Forms.Label();
-            quantityLabel = new System.Windows.Forms.Label();
             title_GoodLabel = new System.Windows.Forms.Label();
             weightLabel = new System.Windows.Forms.Label();
             this.statusStrip_main.SuspendLayout();
@@ -175,28 +174,28 @@
             this.panel_customer_main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.goodsBindingNavigator)).BeginInit();
             this.goodsBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quantityNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).BeginInit();
             this.tabPage_tech.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator_recipes)).BeginInit();
             this.bindingNavigator_recipes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recipesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recipesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).BeginInit();
             this.tabPage_delivery.SuspendLayout();
             this.tabPage_cook.SuspendLayout();
             this.tabPage_seller.SuspendLayout();
             this.tabPage_hr.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.staffDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.staffDataGridView)).BeginInit();
+            this.contextMenuStrip_recipes.SuspendLayout();
             this.SuspendLayout();
             // 
             // descriptionLabel
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            descriptionLabel.Location = new System.Drawing.Point(17, 193);
+            descriptionLabel.Location = new System.Drawing.Point(17, 157);
             descriptionLabel.Name = "descriptionLabel";
             descriptionLabel.Size = new System.Drawing.Size(81, 19);
             descriptionLabel.TabIndex = 16;
@@ -206,7 +205,7 @@
             // 
             photoLabel.AutoSize = true;
             photoLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            photoLabel.Location = new System.Drawing.Point(505, 14);
+            photoLabel.Location = new System.Drawing.Point(465, 22);
             photoLabel.Name = "photoLabel";
             photoLabel.Size = new System.Drawing.Size(109, 19);
             photoLabel.TabIndex = 20;
@@ -216,21 +215,11 @@
             // 
             priceLabel.AutoSize = true;
             priceLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            priceLabel.Location = new System.Drawing.Point(20, 156);
+            priceLabel.Location = new System.Drawing.Point(20, 120);
             priceLabel.Name = "priceLabel";
             priceLabel.Size = new System.Drawing.Size(92, 19);
             priceLabel.TabIndex = 12;
             priceLabel.Text = "Цена за ед.:";
-            // 
-            // quantityLabel
-            // 
-            quantityLabel.AutoSize = true;
-            quantityLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            quantityLabel.Location = new System.Drawing.Point(17, 116);
-            quantityLabel.Name = "quantityLabel";
-            quantityLabel.Size = new System.Drawing.Size(98, 19);
-            quantityLabel.TabIndex = 10;
-            quantityLabel.Text = "Количество:";
             // 
             // title_GoodLabel
             // 
@@ -446,6 +435,14 @@
             this.tableAdapterManager.UpdateOrder = Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VehiclesTableAdapter = null;
             this.tableAdapterManager.VendorTableAdapter = null;
+            // 
+            // recipesTableAdapter
+            // 
+            this.recipesTableAdapter.ClearBeforeFill = true;
+            // 
+            // staffTableAdapter
+            // 
+            this.staffTableAdapter.ClearBeforeFill = true;
             // 
             // openFileDialogPhoto
             // 
@@ -736,10 +733,8 @@
             this.panel_customer_main.Controls.Add(photoLabel);
             this.panel_customer_main.Controls.Add(this.goodsBindingNavigator);
             this.panel_customer_main.Controls.Add(this.priceTextBox);
-            this.panel_customer_main.Controls.Add(this.quantityNumericUpDown);
             this.panel_customer_main.Controls.Add(priceLabel);
             this.panel_customer_main.Controls.Add(this.photoPictureBox);
-            this.panel_customer_main.Controls.Add(quantityLabel);
             this.panel_customer_main.Controls.Add(title_GoodLabel);
             this.panel_customer_main.Controls.Add(this.weightTextBox);
             this.panel_customer_main.Controls.Add(this.title_GoodTextBox);
@@ -753,7 +748,7 @@
             // 
             // button_image
             // 
-            this.button_image.Location = new System.Drawing.Point(619, 7);
+            this.button_image.Location = new System.Drawing.Point(579, 15);
             this.button_image.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_image.Name = "button_image";
             this.button_image.Size = new System.Drawing.Size(125, 28);
@@ -765,10 +760,10 @@
             // descriptionRichTextBox
             // 
             this.descriptionRichTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Description", true));
-            this.descriptionRichTextBox.Location = new System.Drawing.Point(125, 193);
+            this.descriptionRichTextBox.Location = new System.Drawing.Point(125, 157);
             this.descriptionRichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.descriptionRichTextBox.Name = "descriptionRichTextBox";
-            this.descriptionRichTextBox.Size = new System.Drawing.Size(287, 148);
+            this.descriptionRichTextBox.Size = new System.Drawing.Size(287, 185);
             this.descriptionRichTextBox.TabIndex = 20;
             this.descriptionRichTextBox.Text = "";
             // 
@@ -902,21 +897,11 @@
             // 
             this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Price", true));
             this.priceTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.priceTextBox.Location = new System.Drawing.Point(125, 154);
+            this.priceTextBox.Location = new System.Drawing.Point(125, 118);
             this.priceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(287, 27);
             this.priceTextBox.TabIndex = 13;
-            // 
-            // quantityNumericUpDown
-            // 
-            this.quantityNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.goodsBindingSource, "Quantity", true));
-            this.quantityNumericUpDown.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.quantityNumericUpDown.Location = new System.Drawing.Point(125, 116);
-            this.quantityNumericUpDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.quantityNumericUpDown.Name = "quantityNumericUpDown";
-            this.quantityNumericUpDown.Size = new System.Drawing.Size(287, 27);
-            this.quantityNumericUpDown.TabIndex = 19;
             // 
             // photoPictureBox
             // 
@@ -1102,6 +1087,7 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
+            this.recipesDataGridView.ContextMenuStrip = this.contextMenuStrip_recipes;
             this.recipesDataGridView.DataSource = this.recipesBindingSource;
             this.recipesDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.recipesDataGridView.Location = new System.Drawing.Point(0, 27);
@@ -1109,6 +1095,44 @@
             this.recipesDataGridView.RowTemplate.Height = 24;
             this.recipesDataGridView.Size = new System.Drawing.Size(1043, 345);
             this.recipesDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Title_Recipe";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Название рецепта";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Cooking_time";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Время приготовления";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Description";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Описание";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Technologist";
+            this.dataGridViewTextBoxColumn4.DataSource = this.staffBindingSource;
+            this.dataGridViewTextBoxColumn4.DisplayMember = "Full_name";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Технолог";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn4.ValueMember = "Staff_ID";
+            this.dataGridViewTextBoxColumn4.Width = 200;
+            // 
+            // staffBindingSource
+            // 
+            this.staffBindingSource.DataMember = "Staff";
+            this.staffBindingSource.DataSource = this.chuck_TimeDataSet;
             // 
             // tabPage_delivery
             // 
@@ -1121,6 +1145,28 @@
             this.tabPage_delivery.Text = "Начало работы";
             this.tabPage_delivery.UseVisualStyleBackColor = true;
             // 
+            // button_customers
+            // 
+            this.button_customers.Location = new System.Drawing.Point(614, 80);
+            this.button_customers.Margin = new System.Windows.Forms.Padding(4);
+            this.button_customers.Name = "button_customers";
+            this.button_customers.Size = new System.Drawing.Size(306, 193);
+            this.button_customers.TabIndex = 11;
+            this.button_customers.Text = "Покупатели";
+            this.button_customers.UseVisualStyleBackColor = true;
+            this.button_customers.Click += new System.EventHandler(this.Button_customers_adm_Click);
+            // 
+            // button_disc_cards_delivery
+            // 
+            this.button_disc_cards_delivery.Location = new System.Drawing.Point(116, 80);
+            this.button_disc_cards_delivery.Margin = new System.Windows.Forms.Padding(4);
+            this.button_disc_cards_delivery.Name = "button_disc_cards_delivery";
+            this.button_disc_cards_delivery.Size = new System.Drawing.Size(306, 193);
+            this.button_disc_cards_delivery.TabIndex = 10;
+            this.button_disc_cards_delivery.Text = "Дисконтные карты";
+            this.button_disc_cards_delivery.UseVisualStyleBackColor = true;
+            this.button_disc_cards_delivery.Click += new System.EventHandler(this.Button_discount_cards_Click);
+            // 
             // tabPage_cook
             // 
             this.tabPage_cook.Controls.Add(this.button_materials_cook);
@@ -1132,6 +1178,39 @@
             this.tabPage_cook.TabIndex = 6;
             this.tabPage_cook.Text = "Начало работы";
             this.tabPage_cook.UseVisualStyleBackColor = true;
+            // 
+            // button_materials_cook
+            // 
+            this.button_materials_cook.Location = new System.Drawing.Point(412, 101);
+            this.button_materials_cook.Margin = new System.Windows.Forms.Padding(4);
+            this.button_materials_cook.Name = "button_materials_cook";
+            this.button_materials_cook.Size = new System.Drawing.Size(232, 164);
+            this.button_materials_cook.TabIndex = 25;
+            this.button_materials_cook.Text = "Сырье";
+            this.button_materials_cook.UseVisualStyleBackColor = true;
+            this.button_materials_cook.Click += new System.EventHandler(this.Button_materials_adm_Click);
+            // 
+            // button_recipes_cook
+            // 
+            this.button_recipes_cook.Location = new System.Drawing.Point(728, 101);
+            this.button_recipes_cook.Margin = new System.Windows.Forms.Padding(4);
+            this.button_recipes_cook.Name = "button_recipes_cook";
+            this.button_recipes_cook.Size = new System.Drawing.Size(232, 164);
+            this.button_recipes_cook.TabIndex = 24;
+            this.button_recipes_cook.Text = "Рецепты";
+            this.button_recipes_cook.UseVisualStyleBackColor = true;
+            this.button_recipes_cook.Click += new System.EventHandler(this.Button_recipes_adm_Click);
+            // 
+            // button_goods_cook
+            // 
+            this.button_goods_cook.Location = new System.Drawing.Point(97, 101);
+            this.button_goods_cook.Margin = new System.Windows.Forms.Padding(4);
+            this.button_goods_cook.Name = "button_goods_cook";
+            this.button_goods_cook.Size = new System.Drawing.Size(232, 164);
+            this.button_goods_cook.TabIndex = 23;
+            this.button_goods_cook.Text = "Товары";
+            this.button_goods_cook.UseVisualStyleBackColor = true;
+            this.button_goods_cook.Click += new System.EventHandler(this.Button_goods_Click);
             // 
             // tabPage_seller
             // 
@@ -1191,125 +1270,6 @@
             this.tabPage_hr.TabIndex = 7;
             this.tabPage_hr.Text = "Сотрудники";
             this.tabPage_hr.UseVisualStyleBackColor = true;
-            // 
-            // recipesTableAdapter
-            // 
-            this.recipesTableAdapter.ClearBeforeFill = true;
-            // 
-            // staffBindingSource
-            // 
-            this.staffBindingSource.DataMember = "Staff";
-            this.staffBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // staffTableAdapter
-            // 
-            this.staffTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Title_Recipe";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Название рецепта";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Cooking_time";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Время приготовления";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Description";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Описание";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Technologist";
-            this.dataGridViewTextBoxColumn4.DataSource = this.staffBindingSource;
-            this.dataGridViewTextBoxColumn4.DisplayMember = "Full_name";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Технолог";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn4.ValueMember = "Staff_ID";
-            this.dataGridViewTextBoxColumn4.Width = 200;
-            // 
-            // button_customers
-            // 
-            this.button_customers.Location = new System.Drawing.Point(614, 80);
-            this.button_customers.Margin = new System.Windows.Forms.Padding(4);
-            this.button_customers.Name = "button_customers";
-            this.button_customers.Size = new System.Drawing.Size(306, 193);
-            this.button_customers.TabIndex = 11;
-            this.button_customers.Text = "Покупатели";
-            this.button_customers.UseVisualStyleBackColor = true;
-            this.button_customers.Click += new System.EventHandler(this.Button_customers_adm_Click);
-            // 
-            // button_disc_cards_delivery
-            // 
-            this.button_disc_cards_delivery.Location = new System.Drawing.Point(116, 80);
-            this.button_disc_cards_delivery.Margin = new System.Windows.Forms.Padding(4);
-            this.button_disc_cards_delivery.Name = "button_disc_cards_delivery";
-            this.button_disc_cards_delivery.Size = new System.Drawing.Size(306, 193);
-            this.button_disc_cards_delivery.TabIndex = 10;
-            this.button_disc_cards_delivery.Text = "Дисконтные карты";
-            this.button_disc_cards_delivery.UseVisualStyleBackColor = true;
-            this.button_disc_cards_delivery.Click += new System.EventHandler(this.Button_discount_cards_Click);
-            // 
-            // button_materials_cook
-            // 
-            this.button_materials_cook.Location = new System.Drawing.Point(412, 101);
-            this.button_materials_cook.Margin = new System.Windows.Forms.Padding(4);
-            this.button_materials_cook.Name = "button_materials_cook";
-            this.button_materials_cook.Size = new System.Drawing.Size(232, 164);
-            this.button_materials_cook.TabIndex = 25;
-            this.button_materials_cook.Text = "Сырье";
-            this.button_materials_cook.UseVisualStyleBackColor = true;
-            this.button_materials_cook.Click += new System.EventHandler(this.Button_materials_adm_Click);
-            // 
-            // button_recipes_cook
-            // 
-            this.button_recipes_cook.Location = new System.Drawing.Point(728, 101);
-            this.button_recipes_cook.Margin = new System.Windows.Forms.Padding(4);
-            this.button_recipes_cook.Name = "button_recipes_cook";
-            this.button_recipes_cook.Size = new System.Drawing.Size(232, 164);
-            this.button_recipes_cook.TabIndex = 24;
-            this.button_recipes_cook.Text = "Рецепты";
-            this.button_recipes_cook.UseVisualStyleBackColor = true;
-            this.button_recipes_cook.Click += new System.EventHandler(this.Button_recipes_adm_Click);
-            // 
-            // button_goods_cook
-            // 
-            this.button_goods_cook.Location = new System.Drawing.Point(97, 101);
-            this.button_goods_cook.Margin = new System.Windows.Forms.Padding(4);
-            this.button_goods_cook.Name = "button_goods_cook";
-            this.button_goods_cook.Size = new System.Drawing.Size(232, 164);
-            this.button_goods_cook.TabIndex = 23;
-            this.button_goods_cook.Text = "Товары";
-            this.button_goods_cook.UseVisualStyleBackColor = true;
-            this.button_goods_cook.Click += new System.EventHandler(this.Button_goods_Click);
-            // 
-            // staffDataGridView
-            // 
-            this.staffDataGridView.AutoGenerateColumns = false;
-            this.staffDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.staffDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.staffDataGridView.DataSource = this.staffBindingSource;
-            this.staffDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.staffDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.staffDataGridView.Name = "staffDataGridView";
-            this.staffDataGridView.RowTemplate.Height = 24;
-            this.staffDataGridView.Size = new System.Drawing.Size(1043, 367);
-            this.staffDataGridView.TabIndex = 0;
             // 
             // bindingNavigator1
             // 
@@ -1436,6 +1396,24 @@
             this.toolStripButton14.Text = "Сохранить данные";
             this.toolStripButton14.Click += new System.EventHandler(this.ToolStripButton14_Click);
             // 
+            // staffDataGridView
+            // 
+            this.staffDataGridView.AutoGenerateColumns = false;
+            this.staffDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.staffDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.staffDataGridView.DataSource = this.staffBindingSource;
+            this.staffDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.staffDataGridView.Location = new System.Drawing.Point(0, 27);
+            this.staffDataGridView.Name = "staffDataGridView";
+            this.staffDataGridView.RowTemplate.Height = 24;
+            this.staffDataGridView.Size = new System.Drawing.Size(1043, 367);
+            this.staffDataGridView.TabIndex = 0;
+            // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Staff_ID";
@@ -1471,6 +1449,21 @@
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.Width = 200;
             // 
+            // contextMenuStrip_recipes
+            // 
+            this.contextMenuStrip_recipes.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip_recipes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem_materials});
+            this.contextMenuStrip_recipes.Name = "contextMenuStrip_recipes";
+            this.contextMenuStrip_recipes.Size = new System.Drawing.Size(211, 56);
+            // 
+            // ToolStripMenuItem_materials
+            // 
+            this.ToolStripMenuItem_materials.Name = "ToolStripMenuItem_materials";
+            this.ToolStripMenuItem_materials.Size = new System.Drawing.Size(210, 24);
+            this.ToolStripMenuItem_materials.Text = "Состав изделий";
+            this.ToolStripMenuItem_materials.Click += new System.EventHandler(this.ToolStripMenuItem_materials_Click);
+            // 
             // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1501,7 +1494,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.goodsBindingNavigator)).EndInit();
             this.goodsBindingNavigator.ResumeLayout(false);
             this.goodsBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quantityNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.photoPictureBox)).EndInit();
             this.tabPage_tech.ResumeLayout(false);
             this.tabPage_tech.PerformLayout();
@@ -1510,16 +1502,17 @@
             this.bindingNavigator_recipes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recipesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.recipesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).EndInit();
             this.tabPage_delivery.ResumeLayout(false);
             this.tabPage_cook.ResumeLayout(false);
             this.tabPage_seller.ResumeLayout(false);
             this.tabPage_hr.ResumeLayout(false);
             this.tabPage_hr.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.staffDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.staffDataGridView)).EndInit();
+            this.contextMenuStrip_recipes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1563,7 +1556,6 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton goodsBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox priceTextBox;
-        private System.Windows.Forms.NumericUpDown quantityNumericUpDown;
         private System.Windows.Forms.PictureBox photoPictureBox;
         private System.Windows.Forms.TextBox weightTextBox;
         private System.Windows.Forms.TextBox title_GoodTextBox;
@@ -1649,5 +1641,7 @@
         public System.Windows.Forms.ToolStripMenuItem продажиToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem сырьеToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem товарыToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_recipes;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_materials;
     }
 }

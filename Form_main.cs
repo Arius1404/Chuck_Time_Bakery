@@ -96,7 +96,6 @@ namespace Chuck_Time_Bakery
             {
                 title_GoodTextBox.ReadOnly = true;
                 weightTextBox.ReadOnly = true;
-                quantityNumericUpDown.ReadOnly = true;
                 priceTextBox.ReadOnly = true;
                 descriptionRichTextBox.ReadOnly = true;
 
@@ -141,7 +140,6 @@ namespace Chuck_Time_Bakery
             {
                 title_GoodTextBox.ReadOnly = true;
                 weightTextBox.ReadOnly = true;
-                quantityNumericUpDown.ReadOnly = true;
                 priceTextBox.ReadOnly = true;
                 descriptionRichTextBox.ReadOnly = true;
 
@@ -161,7 +159,15 @@ namespace Chuck_Time_Bakery
             else
                 if (status == "Технолог") // админ
             {
-                таблицыToolStripMenuItem.Visible = false;
+                автомобилиToolStripMenuItem.Visible = false;
+                дисконтныеКартыToolStripMenuItem.Visible = false;
+                продажиToolStripMenuItem.Visible = false;
+                запросыНаПоставкуСырьяToolStripMenuItem.Visible = false;
+                персоналToolStripMenuItem.Visible = false;
+                покупателиToolStripMenuItem.Visible = false;
+                поставщикиToolStripMenuItem.Visible = false;
+                рецептыToolStripMenuItem.Visible = false;
+
                 tabControl_main.TabPages.Remove(tabPage_customer);
                 tabControl_main.TabPages.Remove(tabPage_seller);
                 tabControl_main.TabPages.Remove(tabPage_cook);
@@ -322,6 +328,11 @@ namespace Chuck_Time_Bakery
             this.Validate();
             this.staffBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
+        }
+
+        private void ToolStripMenuItem_materials_Click(object sender, EventArgs e)
+        {
+            Form_recipes_materials.frm.ShowForm();
         }
     }
 }

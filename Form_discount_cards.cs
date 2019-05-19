@@ -49,6 +49,13 @@ namespace Chuck_Time_Bakery
             this.discount_cardsTableAdapter.Fill(this.chuck_TimeDataSet.Discount_cards);
             if (Form_main.status == "Продавец-кассир")
                 bindingNavigatorDeleteItem.Visible = false;
+            else if (Form_main.status == "Доставщик")
+            {
+                bindingNavigatorDeleteItem.Visible = false;
+                bindingNavigatorAddNewItem.Visible = false;
+                discount_cardsBindingNavigatorSaveItem.Visible = false;
+                discount_cardsDataGridView.ReadOnly = true;
+            }
         }
     }
 

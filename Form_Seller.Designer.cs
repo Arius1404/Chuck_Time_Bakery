@@ -324,7 +324,7 @@
             this.ToolStripMenuItem_staff_sales,
             this.созданиеОтчетаToolStripMenuItem});
             this.contextMenuStrip_seller.Name = "contextMenuStrip_seller";
-            this.contextMenuStrip_seller.Size = new System.Drawing.Size(225, 104);
+            this.contextMenuStrip_seller.Size = new System.Drawing.Size(225, 76);
             // 
             // toolStripMenuItem_info
             // 
@@ -399,8 +399,6 @@
         private Chuck_TimeDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
         private System.Windows.Forms.BindingSource customersBindingSource;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem_info;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_staff_sales;
-        private System.Windows.Forms.ToolStripMenuItem созданиеОтчетаToolStripMenuItem;
         private System.Windows.Forms.BindingSource vehiclesBindingSource;
         private Chuck_TimeDataSetTableAdapters.VehiclesTableAdapter vehiclesTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -411,5 +409,7 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn5;
         public System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         public System.Windows.Forms.ContextMenuStrip contextMenuStrip_seller;
+        public System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_staff_sales;
+        public System.Windows.Forms.ToolStripMenuItem созданиеОтчетаToolStripMenuItem;
     }
 }

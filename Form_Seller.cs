@@ -37,6 +37,8 @@ namespace Chuck_Time_Bakery
             {
                 bindingNavigatorDeleteItem.Visible = false;
                 contextMenuStrip_seller.Visible = false;
+                созданиеОтчетаToolStripMenuItem.Visible = false;
+                ToolStripMenuItem_staff_sales.Visible = false;
             }
         }
 
