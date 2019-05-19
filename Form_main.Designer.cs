@@ -147,13 +147,21 @@
             this.contextMenuStrip_recipes = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ToolStripMenuItem_materials = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage_delivery = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.button_customers = new System.Windows.Forms.Button();
             this.button_disc_cards_delivery = new System.Windows.Forms.Button();
             this.tabPage_cook = new System.Windows.Forms.TabPage();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.button_materials_cook = new System.Windows.Forms.Button();
             this.button_recipes_cook = new System.Windows.Forms.Button();
             this.button_goods_cook = new System.Windows.Forms.Button();
             this.tabPage_seller = new System.Windows.Forms.TabPage();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.button_discount_cards = new System.Windows.Forms.Button();
             this.button_goods = new System.Windows.Forms.Button();
             this.button_sales = new System.Windows.Forms.Button();
@@ -177,14 +185,6 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             photoLabel = new System.Windows.Forms.Label();
             priceLabel = new System.Windows.Forms.Label();
@@ -222,10 +222,9 @@
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            descriptionLabel.Location = new System.Drawing.Point(13, 128);
-            descriptionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            descriptionLabel.Location = new System.Drawing.Point(17, 158);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(68, 16);
+            descriptionLabel.Size = new System.Drawing.Size(81, 19);
             descriptionLabel.TabIndex = 16;
             descriptionLabel.Text = "Описание:";
             // 
@@ -233,10 +232,9 @@
             // 
             photoLabel.AutoSize = true;
             photoLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            photoLabel.Location = new System.Drawing.Point(349, 18);
-            photoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            photoLabel.Location = new System.Drawing.Point(465, 22);
             photoLabel.Name = "photoLabel";
-            photoLabel.Size = new System.Drawing.Size(89, 16);
+            photoLabel.Size = new System.Drawing.Size(109, 19);
             photoLabel.TabIndex = 20;
             photoLabel.Text = "Изображение:";
             // 
@@ -244,10 +242,9 @@
             // 
             priceLabel.AutoSize = true;
             priceLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            priceLabel.Location = new System.Drawing.Point(15, 98);
-            priceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            priceLabel.Location = new System.Drawing.Point(20, 121);
             priceLabel.Name = "priceLabel";
-            priceLabel.Size = new System.Drawing.Size(76, 16);
+            priceLabel.Size = new System.Drawing.Size(92, 19);
             priceLabel.TabIndex = 12;
             priceLabel.Text = "Цена за ед.:";
             // 
@@ -255,10 +252,9 @@
             // 
             title_GoodLabel.AutoSize = true;
             title_GoodLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            title_GoodLabel.Location = new System.Drawing.Point(13, 38);
-            title_GoodLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            title_GoodLabel.Location = new System.Drawing.Point(17, 47);
             title_GoodLabel.Name = "title_GoodLabel";
-            title_GoodLabel.Size = new System.Drawing.Size(65, 16);
+            title_GoodLabel.Size = new System.Drawing.Size(79, 19);
             title_GoodLabel.TabIndex = 6;
             title_GoodLabel.Text = "Название:";
             // 
@@ -266,10 +262,9 @@
             // 
             weightLabel.AutoSize = true;
             weightLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            weightLabel.Location = new System.Drawing.Point(15, 67);
-            weightLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            weightLabel.Location = new System.Drawing.Point(20, 82);
             weightLabel.Name = "weightLabel";
-            weightLabel.Size = new System.Drawing.Size(32, 16);
+            weightLabel.Size = new System.Drawing.Size(41, 19);
             weightLabel.TabIndex = 8;
             weightLabel.Text = "Вес:";
             // 
@@ -279,10 +274,10 @@
             this.statusStrip_main.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip_main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSplitButton_change_user});
-            this.statusStrip_main.Location = new System.Drawing.Point(0, 481);
+            this.statusStrip_main.Location = new System.Drawing.Point(0, 591);
             this.statusStrip_main.Name = "statusStrip_main";
-            this.statusStrip_main.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-            this.statusStrip_main.Size = new System.Drawing.Size(782, 27);
+            this.statusStrip_main.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
+            this.statusStrip_main.Size = new System.Drawing.Size(1043, 34);
             this.statusStrip_main.TabIndex = 5;
             this.statusStrip_main.Text = "statusStrip_main";
             // 
@@ -293,23 +288,22 @@
             this.редактироватьУчетнуюЗаписьToolStripMenuItem,
             this.сменитьПользователяToolStripMenuItem});
             this.toolStripSplitButton_change_user.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.toolStripSplitButton_change_user.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton_change_user.Image")));
             this.toolStripSplitButton_change_user.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton_change_user.Name = "toolStripSplitButton_change_user";
-            this.toolStripSplitButton_change_user.Size = new System.Drawing.Size(189, 25);
+            this.toolStripSplitButton_change_user.Size = new System.Drawing.Size(240, 32);
             this.toolStripSplitButton_change_user.Text = "Сменить пользователя";
             // 
             // редактироватьУчетнуюЗаписьToolStripMenuItem
             // 
             this.редактироватьУчетнуюЗаписьToolStripMenuItem.Name = "редактироватьУчетнуюЗаписьToolStripMenuItem";
-            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
+            this.редактироватьУчетнуюЗаписьToolStripMenuItem.Size = new System.Drawing.Size(374, 32);
             this.редактироватьУчетнуюЗаписьToolStripMenuItem.Text = "Редактировать учетную запись";
             this.редактироватьУчетнуюЗаписьToolStripMenuItem.Click += new System.EventHandler(this.РедактироватьУчетнуюЗаписьToolStripMenuItem_Click);
             // 
             // сменитьПользователяToolStripMenuItem
             // 
             this.сменитьПользователяToolStripMenuItem.Name = "сменитьПользователяToolStripMenuItem";
-            this.сменитьПользователяToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
+            this.сменитьПользователяToolStripMenuItem.Size = new System.Drawing.Size(374, 32);
             this.сменитьПользователяToolStripMenuItem.Text = "Сменить пользователя";
             this.сменитьПользователяToolStripMenuItem.Click += new System.EventHandler(this.СменитьПользователяToolStripMenuItem_Click);
             // 
@@ -323,8 +317,8 @@
             this.оПрограммеToolStripMenuItem});
             this.menuStrip_main.Location = new System.Drawing.Point(0, 0);
             this.menuStrip_main.Name = "menuStrip_main";
-            this.menuStrip_main.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip_main.Size = new System.Drawing.Size(782, 29);
+            this.menuStrip_main.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip_main.Size = new System.Drawing.Size(1043, 36);
             this.menuStrip_main.TabIndex = 4;
             this.menuStrip_main.Text = "menuStrip_main";
             // 
@@ -342,76 +336,86 @@
             this.сырьеToolStripMenuItem,
             this.товарыToolStripMenuItem});
             this.таблицыToolStripMenuItem.Name = "таблицыToolStripMenuItem";
-            this.таблицыToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
+            this.таблицыToolStripMenuItem.Size = new System.Drawing.Size(105, 32);
             this.таблицыToolStripMenuItem.Text = "Таблицы";
             // 
             // автомобилиToolStripMenuItem
             // 
+            this.автомобилиToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Cars_img;
             this.автомобилиToolStripMenuItem.Name = "автомобилиToolStripMenuItem";
-            this.автомобилиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.автомобилиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.автомобилиToolStripMenuItem.Text = "Автомобили";
             this.автомобилиToolStripMenuItem.Click += new System.EventHandler(this.Button_cars_adm_Click);
             // 
             // дисконтныеКартыToolStripMenuItem
             // 
+            this.дисконтныеКартыToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Discount_cards_img;
             this.дисконтныеКартыToolStripMenuItem.Name = "дисконтныеКартыToolStripMenuItem";
-            this.дисконтныеКартыToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.дисконтныеКартыToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.дисконтныеКартыToolStripMenuItem.Text = "Дисконтные карты";
             this.дисконтныеКартыToolStripMenuItem.Click += new System.EventHandler(this.Button_discount_cards_Click);
             // 
             // продажиToolStripMenuItem
             // 
+            this.продажиToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Orders_img;
             this.продажиToolStripMenuItem.Name = "продажиToolStripMenuItem";
-            this.продажиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.продажиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.продажиToolStripMenuItem.Text = "Заказы";
             this.продажиToolStripMenuItem.Click += new System.EventHandler(this.Button_sales_Click);
             // 
             // запросыНаПоставкуСырьяToolStripMenuItem
             // 
+            this.запросыНаПоставкуСырьяToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Vendor_img;
             this.запросыНаПоставкуСырьяToolStripMenuItem.Name = "запросыНаПоставкуСырьяToolStripMenuItem";
-            this.запросыНаПоставкуСырьяToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.запросыНаПоставкуСырьяToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.запросыНаПоставкуСырьяToolStripMenuItem.Text = "Запросы на поставку сырья";
             this.запросыНаПоставкуСырьяToolStripMenuItem.Click += new System.EventHandler(this.Button_requests_adm_Click);
             // 
             // персоналToolStripMenuItem
             // 
+            this.персоналToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Staff_img;
             this.персоналToolStripMenuItem.Name = "персоналToolStripMenuItem";
-            this.персоналToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.персоналToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.персоналToolStripMenuItem.Text = "Персонал";
             this.персоналToolStripMenuItem.Click += new System.EventHandler(this.Button_staff_adm_Click);
             // 
             // покупателиToolStripMenuItem
             // 
+            this.покупателиToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Customers_img;
             this.покупателиToolStripMenuItem.Name = "покупателиToolStripMenuItem";
-            this.покупателиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.покупателиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.покупателиToolStripMenuItem.Text = "Покупатели";
             this.покупателиToolStripMenuItem.Click += new System.EventHandler(this.Button_customers_adm_Click);
             // 
             // поставщикиToolStripMenuItem
             // 
+            this.поставщикиToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Vendor_list_img;
             this.поставщикиToolStripMenuItem.Name = "поставщикиToolStripMenuItem";
-            this.поставщикиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.поставщикиToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.поставщикиToolStripMenuItem.Text = "Поставщики";
             this.поставщикиToolStripMenuItem.Click += new System.EventHandler(this.Button_vendor_adm_Click);
             // 
             // рецептыToolStripMenuItem
             // 
+            this.рецептыToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Receipe_img;
             this.рецептыToolStripMenuItem.Name = "рецептыToolStripMenuItem";
-            this.рецептыToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.рецептыToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.рецептыToolStripMenuItem.Text = "Рецепты";
             this.рецептыToolStripMenuItem.Click += new System.EventHandler(this.Button_recipes_adm_Click);
             // 
             // сырьеToolStripMenuItem
             // 
+            this.сырьеToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Raw_img;
             this.сырьеToolStripMenuItem.Name = "сырьеToolStripMenuItem";
-            this.сырьеToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.сырьеToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.сырьеToolStripMenuItem.Text = "Сырье";
             this.сырьеToolStripMenuItem.Click += new System.EventHandler(this.Button_materials_adm_Click);
             // 
             // товарыToolStripMenuItem
             // 
+            this.товарыToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Goods_img;
             this.товарыToolStripMenuItem.Name = "товарыToolStripMenuItem";
-            this.товарыToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
+            this.товарыToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.товарыToolStripMenuItem.Text = "Товары";
             this.товарыToolStripMenuItem.Click += new System.EventHandler(this.Button_goods_Click);
             // 
@@ -421,19 +425,19 @@
             this.ифнормацияToolStripMenuItem,
             this.помощьToolStripMenuItem});
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 25);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(148, 32);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             // 
             // ифнормацияToolStripMenuItem
             // 
             this.ифнормацияToolStripMenuItem.Name = "ифнормацияToolStripMenuItem";
-            this.ифнормацияToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.ифнормацияToolStripMenuItem.Size = new System.Drawing.Size(213, 32);
             this.ифнормацияToolStripMenuItem.Text = "Информация";
             // 
             // помощьToolStripMenuItem
             // 
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(213, 32);
             this.помощьToolStripMenuItem.Text = "Помощь";
             // 
             // chuck_TimeDataSet
@@ -493,10 +497,11 @@
             this.tabControl_main.Controls.Add(this.tabPage_seller);
             this.tabControl_main.Controls.Add(this.tabPage_hr);
             this.tabControl_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl_main.Location = new System.Drawing.Point(0, 29);
+            this.tabControl_main.Location = new System.Drawing.Point(0, 36);
+            this.tabControl_main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl_main.Name = "tabControl_main";
             this.tabControl_main.SelectedIndex = 0;
-            this.tabControl_main.Size = new System.Drawing.Size(782, 452);
+            this.tabControl_main.Size = new System.Drawing.Size(1043, 555);
             this.tabControl_main.TabIndex = 24;
             // 
             // tabPage_director
@@ -523,10 +528,10 @@
             this.tabPage_director.Controls.Add(this.button_disk_cards_dir);
             this.tabPage_director.Controls.Add(this.button_goods_dir);
             this.tabPage_director.Controls.Add(this.button_orders_dir);
-            this.tabPage_director.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_director.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_director.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_director.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_director.Name = "tabPage_director";
-            this.tabPage_director.Size = new System.Drawing.Size(774, 426);
+            this.tabPage_director.Size = new System.Drawing.Size(1035, 526);
             this.tabPage_director.TabIndex = 3;
             this.tabPage_director.Text = "Начало работы";
             this.tabPage_director.UseVisualStyleBackColor = true;
@@ -536,9 +541,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label10.Location = new System.Drawing.Point(666, 239);
+            this.label10.Location = new System.Drawing.Point(888, 294);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(60, 20);
+            this.label10.Size = new System.Drawing.Size(79, 28);
             this.label10.TabIndex = 32;
             this.label10.Text = "Товары";
             // 
@@ -547,9 +553,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label9.Location = new System.Drawing.Point(519, 239);
+            this.label9.Location = new System.Drawing.Point(692, 294);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 20);
+            this.label9.Size = new System.Drawing.Size(69, 28);
             this.label9.TabIndex = 31;
             this.label9.Text = "Сырье";
             // 
@@ -558,9 +565,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label8.Location = new System.Drawing.Point(360, 240);
+            this.label8.Location = new System.Drawing.Point(480, 295);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 20);
+            this.label8.Size = new System.Drawing.Size(94, 28);
             this.label8.TabIndex = 30;
             this.label8.Text = "Рецепты";
             // 
@@ -569,9 +577,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label7.Location = new System.Drawing.Point(217, 239);
+            this.label7.Location = new System.Drawing.Point(289, 294);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 20);
+            this.label7.Size = new System.Drawing.Size(78, 28);
             this.label7.TabIndex = 29;
             this.label7.Text = "Заказы";
             // 
@@ -580,9 +589,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label6.Location = new System.Drawing.Point(51, 239);
+            this.label6.Location = new System.Drawing.Point(68, 294);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 20);
+            this.label6.Size = new System.Drawing.Size(137, 28);
             this.label6.TabIndex = 28;
             this.label6.Text = "Поставщики";
             // 
@@ -591,9 +601,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label5.Location = new System.Drawing.Point(330, 37);
+            this.label5.Location = new System.Drawing.Point(440, 46);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 20);
+            this.label5.Size = new System.Drawing.Size(164, 28);
             this.label5.TabIndex = 27;
             this.label5.Text = "Поставка сырья";
             // 
@@ -602,9 +613,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label4.Location = new System.Drawing.Point(644, 37);
+            this.label4.Location = new System.Drawing.Point(859, 46);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 20);
+            this.label4.Size = new System.Drawing.Size(130, 28);
             this.label4.TabIndex = 26;
             this.label4.Text = "Покупатели";
             // 
@@ -613,9 +625,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label3.Location = new System.Drawing.Point(509, 37);
+            this.label3.Location = new System.Drawing.Point(679, 46);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 20);
+            this.label3.Size = new System.Drawing.Size(96, 28);
             this.label3.TabIndex = 25;
             this.label3.Text = "Персонал";
             // 
@@ -624,9 +637,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Location = new System.Drawing.Point(54, 37);
+            this.label2.Location = new System.Drawing.Point(72, 46);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 20);
+            this.label2.Size = new System.Drawing.Size(135, 28);
             this.label2.TabIndex = 24;
             this.label2.Text = "Автомобили";
             // 
@@ -635,9 +649,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(183, 37);
+            this.label1.Location = new System.Drawing.Point(244, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 20);
+            this.label1.Size = new System.Drawing.Size(167, 25);
             this.label1.TabIndex = 23;
             this.label1.Text = "Скидочные карты";
             // 
@@ -646,9 +661,10 @@
             this.button_materials_dir.BackColor = System.Drawing.Color.White;
             this.button_materials_dir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_materials_dir.BackgroundImage")));
             this.button_materials_dir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_materials_dir.Location = new System.Drawing.Point(493, 261);
+            this.button_materials_dir.Location = new System.Drawing.Point(657, 321);
+            this.button_materials_dir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_materials_dir.Name = "button_materials_dir";
-            this.button_materials_dir.Size = new System.Drawing.Size(105, 72);
+            this.button_materials_dir.Size = new System.Drawing.Size(140, 89);
             this.button_materials_dir.TabIndex = 22;
             this.button_materials_dir.UseVisualStyleBackColor = false;
             this.button_materials_dir.Click += new System.EventHandler(this.Button_materials_adm_Click);
@@ -658,9 +674,10 @@
             this.button_recipes_dir.BackColor = System.Drawing.Color.White;
             this.button_recipes_dir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_recipes_dir.BackgroundImage")));
             this.button_recipes_dir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_recipes_dir.Location = new System.Drawing.Point(341, 261);
+            this.button_recipes_dir.Location = new System.Drawing.Point(455, 321);
+            this.button_recipes_dir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_recipes_dir.Name = "button_recipes_dir";
-            this.button_recipes_dir.Size = new System.Drawing.Size(105, 72);
+            this.button_recipes_dir.Size = new System.Drawing.Size(140, 89);
             this.button_recipes_dir.TabIndex = 21;
             this.button_recipes_dir.UseVisualStyleBackColor = false;
             this.button_recipes_dir.Click += new System.EventHandler(this.Button_recipes_adm_Click);
@@ -669,9 +686,10 @@
             // 
             this.button_vendors_dir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_vendors_dir.BackgroundImage")));
             this.button_vendors_dir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_vendors_dir.Location = new System.Drawing.Point(52, 261);
+            this.button_vendors_dir.Location = new System.Drawing.Point(69, 321);
+            this.button_vendors_dir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_vendors_dir.Name = "button_vendors_dir";
-            this.button_vendors_dir.Size = new System.Drawing.Size(105, 72);
+            this.button_vendors_dir.Size = new System.Drawing.Size(140, 89);
             this.button_vendors_dir.TabIndex = 20;
             this.button_vendors_dir.UseVisualStyleBackColor = true;
             this.button_vendors_dir.Click += new System.EventHandler(this.Button_vendor_adm_Click);
@@ -681,9 +699,10 @@
             this.button_cutomers_dir.BackColor = System.Drawing.Color.White;
             this.button_cutomers_dir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_cutomers_dir.BackgroundImage")));
             this.button_cutomers_dir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_cutomers_dir.Location = new System.Drawing.Point(642, 58);
+            this.button_cutomers_dir.Location = new System.Drawing.Point(856, 71);
+            this.button_cutomers_dir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_cutomers_dir.Name = "button_cutomers_dir";
-            this.button_cutomers_dir.Size = new System.Drawing.Size(105, 72);
+            this.button_cutomers_dir.Size = new System.Drawing.Size(140, 89);
             this.button_cutomers_dir.TabIndex = 19;
             this.button_cutomers_dir.UseVisualStyleBackColor = false;
             this.button_cutomers_dir.Click += new System.EventHandler(this.Button_customers_adm_Click);
@@ -693,9 +712,10 @@
             this.button_staff_dir.BackColor = System.Drawing.Color.White;
             this.button_staff_dir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_staff_dir.BackgroundImage")));
             this.button_staff_dir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_staff_dir.Location = new System.Drawing.Point(493, 58);
+            this.button_staff_dir.Location = new System.Drawing.Point(657, 71);
+            this.button_staff_dir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_staff_dir.Name = "button_staff_dir";
-            this.button_staff_dir.Size = new System.Drawing.Size(105, 72);
+            this.button_staff_dir.Size = new System.Drawing.Size(140, 89);
             this.button_staff_dir.TabIndex = 18;
             this.button_staff_dir.UseVisualStyleBackColor = false;
             this.button_staff_dir.Click += new System.EventHandler(this.Button_staff_adm_Click);
@@ -705,9 +725,10 @@
             this.button_requests_dir.BackColor = System.Drawing.Color.White;
             this.button_requests_dir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_requests_dir.BackgroundImage")));
             this.button_requests_dir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_requests_dir.Location = new System.Drawing.Point(341, 58);
+            this.button_requests_dir.Location = new System.Drawing.Point(455, 71);
+            this.button_requests_dir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_requests_dir.Name = "button_requests_dir";
-            this.button_requests_dir.Size = new System.Drawing.Size(105, 72);
+            this.button_requests_dir.Size = new System.Drawing.Size(140, 89);
             this.button_requests_dir.TabIndex = 17;
             this.button_requests_dir.UseVisualStyleBackColor = false;
             this.button_requests_dir.Click += new System.EventHandler(this.Button_requests_adm_Click);
@@ -717,9 +738,10 @@
             this.button_vehicles_dir.BackColor = System.Drawing.Color.White;
             this.button_vehicles_dir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_vehicles_dir.BackgroundImage")));
             this.button_vehicles_dir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_vehicles_dir.Location = new System.Drawing.Point(52, 58);
+            this.button_vehicles_dir.Location = new System.Drawing.Point(69, 71);
+            this.button_vehicles_dir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_vehicles_dir.Name = "button_vehicles_dir";
-            this.button_vehicles_dir.Size = new System.Drawing.Size(105, 72);
+            this.button_vehicles_dir.Size = new System.Drawing.Size(140, 89);
             this.button_vehicles_dir.TabIndex = 16;
             this.button_vehicles_dir.UseVisualStyleBackColor = false;
             this.button_vehicles_dir.Click += new System.EventHandler(this.Button_cars_adm_Click);
@@ -729,9 +751,10 @@
             this.button_disk_cards_dir.BackColor = System.Drawing.Color.White;
             this.button_disk_cards_dir.BackgroundImage = global::Chuck_Time_Bakery.Properties.Resources.Discount_cards_img;
             this.button_disk_cards_dir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_disk_cards_dir.Location = new System.Drawing.Point(196, 58);
+            this.button_disk_cards_dir.Location = new System.Drawing.Point(261, 71);
+            this.button_disk_cards_dir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_disk_cards_dir.Name = "button_disk_cards_dir";
-            this.button_disk_cards_dir.Size = new System.Drawing.Size(105, 72);
+            this.button_disk_cards_dir.Size = new System.Drawing.Size(140, 89);
             this.button_disk_cards_dir.TabIndex = 15;
             this.button_disk_cards_dir.UseVisualStyleBackColor = false;
             this.button_disk_cards_dir.Click += new System.EventHandler(this.Button_discount_cards_Click);
@@ -741,9 +764,10 @@
             this.button_goods_dir.BackColor = System.Drawing.Color.White;
             this.button_goods_dir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_goods_dir.BackgroundImage")));
             this.button_goods_dir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_goods_dir.Location = new System.Drawing.Point(642, 261);
+            this.button_goods_dir.Location = new System.Drawing.Point(856, 321);
+            this.button_goods_dir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_goods_dir.Name = "button_goods_dir";
-            this.button_goods_dir.Size = new System.Drawing.Size(105, 72);
+            this.button_goods_dir.Size = new System.Drawing.Size(140, 89);
             this.button_goods_dir.TabIndex = 14;
             this.button_goods_dir.UseVisualStyleBackColor = false;
             this.button_goods_dir.Click += new System.EventHandler(this.Button_goods_Click);
@@ -753,9 +777,10 @@
             this.button_orders_dir.BackColor = System.Drawing.Color.White;
             this.button_orders_dir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_orders_dir.BackgroundImage")));
             this.button_orders_dir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_orders_dir.Location = new System.Drawing.Point(196, 261);
+            this.button_orders_dir.Location = new System.Drawing.Point(261, 321);
+            this.button_orders_dir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_orders_dir.Name = "button_orders_dir";
-            this.button_orders_dir.Size = new System.Drawing.Size(105, 72);
+            this.button_orders_dir.Size = new System.Drawing.Size(140, 89);
             this.button_orders_dir.TabIndex = 13;
             this.button_orders_dir.UseVisualStyleBackColor = false;
             this.button_orders_dir.Click += new System.EventHandler(this.Button_sales_Click);
@@ -782,11 +807,11 @@
             this.tabPage_admin.Controls.Add(this.button_discount_cards_adm);
             this.tabPage_admin.Controls.Add(this.button_goods_adm);
             this.tabPage_admin.Controls.Add(this.button_sales_adm);
-            this.tabPage_admin.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_admin.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_admin.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_admin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_admin.Name = "tabPage_admin";
-            this.tabPage_admin.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage_admin.Size = new System.Drawing.Size(774, 426);
+            this.tabPage_admin.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage_admin.Size = new System.Drawing.Size(1035, 527);
             this.tabPage_admin.TabIndex = 2;
             this.tabPage_admin.Text = "Начало работы";
             this.tabPage_admin.UseVisualStyleBackColor = true;
@@ -796,9 +821,10 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label19.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label19.Location = new System.Drawing.Point(364, 240);
+            this.label19.Location = new System.Drawing.Point(485, 295);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 20);
+            this.label19.Size = new System.Drawing.Size(69, 28);
             this.label19.TabIndex = 21;
             this.label19.Text = "Сырье";
             // 
@@ -807,9 +833,10 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label18.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label18.Location = new System.Drawing.Point(51, 240);
+            this.label18.Location = new System.Drawing.Point(68, 295);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(106, 20);
+            this.label18.Size = new System.Drawing.Size(137, 28);
             this.label18.TabIndex = 20;
             this.label18.Text = "Поставщики";
             // 
@@ -818,9 +845,10 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label17.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label17.Location = new System.Drawing.Point(332, 37);
+            this.label17.Location = new System.Drawing.Point(443, 46);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(126, 20);
+            this.label17.Size = new System.Drawing.Size(164, 28);
             this.label17.TabIndex = 19;
             this.label17.Text = "Поставка сырья";
             // 
@@ -829,9 +857,10 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label16.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label16.Location = new System.Drawing.Point(219, 240);
+            this.label16.Location = new System.Drawing.Point(292, 295);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(60, 20);
+            this.label16.Size = new System.Drawing.Size(78, 28);
             this.label16.TabIndex = 18;
             this.label16.Text = "Заказы";
             // 
@@ -840,9 +869,10 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label15.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label15.Location = new System.Drawing.Point(515, 240);
+            this.label15.Location = new System.Drawing.Point(687, 295);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 20);
+            this.label15.Size = new System.Drawing.Size(79, 28);
             this.label15.TabIndex = 17;
             this.label15.Text = "Товары";
             // 
@@ -851,9 +881,10 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label14.Location = new System.Drawing.Point(644, 36);
+            this.label14.Location = new System.Drawing.Point(859, 44);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(101, 20);
+            this.label14.Size = new System.Drawing.Size(130, 28);
             this.label14.TabIndex = 16;
             this.label14.Text = "Покупатели";
             // 
@@ -862,9 +893,10 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label13.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label13.Location = new System.Drawing.Point(509, 36);
+            this.label13.Location = new System.Drawing.Point(679, 44);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 20);
+            this.label13.Size = new System.Drawing.Size(96, 28);
             this.label13.TabIndex = 15;
             this.label13.Text = "Персонал";
             // 
@@ -873,9 +905,10 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label12.Location = new System.Drawing.Point(185, 37);
+            this.label12.Location = new System.Drawing.Point(247, 46);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(132, 20);
+            this.label12.Size = new System.Drawing.Size(167, 25);
             this.label12.TabIndex = 14;
             this.label12.Text = "Скидочные карты";
             // 
@@ -884,9 +917,10 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label11.Location = new System.Drawing.Point(54, 37);
+            this.label11.Location = new System.Drawing.Point(72, 46);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 20);
+            this.label11.Size = new System.Drawing.Size(135, 28);
             this.label11.TabIndex = 13;
             this.label11.Text = "Автомобили";
             // 
@@ -895,9 +929,10 @@
             this.button_materials_adm.BackColor = System.Drawing.Color.White;
             this.button_materials_adm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_materials_adm.BackgroundImage")));
             this.button_materials_adm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_materials_adm.Location = new System.Drawing.Point(341, 261);
+            this.button_materials_adm.Location = new System.Drawing.Point(455, 321);
+            this.button_materials_adm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_materials_adm.Name = "button_materials_adm";
-            this.button_materials_adm.Size = new System.Drawing.Size(105, 72);
+            this.button_materials_adm.Size = new System.Drawing.Size(140, 89);
             this.button_materials_adm.TabIndex = 12;
             this.button_materials_adm.UseVisualStyleBackColor = false;
             this.button_materials_adm.Click += new System.EventHandler(this.Button_materials_adm_Click);
@@ -907,9 +942,10 @@
             this.button_vendor_adm.BackColor = System.Drawing.Color.White;
             this.button_vendor_adm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_vendor_adm.BackgroundImage")));
             this.button_vendor_adm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_vendor_adm.Location = new System.Drawing.Point(52, 261);
+            this.button_vendor_adm.Location = new System.Drawing.Point(69, 321);
+            this.button_vendor_adm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_vendor_adm.Name = "button_vendor_adm";
-            this.button_vendor_adm.Size = new System.Drawing.Size(105, 72);
+            this.button_vendor_adm.Size = new System.Drawing.Size(140, 89);
             this.button_vendor_adm.TabIndex = 10;
             this.button_vendor_adm.UseVisualStyleBackColor = false;
             this.button_vendor_adm.Click += new System.EventHandler(this.Button_vendor_adm_Click);
@@ -919,9 +955,10 @@
             this.button_customers_adm.BackColor = System.Drawing.Color.White;
             this.button_customers_adm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_customers_adm.BackgroundImage")));
             this.button_customers_adm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_customers_adm.Location = new System.Drawing.Point(642, 58);
+            this.button_customers_adm.Location = new System.Drawing.Point(856, 71);
+            this.button_customers_adm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_customers_adm.Name = "button_customers_adm";
-            this.button_customers_adm.Size = new System.Drawing.Size(105, 72);
+            this.button_customers_adm.Size = new System.Drawing.Size(140, 89);
             this.button_customers_adm.TabIndex = 9;
             this.button_customers_adm.UseVisualStyleBackColor = false;
             this.button_customers_adm.Click += new System.EventHandler(this.Button_customers_adm_Click);
@@ -931,9 +968,10 @@
             this.button_staff_adm.BackColor = System.Drawing.Color.White;
             this.button_staff_adm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_staff_adm.BackgroundImage")));
             this.button_staff_adm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_staff_adm.Location = new System.Drawing.Point(493, 58);
+            this.button_staff_adm.Location = new System.Drawing.Point(657, 71);
+            this.button_staff_adm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_staff_adm.Name = "button_staff_adm";
-            this.button_staff_adm.Size = new System.Drawing.Size(105, 72);
+            this.button_staff_adm.Size = new System.Drawing.Size(140, 89);
             this.button_staff_adm.TabIndex = 8;
             this.button_staff_adm.UseVisualStyleBackColor = false;
             this.button_staff_adm.Click += new System.EventHandler(this.Button_staff_adm_Click);
@@ -943,9 +981,10 @@
             this.button_requests_adm.BackColor = System.Drawing.Color.White;
             this.button_requests_adm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_requests_adm.BackgroundImage")));
             this.button_requests_adm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_requests_adm.Location = new System.Drawing.Point(341, 58);
+            this.button_requests_adm.Location = new System.Drawing.Point(455, 71);
+            this.button_requests_adm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_requests_adm.Name = "button_requests_adm";
-            this.button_requests_adm.Size = new System.Drawing.Size(105, 72);
+            this.button_requests_adm.Size = new System.Drawing.Size(140, 89);
             this.button_requests_adm.TabIndex = 7;
             this.button_requests_adm.UseVisualStyleBackColor = false;
             this.button_requests_adm.Click += new System.EventHandler(this.Button_requests_adm_Click);
@@ -955,9 +994,10 @@
             this.button_cars_adm.BackColor = System.Drawing.Color.White;
             this.button_cars_adm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_cars_adm.BackgroundImage")));
             this.button_cars_adm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_cars_adm.Location = new System.Drawing.Point(52, 58);
+            this.button_cars_adm.Location = new System.Drawing.Point(69, 71);
+            this.button_cars_adm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_cars_adm.Name = "button_cars_adm";
-            this.button_cars_adm.Size = new System.Drawing.Size(105, 72);
+            this.button_cars_adm.Size = new System.Drawing.Size(140, 89);
             this.button_cars_adm.TabIndex = 6;
             this.button_cars_adm.UseVisualStyleBackColor = false;
             this.button_cars_adm.Click += new System.EventHandler(this.Button_cars_adm_Click);
@@ -967,9 +1007,10 @@
             this.button_discount_cards_adm.BackColor = System.Drawing.Color.White;
             this.button_discount_cards_adm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_discount_cards_adm.BackgroundImage")));
             this.button_discount_cards_adm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_discount_cards_adm.Location = new System.Drawing.Point(196, 58);
+            this.button_discount_cards_adm.Location = new System.Drawing.Point(261, 71);
+            this.button_discount_cards_adm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_discount_cards_adm.Name = "button_discount_cards_adm";
-            this.button_discount_cards_adm.Size = new System.Drawing.Size(105, 72);
+            this.button_discount_cards_adm.Size = new System.Drawing.Size(140, 89);
             this.button_discount_cards_adm.TabIndex = 5;
             this.button_discount_cards_adm.UseVisualStyleBackColor = false;
             this.button_discount_cards_adm.Click += new System.EventHandler(this.Button_discount_cards_Click);
@@ -979,9 +1020,10 @@
             this.button_goods_adm.BackColor = System.Drawing.Color.White;
             this.button_goods_adm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_goods_adm.BackgroundImage")));
             this.button_goods_adm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_goods_adm.Location = new System.Drawing.Point(493, 261);
+            this.button_goods_adm.Location = new System.Drawing.Point(657, 321);
+            this.button_goods_adm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_goods_adm.Name = "button_goods_adm";
-            this.button_goods_adm.Size = new System.Drawing.Size(105, 72);
+            this.button_goods_adm.Size = new System.Drawing.Size(140, 89);
             this.button_goods_adm.TabIndex = 4;
             this.button_goods_adm.UseVisualStyleBackColor = false;
             this.button_goods_adm.Click += new System.EventHandler(this.Button_goods_Click);
@@ -991,9 +1033,10 @@
             this.button_sales_adm.BackColor = System.Drawing.Color.White;
             this.button_sales_adm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_sales_adm.BackgroundImage")));
             this.button_sales_adm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_sales_adm.Location = new System.Drawing.Point(196, 261);
+            this.button_sales_adm.Location = new System.Drawing.Point(261, 321);
+            this.button_sales_adm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_sales_adm.Name = "button_sales_adm";
-            this.button_sales_adm.Size = new System.Drawing.Size(105, 72);
+            this.button_sales_adm.Size = new System.Drawing.Size(140, 89);
             this.button_sales_adm.TabIndex = 3;
             this.button_sales_adm.UseVisualStyleBackColor = false;
             this.button_sales_adm.Click += new System.EventHandler(this.Button_sales_Click);
@@ -1001,10 +1044,11 @@
             // tabPage_customer
             // 
             this.tabPage_customer.Controls.Add(this.panel_customer_main);
-            this.tabPage_customer.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_customer.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_customer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage_customer.Name = "tabPage_customer";
-            this.tabPage_customer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_customer.Size = new System.Drawing.Size(774, 426);
+            this.tabPage_customer.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_customer.Size = new System.Drawing.Size(1035, 527);
             this.tabPage_customer.TabIndex = 0;
             this.tabPage_customer.Text = "Ассортимент";
             this.tabPage_customer.UseVisualStyleBackColor = true;
@@ -1024,17 +1068,18 @@
             this.panel_customer_main.Controls.Add(this.title_GoodTextBox);
             this.panel_customer_main.Controls.Add(weightLabel);
             this.panel_customer_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_customer_main.Location = new System.Drawing.Point(3, 3);
+            this.panel_customer_main.Location = new System.Drawing.Point(4, 4);
+            this.panel_customer_main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_customer_main.Name = "panel_customer_main";
-            this.panel_customer_main.Size = new System.Drawing.Size(768, 420);
+            this.panel_customer_main.Size = new System.Drawing.Size(1027, 519);
             this.panel_customer_main.TabIndex = 22;
             // 
             // button_image
             // 
-            this.button_image.Location = new System.Drawing.Point(434, 12);
-            this.button_image.Margin = new System.Windows.Forms.Padding(2);
+            this.button_image.Location = new System.Drawing.Point(579, 15);
+            this.button_image.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_image.Name = "button_image";
-            this.button_image.Size = new System.Drawing.Size(94, 23);
+            this.button_image.Size = new System.Drawing.Size(125, 28);
             this.button_image.TabIndex = 21;
             this.button_image.Text = "Обзор...";
             this.button_image.UseVisualStyleBackColor = true;
@@ -1043,10 +1088,10 @@
             // descriptionRichTextBox
             // 
             this.descriptionRichTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Description", true));
-            this.descriptionRichTextBox.Location = new System.Drawing.Point(94, 128);
-            this.descriptionRichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.descriptionRichTextBox.Location = new System.Drawing.Point(125, 158);
+            this.descriptionRichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.descriptionRichTextBox.Name = "descriptionRichTextBox";
-            this.descriptionRichTextBox.Size = new System.Drawing.Size(216, 151);
+            this.descriptionRichTextBox.Size = new System.Drawing.Size(287, 185);
             this.descriptionRichTextBox.TabIndex = 20;
             this.descriptionRichTextBox.Text = "";
             // 
@@ -1078,7 +1123,7 @@
             this.goodsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.goodsBindingNavigator.Name = "goodsBindingNavigator";
             this.goodsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.goodsBindingNavigator.Size = new System.Drawing.Size(768, 27);
+            this.goodsBindingNavigator.Size = new System.Drawing.Size(1027, 27);
             this.goodsBindingNavigator.TabIndex = 6;
             this.goodsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -1094,7 +1139,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -1135,7 +1180,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(49, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -1180,10 +1225,10 @@
             // 
             this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Price", true));
             this.priceTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.priceTextBox.Location = new System.Drawing.Point(94, 96);
-            this.priceTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.priceTextBox.Location = new System.Drawing.Point(125, 118);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(216, 23);
+            this.priceTextBox.Size = new System.Drawing.Size(287, 27);
             this.priceTextBox.TabIndex = 13;
             // 
             // photoPictureBox
@@ -1191,10 +1236,10 @@
             this.photoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.photoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.photoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.goodsBindingSource, "Photo", true));
-            this.photoPictureBox.Location = new System.Drawing.Point(347, 38);
-            this.photoPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.photoPictureBox.Location = new System.Drawing.Point(463, 47);
+            this.photoPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.photoPictureBox.Name = "photoPictureBox";
-            this.photoPictureBox.Size = new System.Drawing.Size(427, 240);
+            this.photoPictureBox.Size = new System.Drawing.Size(569, 295);
             this.photoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.photoPictureBox.TabIndex = 15;
             this.photoPictureBox.TabStop = false;
@@ -1203,20 +1248,20 @@
             // 
             this.weightTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Weight", true));
             this.weightTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.weightTextBox.Location = new System.Drawing.Point(94, 65);
-            this.weightTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.weightTextBox.Location = new System.Drawing.Point(125, 80);
+            this.weightTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.weightTextBox.Name = "weightTextBox";
-            this.weightTextBox.Size = new System.Drawing.Size(216, 23);
+            this.weightTextBox.Size = new System.Drawing.Size(287, 27);
             this.weightTextBox.TabIndex = 9;
             // 
             // title_GoodTextBox
             // 
             this.title_GoodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Title_Good", true));
             this.title_GoodTextBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.title_GoodTextBox.Location = new System.Drawing.Point(94, 36);
-            this.title_GoodTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.title_GoodTextBox.Location = new System.Drawing.Point(125, 44);
+            this.title_GoodTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.title_GoodTextBox.Name = "title_GoodTextBox";
-            this.title_GoodTextBox.Size = new System.Drawing.Size(216, 23);
+            this.title_GoodTextBox.Size = new System.Drawing.Size(287, 27);
             this.title_GoodTextBox.TabIndex = 7;
             // 
             // tabPage_tech
@@ -1224,10 +1269,10 @@
             this.tabPage_tech.AutoScroll = true;
             this.tabPage_tech.Controls.Add(this.bindingNavigator_recipes);
             this.tabPage_tech.Controls.Add(this.recipesDataGridView);
-            this.tabPage_tech.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_tech.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_tech.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_tech.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_tech.Name = "tabPage_tech";
-            this.tabPage_tech.Size = new System.Drawing.Size(774, 426);
+            this.tabPage_tech.Size = new System.Drawing.Size(1035, 527);
             this.tabPage_tech.TabIndex = 4;
             this.tabPage_tech.Text = "Рецепты";
             this.tabPage_tech.UseVisualStyleBackColor = true;
@@ -1260,7 +1305,7 @@
             this.bindingNavigator_recipes.MovePreviousItem = this.toolStripButton4;
             this.bindingNavigator_recipes.Name = "bindingNavigator_recipes";
             this.bindingNavigator_recipes.PositionItem = this.toolStripTextBox1;
-            this.bindingNavigator_recipes.Size = new System.Drawing.Size(774, 27);
+            this.bindingNavigator_recipes.Size = new System.Drawing.Size(1035, 27);
             this.bindingNavigator_recipes.TabIndex = 7;
             // 
             // toolStripButton1
@@ -1280,7 +1325,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(36, 24);
+            this.toolStripLabel1.Size = new System.Drawing.Size(47, 24);
             this.toolStripLabel1.Text = "из {0}";
             this.toolStripLabel1.ToolTipText = "Общее число элементов";
             // 
@@ -1321,7 +1366,7 @@
             this.toolStripTextBox1.AccessibleName = "Положение";
             this.toolStripTextBox1.AutoSize = false;
             this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(38, 23);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(49, 27);
             this.toolStripTextBox1.Text = "0";
             this.toolStripTextBox1.ToolTipText = "Текущее положение";
             // 
@@ -1374,11 +1419,11 @@
             this.recipesDataGridView.ContextMenuStrip = this.contextMenuStrip_recipes;
             this.recipesDataGridView.DataSource = this.recipesBindingSource;
             this.recipesDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.recipesDataGridView.Location = new System.Drawing.Point(0, 146);
-            this.recipesDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.recipesDataGridView.Location = new System.Drawing.Point(0, 182);
+            this.recipesDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.recipesDataGridView.Name = "recipesDataGridView";
             this.recipesDataGridView.RowTemplate.Height = 24;
-            this.recipesDataGridView.Size = new System.Drawing.Size(774, 280);
+            this.recipesDataGridView.Size = new System.Drawing.Size(1035, 345);
             this.recipesDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -1425,12 +1470,12 @@
             this.contextMenuStrip_recipes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem_materials});
             this.contextMenuStrip_recipes.Name = "contextMenuStrip_recipes";
-            this.contextMenuStrip_recipes.Size = new System.Drawing.Size(161, 26);
+            this.contextMenuStrip_recipes.Size = new System.Drawing.Size(188, 28);
             // 
             // ToolStripMenuItem_materials
             // 
             this.ToolStripMenuItem_materials.Name = "ToolStripMenuItem_materials";
-            this.ToolStripMenuItem_materials.Size = new System.Drawing.Size(160, 22);
+            this.ToolStripMenuItem_materials.Size = new System.Drawing.Size(187, 24);
             this.ToolStripMenuItem_materials.Text = "Состав изделий";
             this.ToolStripMenuItem_materials.Click += new System.EventHandler(this.ToolStripMenuItem_materials_Click);
             // 
@@ -1442,22 +1487,47 @@
             this.tabPage_delivery.Controls.Add(this.label20);
             this.tabPage_delivery.Controls.Add(this.button_customers);
             this.tabPage_delivery.Controls.Add(this.button_disc_cards_delivery);
-            this.tabPage_delivery.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_delivery.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_delivery.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_delivery.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_delivery.Name = "tabPage_delivery";
-            this.tabPage_delivery.Size = new System.Drawing.Size(774, 426);
+            this.tabPage_delivery.Size = new System.Drawing.Size(1035, 527);
             this.tabPage_delivery.TabIndex = 5;
             this.tabPage_delivery.Text = "Начало работы";
             this.tabPage_delivery.UseVisualStyleBackColor = true;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label21.Location = new System.Drawing.Point(264, 42);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(130, 28);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "Покупатели";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label20.Location = new System.Drawing.Point(52, 41);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(167, 25);
+            this.label20.TabIndex = 12;
+            this.label20.Text = "Скидочные карты";
             // 
             // button_customers
             // 
             this.button_customers.BackColor = System.Drawing.Color.White;
             this.button_customers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_customers.BackgroundImage")));
             this.button_customers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_customers.Location = new System.Drawing.Point(196, 55);
+            this.button_customers.Location = new System.Drawing.Point(261, 68);
+            this.button_customers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_customers.Name = "button_customers";
-            this.button_customers.Size = new System.Drawing.Size(105, 72);
+            this.button_customers.Size = new System.Drawing.Size(140, 89);
             this.button_customers.TabIndex = 11;
             this.button_customers.UseVisualStyleBackColor = false;
             this.button_customers.Click += new System.EventHandler(this.Button_customers_adm_Click);
@@ -1467,9 +1537,10 @@
             this.button_disc_cards_delivery.BackColor = System.Drawing.Color.White;
             this.button_disc_cards_delivery.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_disc_cards_delivery.BackgroundImage")));
             this.button_disc_cards_delivery.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_disc_cards_delivery.Location = new System.Drawing.Point(52, 55);
+            this.button_disc_cards_delivery.Location = new System.Drawing.Point(69, 68);
+            this.button_disc_cards_delivery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_disc_cards_delivery.Name = "button_disc_cards_delivery";
-            this.button_disc_cards_delivery.Size = new System.Drawing.Size(105, 72);
+            this.button_disc_cards_delivery.Size = new System.Drawing.Size(140, 89);
             this.button_disc_cards_delivery.TabIndex = 10;
             this.button_disc_cards_delivery.UseVisualStyleBackColor = false;
             this.button_disc_cards_delivery.Click += new System.EventHandler(this.Button_discount_cards_Click);
@@ -1484,22 +1555,59 @@
             this.tabPage_cook.Controls.Add(this.button_materials_cook);
             this.tabPage_cook.Controls.Add(this.button_recipes_cook);
             this.tabPage_cook.Controls.Add(this.button_goods_cook);
-            this.tabPage_cook.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_cook.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_cook.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_cook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_cook.Name = "tabPage_cook";
-            this.tabPage_cook.Size = new System.Drawing.Size(774, 426);
+            this.tabPage_cook.Size = new System.Drawing.Size(1035, 527);
             this.tabPage_cook.TabIndex = 6;
             this.tabPage_cook.Text = "Начало работы";
             this.tabPage_cook.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label24.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label24.Location = new System.Drawing.Point(476, 43);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(94, 28);
+            this.label24.TabIndex = 28;
+            this.label24.Text = "Рецепты";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label23.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label23.Location = new System.Drawing.Point(297, 43);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(69, 28);
+            this.label23.TabIndex = 27;
+            this.label23.Text = "Сырье";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label22.Location = new System.Drawing.Point(100, 43);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(79, 28);
+            this.label22.TabIndex = 26;
+            this.label22.Text = "Товары";
             // 
             // button_materials_cook
             // 
             this.button_materials_cook.BackColor = System.Drawing.Color.White;
             this.button_materials_cook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_materials_cook.BackgroundImage")));
             this.button_materials_cook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_materials_cook.Location = new System.Drawing.Point(197, 56);
+            this.button_materials_cook.Location = new System.Drawing.Point(263, 69);
+            this.button_materials_cook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_materials_cook.Name = "button_materials_cook";
-            this.button_materials_cook.Size = new System.Drawing.Size(105, 72);
+            this.button_materials_cook.Size = new System.Drawing.Size(140, 89);
             this.button_materials_cook.TabIndex = 25;
             this.button_materials_cook.UseVisualStyleBackColor = false;
             this.button_materials_cook.Click += new System.EventHandler(this.Button_materials_adm_Click);
@@ -1509,9 +1617,10 @@
             this.button_recipes_cook.BackColor = System.Drawing.Color.White;
             this.button_recipes_cook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_recipes_cook.BackgroundImage")));
             this.button_recipes_cook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_recipes_cook.Location = new System.Drawing.Point(339, 56);
+            this.button_recipes_cook.Location = new System.Drawing.Point(452, 69);
+            this.button_recipes_cook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_recipes_cook.Name = "button_recipes_cook";
-            this.button_recipes_cook.Size = new System.Drawing.Size(105, 72);
+            this.button_recipes_cook.Size = new System.Drawing.Size(140, 89);
             this.button_recipes_cook.TabIndex = 24;
             this.button_recipes_cook.UseVisualStyleBackColor = false;
             this.button_recipes_cook.Click += new System.EventHandler(this.Button_recipes_adm_Click);
@@ -1521,9 +1630,10 @@
             this.button_goods_cook.BackColor = System.Drawing.Color.White;
             this.button_goods_cook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_goods_cook.BackgroundImage")));
             this.button_goods_cook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_goods_cook.Location = new System.Drawing.Point(52, 56);
+            this.button_goods_cook.Location = new System.Drawing.Point(69, 69);
+            this.button_goods_cook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_goods_cook.Name = "button_goods_cook";
-            this.button_goods_cook.Size = new System.Drawing.Size(105, 72);
+            this.button_goods_cook.Size = new System.Drawing.Size(140, 89);
             this.button_goods_cook.TabIndex = 23;
             this.button_goods_cook.UseVisualStyleBackColor = false;
             this.button_goods_cook.Click += new System.EventHandler(this.Button_goods_Click);
@@ -1538,22 +1648,60 @@
             this.tabPage_seller.Controls.Add(this.button_discount_cards);
             this.tabPage_seller.Controls.Add(this.button_goods);
             this.tabPage_seller.Controls.Add(this.button_sales);
-            this.tabPage_seller.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_seller.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_seller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage_seller.Name = "tabPage_seller";
-            this.tabPage_seller.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_seller.Size = new System.Drawing.Size(774, 426);
+            this.tabPage_seller.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_seller.Size = new System.Drawing.Size(1035, 527);
             this.tabPage_seller.TabIndex = 1;
             this.tabPage_seller.Text = "Начало работы";
             this.tabPage_seller.UseVisualStyleBackColor = true;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label27.Location = new System.Drawing.Point(432, 44);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(167, 25);
+            this.label27.TabIndex = 5;
+            this.label27.Text = "Скидочные карты";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label26.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label26.Location = new System.Drawing.Point(289, 44);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(78, 28);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "Заказы";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label25.Location = new System.Drawing.Point(64, 44);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(149, 28);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "Ассортимент";
             // 
             // button_discount_cards
             // 
             this.button_discount_cards.BackColor = System.Drawing.Color.White;
             this.button_discount_cards.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_discount_cards.BackgroundImage")));
             this.button_discount_cards.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_discount_cards.Location = new System.Drawing.Point(337, 57);
+            this.button_discount_cards.Location = new System.Drawing.Point(449, 70);
+            this.button_discount_cards.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_discount_cards.Name = "button_discount_cards";
-            this.button_discount_cards.Size = new System.Drawing.Size(105, 72);
+            this.button_discount_cards.Size = new System.Drawing.Size(140, 89);
             this.button_discount_cards.TabIndex = 2;
             this.button_discount_cards.UseVisualStyleBackColor = false;
             this.button_discount_cards.Click += new System.EventHandler(this.Button_discount_cards_Click);
@@ -1563,9 +1711,10 @@
             this.button_goods.BackColor = System.Drawing.Color.White;
             this.button_goods.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_goods.BackgroundImage")));
             this.button_goods.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_goods.Location = new System.Drawing.Point(53, 57);
+            this.button_goods.Location = new System.Drawing.Point(71, 70);
+            this.button_goods.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_goods.Name = "button_goods";
-            this.button_goods.Size = new System.Drawing.Size(105, 72);
+            this.button_goods.Size = new System.Drawing.Size(140, 89);
             this.button_goods.TabIndex = 1;
             this.button_goods.UseVisualStyleBackColor = false;
             this.button_goods.Click += new System.EventHandler(this.Button_goods_Click);
@@ -1575,9 +1724,10 @@
             this.button_sales.BackColor = System.Drawing.Color.White;
             this.button_sales.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_sales.BackgroundImage")));
             this.button_sales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_sales.Location = new System.Drawing.Point(195, 57);
+            this.button_sales.Location = new System.Drawing.Point(260, 70);
+            this.button_sales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_sales.Name = "button_sales";
-            this.button_sales.Size = new System.Drawing.Size(105, 72);
+            this.button_sales.Size = new System.Drawing.Size(140, 89);
             this.button_sales.TabIndex = 0;
             this.button_sales.UseVisualStyleBackColor = false;
             this.button_sales.Click += new System.EventHandler(this.Button_sales_Click);
@@ -1587,10 +1737,10 @@
             this.tabPage_hr.AutoScroll = true;
             this.tabPage_hr.Controls.Add(this.bindingNavigator1);
             this.tabPage_hr.Controls.Add(this.staffDataGridView);
-            this.tabPage_hr.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_hr.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage_hr.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_hr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage_hr.Name = "tabPage_hr";
-            this.tabPage_hr.Size = new System.Drawing.Size(774, 426);
+            this.tabPage_hr.Size = new System.Drawing.Size(1035, 527);
             this.tabPage_hr.TabIndex = 7;
             this.tabPage_hr.Text = "Сотрудники";
             this.tabPage_hr.UseVisualStyleBackColor = true;
@@ -1623,7 +1773,7 @@
             this.bindingNavigator1.MovePreviousItem = this.toolStripButton11;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.toolStripTextBox2;
-            this.bindingNavigator1.Size = new System.Drawing.Size(774, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1035, 27);
             this.bindingNavigator1.TabIndex = 8;
             // 
             // toolStripButton8
@@ -1638,7 +1788,7 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(36, 24);
+            this.toolStripLabel2.Size = new System.Drawing.Size(47, 24);
             this.toolStripLabel2.Text = "из {0}";
             this.toolStripLabel2.ToolTipText = "Общее число элементов";
             // 
@@ -1679,7 +1829,7 @@
             this.toolStripTextBox2.AccessibleName = "Положение";
             this.toolStripTextBox2.AutoSize = false;
             this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(38, 23);
+            this.toolStripTextBox2.Size = new System.Drawing.Size(49, 27);
             this.toolStripTextBox2.Text = "0";
             this.toolStripTextBox2.ToolTipText = "Текущее положение";
             // 
@@ -1732,11 +1882,11 @@
             this.dataGridViewTextBoxColumn9});
             this.staffDataGridView.DataSource = this.staffBindingSource;
             this.staffDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.staffDataGridView.Location = new System.Drawing.Point(0, 128);
-            this.staffDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.staffDataGridView.Location = new System.Drawing.Point(0, 160);
+            this.staffDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.staffDataGridView.Name = "staffDataGridView";
             this.staffDataGridView.RowTemplate.Height = 24;
-            this.staffDataGridView.Size = new System.Drawing.Size(774, 298);
+            this.staffDataGridView.Size = new System.Drawing.Size(1035, 367);
             this.staffDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn5
@@ -1774,104 +1924,16 @@
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.Width = 200;
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label20.Location = new System.Drawing.Point(39, 33);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(132, 20);
-            this.label20.TabIndex = 12;
-            this.label20.Text = "Скидочные карты";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label21.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label21.Location = new System.Drawing.Point(198, 34);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(101, 20);
-            this.label21.TabIndex = 13;
-            this.label21.Text = "Покупатели";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label22.Location = new System.Drawing.Point(75, 35);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(60, 20);
-            this.label22.TabIndex = 26;
-            this.label22.Text = "Товары";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label23.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label23.Location = new System.Drawing.Point(223, 35);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(53, 20);
-            this.label23.TabIndex = 27;
-            this.label23.Text = "Сырье";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label24.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label24.Location = new System.Drawing.Point(357, 35);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(71, 20);
-            this.label24.TabIndex = 28;
-            this.label24.Text = "Рецепты";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label25.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label25.Location = new System.Drawing.Point(48, 36);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(114, 20);
-            this.label25.TabIndex = 3;
-            this.label25.Text = "Ассортимент";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label26.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label26.Location = new System.Drawing.Point(217, 36);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(60, 20);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Заказы";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label27.Location = new System.Drawing.Point(324, 36);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(132, 20);
-            this.label27.TabIndex = 5;
-            this.label27.Text = "Скидочные карты";
-            // 
             // Form_main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 508);
+            this.ClientSize = new System.Drawing.Size(1043, 625);
             this.Controls.Add(this.tabControl_main);
             this.Controls.Add(this.statusStrip_main);
             this.Controls.Add(this.menuStrip_main);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Пекарня \"ЧакТайм\"";
