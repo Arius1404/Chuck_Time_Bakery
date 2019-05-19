@@ -147,13 +147,21 @@
             this.contextMenuStrip_recipes = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ToolStripMenuItem_materials = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage_delivery = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.button_customers = new System.Windows.Forms.Button();
             this.button_disc_cards_delivery = new System.Windows.Forms.Button();
             this.tabPage_cook = new System.Windows.Forms.TabPage();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.button_materials_cook = new System.Windows.Forms.Button();
             this.button_recipes_cook = new System.Windows.Forms.Button();
             this.button_goods_cook = new System.Windows.Forms.Button();
             this.tabPage_seller = new System.Windows.Forms.TabPage();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.button_discount_cards = new System.Windows.Forms.Button();
             this.button_goods = new System.Windows.Forms.Button();
             this.button_sales = new System.Windows.Forms.Button();
@@ -177,14 +185,6 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
             photoLabel = new System.Windows.Forms.Label();
             priceLabel = new System.Windows.Forms.Label();
@@ -347,6 +347,7 @@
             // 
             // автомобилиToolStripMenuItem
             // 
+            this.автомобилиToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.автомобилиToolStripMenuItem.Name = "автомобилиToolStripMenuItem";
             this.автомобилиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.автомобилиToolStripMenuItem.Text = "Автомобили";
@@ -354,6 +355,7 @@
             // 
             // дисконтныеКартыToolStripMenuItem
             // 
+            this.дисконтныеКартыToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.дисконтныеКартыToolStripMenuItem.Name = "дисконтныеКартыToolStripMenuItem";
             this.дисконтныеКартыToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.дисконтныеКартыToolStripMenuItem.Text = "Дисконтные карты";
@@ -361,6 +363,7 @@
             // 
             // продажиToolStripMenuItem
             // 
+            this.продажиToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.продажиToolStripMenuItem.Name = "продажиToolStripMenuItem";
             this.продажиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.продажиToolStripMenuItem.Text = "Заказы";
@@ -368,6 +371,7 @@
             // 
             // запросыНаПоставкуСырьяToolStripMenuItem
             // 
+            this.запросыНаПоставкуСырьяToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.запросыНаПоставкуСырьяToolStripMenuItem.Name = "запросыНаПоставкуСырьяToolStripMenuItem";
             this.запросыНаПоставкуСырьяToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.запросыНаПоставкуСырьяToolStripMenuItem.Text = "Запросы на поставку сырья";
@@ -375,6 +379,7 @@
             // 
             // персоналToolStripMenuItem
             // 
+            this.персоналToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.персоналToolStripMenuItem.Name = "персоналToolStripMenuItem";
             this.персоналToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.персоналToolStripMenuItem.Text = "Персонал";
@@ -382,6 +387,7 @@
             // 
             // покупателиToolStripMenuItem
             // 
+            this.покупателиToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.покупателиToolStripMenuItem.Name = "покупателиToolStripMenuItem";
             this.покупателиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.покупателиToolStripMenuItem.Text = "Покупатели";
@@ -389,6 +395,7 @@
             // 
             // поставщикиToolStripMenuItem
             // 
+            this.поставщикиToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.поставщикиToolStripMenuItem.Name = "поставщикиToolStripMenuItem";
             this.поставщикиToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.поставщикиToolStripMenuItem.Text = "Поставщики";
@@ -396,6 +403,7 @@
             // 
             // рецептыToolStripMenuItem
             // 
+            this.рецептыToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.рецептыToolStripMenuItem.Name = "рецептыToolStripMenuItem";
             this.рецептыToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.рецептыToolStripMenuItem.Text = "Рецепты";
@@ -403,6 +411,7 @@
             // 
             // сырьеToolStripMenuItem
             // 
+            this.сырьеToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.сырьеToolStripMenuItem.Name = "сырьеToolStripMenuItem";
             this.сырьеToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.сырьеToolStripMenuItem.Text = "Сырье";
@@ -410,6 +419,7 @@
             // 
             // товарыToolStripMenuItem
             // 
+            this.товарыToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.товарыToolStripMenuItem.Name = "товарыToolStripMenuItem";
             this.товарыToolStripMenuItem.Size = new System.Drawing.Size(278, 26);
             this.товарыToolStripMenuItem.Text = "Товары";
@@ -426,14 +436,16 @@
             // 
             // ифнормацияToolStripMenuItem
             // 
+            this.ифнормацияToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.ифнормацияToolStripMenuItem.Name = "ифнормацияToolStripMenuItem";
-            this.ифнормацияToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.ифнормацияToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.ифнормацияToolStripMenuItem.Text = "Информация";
             // 
             // помощьToolStripMenuItem
             // 
+            this.помощьToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.помощьToolStripMenuItem.Text = "Помощь";
             // 
             // chuck_TimeDataSet
@@ -1450,6 +1462,28 @@
             this.tabPage_delivery.Text = "Начало работы";
             this.tabPage_delivery.UseVisualStyleBackColor = true;
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label21.Location = new System.Drawing.Point(198, 34);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(101, 20);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "Покупатели";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label20.Location = new System.Drawing.Point(39, 33);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(132, 20);
+            this.label20.TabIndex = 12;
+            this.label20.Text = "Скидочные карты";
+            // 
             // button_customers
             // 
             this.button_customers.BackColor = System.Drawing.Color.White;
@@ -1491,6 +1525,39 @@
             this.tabPage_cook.TabIndex = 6;
             this.tabPage_cook.Text = "Начало работы";
             this.tabPage_cook.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label24.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label24.Location = new System.Drawing.Point(357, 35);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(71, 20);
+            this.label24.TabIndex = 28;
+            this.label24.Text = "Рецепты";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label23.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label23.Location = new System.Drawing.Point(223, 35);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(53, 20);
+            this.label23.TabIndex = 27;
+            this.label23.Text = "Сырье";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label22.Location = new System.Drawing.Point(75, 35);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(60, 20);
+            this.label22.TabIndex = 26;
+            this.label22.Text = "Товары";
             // 
             // button_materials_cook
             // 
@@ -1545,6 +1612,39 @@
             this.tabPage_seller.TabIndex = 1;
             this.tabPage_seller.Text = "Начало работы";
             this.tabPage_seller.UseVisualStyleBackColor = true;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label27.Location = new System.Drawing.Point(324, 36);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(132, 20);
+            this.label27.TabIndex = 5;
+            this.label27.Text = "Скидочные карты";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label26.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label26.Location = new System.Drawing.Point(217, 36);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(60, 20);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "Заказы";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label25.Location = new System.Drawing.Point(48, 36);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(114, 20);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "Ассортимент";
             // 
             // button_discount_cards
             // 
@@ -1773,94 +1873,6 @@
             this.dataGridViewTextBoxColumn9.HeaderText = "Номер телефона";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.Width = 200;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label20.Location = new System.Drawing.Point(39, 33);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(132, 20);
-            this.label20.TabIndex = 12;
-            this.label20.Text = "Скидочные карты";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label21.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label21.Location = new System.Drawing.Point(198, 34);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(101, 20);
-            this.label21.TabIndex = 13;
-            this.label21.Text = "Покупатели";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label22.Location = new System.Drawing.Point(75, 35);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(60, 20);
-            this.label22.TabIndex = 26;
-            this.label22.Text = "Товары";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label23.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label23.Location = new System.Drawing.Point(223, 35);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(53, 20);
-            this.label23.TabIndex = 27;
-            this.label23.Text = "Сырье";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label24.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label24.Location = new System.Drawing.Point(357, 35);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(71, 20);
-            this.label24.TabIndex = 28;
-            this.label24.Text = "Рецепты";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label25.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label25.Location = new System.Drawing.Point(48, 36);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(114, 20);
-            this.label25.TabIndex = 3;
-            this.label25.Text = "Ассортимент";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label26.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label26.Location = new System.Drawing.Point(217, 36);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(60, 20);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Заказы";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label27.Location = new System.Drawing.Point(324, 36);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(132, 20);
-            this.label27.TabIndex = 5;
-            this.label27.Text = "Скидочные карты";
             // 
             // Form_main
             // 
