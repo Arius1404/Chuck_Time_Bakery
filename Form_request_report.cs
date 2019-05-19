@@ -54,7 +54,7 @@ namespace Chuck_Time_Bakery
 
         }
 
-        private readonly string TemplateFileName_req = @"C:\Users\Arius\Desktop\Template_request.docx";
+        private readonly string TemplateFileName_req = Application.StartupPath + @"\Template_request.docx";
 
         private void Button_request_report_Click(object sender, EventArgs e)
         {

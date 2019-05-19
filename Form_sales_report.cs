@@ -35,7 +35,7 @@ namespace Chuck_Time_Bakery
             Activate();
         }
         
-        private readonly string TemplateFileName = @"C:\Users\Arius\Desktop\Template.docx";
+        private readonly string TemplateFileName = Application.StartupPath + @"\Template.docx";
 
         private void Button_sales_report_Click(object sender, EventArgs e)
         {
