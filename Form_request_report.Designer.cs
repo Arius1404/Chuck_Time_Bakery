@@ -39,6 +39,8 @@
             this.requestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.requestsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.RequestsTableAdapter();
             this.tableAdapterManager = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager();
+            this.materialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter();
+            this.vendorTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.VendorTableAdapter();
             this.request_IDTextBox = new System.Windows.Forms.TextBox();
             this.quantityTextBox = new System.Windows.Forms.TextBox();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -51,9 +53,7 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.requestsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.materialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.materialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter();
             this.vendorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vendorTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.VendorTableAdapter();
             this.raw_titleTextBox = new System.Windows.Forms.TextBox();
             this.create_dateTextBox = new System.Windows.Forms.TextBox();
             this.vendor_TitleTextBox = new System.Windows.Forms.TextBox();
@@ -70,6 +70,56 @@
             ((System.ComponentModel.ISupportInitialize)(this.materialsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendorBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // request_IDLabel
+            // 
+            request_IDLabel.AutoSize = true;
+            request_IDLabel.Location = new System.Drawing.Point(13, 43);
+            request_IDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            request_IDLabel.Name = "request_IDLabel";
+            request_IDLabel.Size = new System.Drawing.Size(66, 13);
+            request_IDLabel.TabIndex = 1;
+            request_IDLabel.Text = "№ запроса:";
+            // 
+            // raw_titleLabel
+            // 
+            raw_titleLabel.AutoSize = true;
+            raw_titleLabel.Location = new System.Drawing.Point(13, 67);
+            raw_titleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            raw_titleLabel.Name = "raw_titleLabel";
+            raw_titleLabel.Size = new System.Drawing.Size(60, 13);
+            raw_titleLabel.TabIndex = 3;
+            raw_titleLabel.Text = "Материал:";
+            // 
+            // quantityLabel
+            // 
+            quantityLabel.AutoSize = true;
+            quantityLabel.Location = new System.Drawing.Point(13, 90);
+            quantityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            quantityLabel.Name = "quantityLabel";
+            quantityLabel.Size = new System.Drawing.Size(69, 13);
+            quantityLabel.TabIndex = 5;
+            quantityLabel.Text = "Количество:";
+            // 
+            // create_dateLabel
+            // 
+            create_dateLabel.AutoSize = true;
+            create_dateLabel.Location = new System.Drawing.Point(13, 114);
+            create_dateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            create_dateLabel.Name = "create_dateLabel";
+            create_dateLabel.Size = new System.Drawing.Size(87, 13);
+            create_dateLabel.TabIndex = 7;
+            create_dateLabel.Text = "Дата создания:";
+            // 
+            // vendor_TitleLabel
+            // 
+            vendor_TitleLabel.AutoSize = true;
+            vendor_TitleLabel.Location = new System.Drawing.Point(13, 137);
+            vendor_TitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            vendor_TitleLabel.Name = "vendor_TitleLabel";
+            vendor_TitleLabel.Size = new System.Drawing.Size(68, 13);
+            vendor_TitleLabel.TabIndex = 9;
+            vendor_TitleLabel.Text = "Поставщик:";
             // 
             // chuck_TimeDataSet
             // 
@@ -105,68 +155,33 @@
             this.tableAdapterManager.VehiclesTableAdapter = null;
             this.tableAdapterManager.VendorTableAdapter = this.vendorTableAdapter;
             // 
-            // request_IDLabel
+            // materialsTableAdapter
             // 
-            request_IDLabel.AutoSize = true;
-            request_IDLabel.Location = new System.Drawing.Point(17, 49);
-            request_IDLabel.Name = "request_IDLabel";
-            request_IDLabel.Size = new System.Drawing.Size(84, 17);
-            request_IDLabel.TabIndex = 1;
-            request_IDLabel.Text = "№ запроса:";
+            this.materialsTableAdapter.ClearBeforeFill = true;
+            // 
+            // vendorTableAdapter
+            // 
+            this.vendorTableAdapter.ClearBeforeFill = true;
             // 
             // request_IDTextBox
             // 
             this.request_IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Request_ID", true));
-            this.request_IDTextBox.Location = new System.Drawing.Point(131, 46);
+            this.request_IDTextBox.Location = new System.Drawing.Point(98, 39);
+            this.request_IDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.request_IDTextBox.Name = "request_IDTextBox";
             this.request_IDTextBox.ReadOnly = true;
-            this.request_IDTextBox.Size = new System.Drawing.Size(200, 22);
+            this.request_IDTextBox.Size = new System.Drawing.Size(151, 20);
             this.request_IDTextBox.TabIndex = 2;
-            // 
-            // raw_titleLabel
-            // 
-            raw_titleLabel.AutoSize = true;
-            raw_titleLabel.Location = new System.Drawing.Point(17, 82);
-            raw_titleLabel.Name = "raw_titleLabel";
-            raw_titleLabel.Size = new System.Drawing.Size(78, 17);
-            raw_titleLabel.TabIndex = 3;
-            raw_titleLabel.Text = "Материал:";
-            // 
-            // quantityLabel
-            // 
-            quantityLabel.AutoSize = true;
-            quantityLabel.Location = new System.Drawing.Point(17, 108);
-            quantityLabel.Name = "quantityLabel";
-            quantityLabel.Size = new System.Drawing.Size(90, 17);
-            quantityLabel.TabIndex = 5;
-            quantityLabel.Text = "Количество:";
             // 
             // quantityTextBox
             // 
             this.quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Quantity", true));
-            this.quantityTextBox.Location = new System.Drawing.Point(131, 105);
+            this.quantityTextBox.Location = new System.Drawing.Point(98, 87);
+            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quantityTextBox.Name = "quantityTextBox";
             this.quantityTextBox.ReadOnly = true;
-            this.quantityTextBox.Size = new System.Drawing.Size(200, 22);
+            this.quantityTextBox.Size = new System.Drawing.Size(151, 20);
             this.quantityTextBox.TabIndex = 6;
-            // 
-            // create_dateLabel
-            // 
-            create_dateLabel.AutoSize = true;
-            create_dateLabel.Location = new System.Drawing.Point(17, 140);
-            create_dateLabel.Name = "create_dateLabel";
-            create_dateLabel.Size = new System.Drawing.Size(112, 17);
-            create_dateLabel.TabIndex = 7;
-            create_dateLabel.Text = "Дата создания:";
-            // 
-            // vendor_TitleLabel
-            // 
-            vendor_TitleLabel.AutoSize = true;
-            vendor_TitleLabel.Location = new System.Drawing.Point(17, 168);
-            vendor_TitleLabel.Name = "vendor_TitleLabel";
-            vendor_TitleLabel.Size = new System.Drawing.Size(85, 17);
-            vendor_TitleLabel.TabIndex = 9;
-            vendor_TitleLabel.Text = "Поставщик:";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -196,14 +211,14 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -254,7 +269,7 @@
             this.requestsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.requestsBindingNavigator.Name = "requestsBindingNavigator";
             this.requestsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.requestsBindingNavigator.Size = new System.Drawing.Size(364, 27);
+            this.requestsBindingNavigator.Size = new System.Drawing.Size(273, 27);
             this.requestsBindingNavigator.TabIndex = 0;
             this.requestsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -263,51 +278,47 @@
             this.materialsBindingSource.DataMember = "Materials";
             this.materialsBindingSource.DataSource = this.chuck_TimeDataSet;
             // 
-            // materialsTableAdapter
-            // 
-            this.materialsTableAdapter.ClearBeforeFill = true;
-            // 
             // vendorBindingSource
             // 
             this.vendorBindingSource.DataMember = "Vendor";
             this.vendorBindingSource.DataSource = this.chuck_TimeDataSet;
             // 
-            // vendorTableAdapter
-            // 
-            this.vendorTableAdapter.ClearBeforeFill = true;
-            // 
             // raw_titleTextBox
             // 
             this.raw_titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Raw_title", true));
-            this.raw_titleTextBox.Location = new System.Drawing.Point(131, 77);
+            this.raw_titleTextBox.Location = new System.Drawing.Point(98, 63);
+            this.raw_titleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.raw_titleTextBox.Name = "raw_titleTextBox";
             this.raw_titleTextBox.ReadOnly = true;
-            this.raw_titleTextBox.Size = new System.Drawing.Size(200, 22);
+            this.raw_titleTextBox.Size = new System.Drawing.Size(151, 20);
             this.raw_titleTextBox.TabIndex = 10;
             // 
             // create_dateTextBox
             // 
             this.create_dateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Create_date", true));
-            this.create_dateTextBox.Location = new System.Drawing.Point(131, 137);
+            this.create_dateTextBox.Location = new System.Drawing.Point(98, 111);
+            this.create_dateTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.create_dateTextBox.Name = "create_dateTextBox";
             this.create_dateTextBox.ReadOnly = true;
-            this.create_dateTextBox.Size = new System.Drawing.Size(200, 22);
+            this.create_dateTextBox.Size = new System.Drawing.Size(151, 20);
             this.create_dateTextBox.TabIndex = 11;
             // 
             // vendor_TitleTextBox
             // 
             this.vendor_TitleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Vendor_Title", true));
-            this.vendor_TitleTextBox.Location = new System.Drawing.Point(131, 165);
+            this.vendor_TitleTextBox.Location = new System.Drawing.Point(98, 135);
+            this.vendor_TitleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.vendor_TitleTextBox.Name = "vendor_TitleTextBox";
             this.vendor_TitleTextBox.ReadOnly = true;
-            this.vendor_TitleTextBox.Size = new System.Drawing.Size(200, 22);
+            this.vendor_TitleTextBox.Size = new System.Drawing.Size(151, 20);
             this.vendor_TitleTextBox.TabIndex = 12;
             // 
             // button_request_report
             // 
-            this.button_request_report.Location = new System.Drawing.Point(194, 218);
+            this.button_request_report.Location = new System.Drawing.Point(146, 177);
+            this.button_request_report.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button_request_report.Name = "button_request_report";
-            this.button_request_report.Size = new System.Drawing.Size(137, 33);
+            this.button_request_report.Size = new System.Drawing.Size(103, 27);
             this.button_request_report.TabIndex = 13;
             this.button_request_report.Text = "Создать запрос";
             this.button_request_report.UseVisualStyleBackColor = true;
@@ -315,9 +326,9 @@
             // 
             // Form_request_report
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 290);
+            this.ClientSize = new System.Drawing.Size(273, 236);
             this.Controls.Add(this.button_request_report);
             this.Controls.Add(this.vendor_TitleTextBox);
             this.Controls.Add(this.create_dateTextBox);
@@ -331,6 +342,7 @@
             this.Controls.Add(vendor_TitleLabel);
             this.Controls.Add(this.requestsBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_request_report";
