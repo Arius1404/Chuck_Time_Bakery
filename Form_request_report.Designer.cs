@@ -55,9 +55,13 @@
             this.materialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vendorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.raw_titleTextBox = new System.Windows.Forms.TextBox();
-            this.create_dateTextBox = new System.Windows.Forms.TextBox();
             this.vendor_TitleTextBox = new System.Windows.Forms.TextBox();
             this.button_request_report = new System.Windows.Forms.Button();
+            this.request_dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox_path_req = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox_name_req = new System.Windows.Forms.TextBox();
             request_IDLabel = new System.Windows.Forms.Label();
             raw_titleLabel = new System.Windows.Forms.Label();
             quantityLabel = new System.Windows.Forms.Label();
@@ -167,7 +171,7 @@
             // 
             this.request_IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Request_ID", true));
             this.request_IDTextBox.Location = new System.Drawing.Point(98, 39);
-            this.request_IDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.request_IDTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.request_IDTextBox.Name = "request_IDTextBox";
             this.request_IDTextBox.ReadOnly = true;
             this.request_IDTextBox.Size = new System.Drawing.Size(151, 20);
@@ -177,7 +181,7 @@
             // 
             this.quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Quantity", true));
             this.quantityTextBox.Location = new System.Drawing.Point(98, 87);
-            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.quantityTextBox.Name = "quantityTextBox";
             this.quantityTextBox.ReadOnly = true;
             this.quantityTextBox.Size = new System.Drawing.Size(151, 20);
@@ -269,7 +273,7 @@
             this.requestsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.requestsBindingNavigator.Name = "requestsBindingNavigator";
             this.requestsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.requestsBindingNavigator.Size = new System.Drawing.Size(273, 27);
+            this.requestsBindingNavigator.Size = new System.Drawing.Size(319, 27);
             this.requestsBindingNavigator.TabIndex = 0;
             this.requestsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -287,27 +291,17 @@
             // 
             this.raw_titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Raw_title", true));
             this.raw_titleTextBox.Location = new System.Drawing.Point(98, 63);
-            this.raw_titleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.raw_titleTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.raw_titleTextBox.Name = "raw_titleTextBox";
             this.raw_titleTextBox.ReadOnly = true;
             this.raw_titleTextBox.Size = new System.Drawing.Size(151, 20);
             this.raw_titleTextBox.TabIndex = 10;
             // 
-            // create_dateTextBox
-            // 
-            this.create_dateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Create_date", true));
-            this.create_dateTextBox.Location = new System.Drawing.Point(98, 111);
-            this.create_dateTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.create_dateTextBox.Name = "create_dateTextBox";
-            this.create_dateTextBox.ReadOnly = true;
-            this.create_dateTextBox.Size = new System.Drawing.Size(151, 20);
-            this.create_dateTextBox.TabIndex = 11;
-            // 
             // vendor_TitleTextBox
             // 
             this.vendor_TitleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Vendor_Title", true));
             this.vendor_TitleTextBox.Location = new System.Drawing.Point(98, 135);
-            this.vendor_TitleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendor_TitleTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.vendor_TitleTextBox.Name = "vendor_TitleTextBox";
             this.vendor_TitleTextBox.ReadOnly = true;
             this.vendor_TitleTextBox.Size = new System.Drawing.Size(151, 20);
@@ -316,7 +310,7 @@
             // button_request_report
             // 
             this.button_request_report.Location = new System.Drawing.Point(146, 177);
-            this.button_request_report.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_request_report.Margin = new System.Windows.Forms.Padding(2);
             this.button_request_report.Name = "button_request_report";
             this.button_request_report.Size = new System.Drawing.Size(103, 27);
             this.button_request_report.TabIndex = 13;
@@ -324,14 +318,63 @@
             this.button_request_report.UseVisualStyleBackColor = true;
             this.button_request_report.Click += new System.EventHandler(this.Button_request_report_Click);
             // 
+            // request_dateTimePicker
+            // 
+            this.request_dateTimePicker.Location = new System.Drawing.Point(98, 110);
+            this.request_dateTimePicker.Name = "request_dateTimePicker";
+            this.request_dateTimePicker.Size = new System.Drawing.Size(151, 20);
+            this.request_dateTimePicker.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 219);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Путь сохранения отчета";
+            // 
+            // textBox_path_req
+            // 
+            this.textBox_path_req.Location = new System.Drawing.Point(146, 216);
+            this.textBox_path_req.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_path_req.Name = "textBox_path_req";
+            this.textBox_path_req.Size = new System.Drawing.Size(168, 20);
+            this.textBox_path_req.TabIndex = 16;
+            this.textBox_path_req.Text = "C:\\Users\\Arius\\Desktop\\";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 246);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Имя файла";
+            // 
+            // textBox_name_req
+            // 
+            this.textBox_name_req.Location = new System.Drawing.Point(146, 243);
+            this.textBox_name_req.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_name_req.Name = "textBox_name_req";
+            this.textBox_name_req.Size = new System.Drawing.Size(168, 20);
+            this.textBox_name_req.TabIndex = 18;
+            this.textBox_name_req.Text = "Запрос на поставку.docx";
+            // 
             // Form_request_report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 236);
+            this.ClientSize = new System.Drawing.Size(319, 268);
+            this.Controls.Add(this.textBox_name_req);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox_path_req);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.request_dateTimePicker);
             this.Controls.Add(this.button_request_report);
             this.Controls.Add(this.vendor_TitleTextBox);
-            this.Controls.Add(this.create_dateTextBox);
             this.Controls.Add(this.raw_titleTextBox);
             this.Controls.Add(request_IDLabel);
             this.Controls.Add(this.request_IDTextBox);
@@ -342,7 +385,7 @@
             this.Controls.Add(vendor_TitleLabel);
             this.Controls.Add(this.requestsBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_request_report";
@@ -383,8 +426,12 @@
         private Chuck_TimeDataSetTableAdapters.VendorTableAdapter vendorTableAdapter;
         private System.Windows.Forms.BindingSource vendorBindingSource;
         private System.Windows.Forms.TextBox raw_titleTextBox;
-        private System.Windows.Forms.TextBox create_dateTextBox;
         private System.Windows.Forms.TextBox vendor_TitleTextBox;
         private System.Windows.Forms.Button button_request_report;
+        private System.Windows.Forms.DateTimePicker request_dateTimePicker;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox_path_req;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox_name_req;
     }
 }

@@ -59,10 +59,9 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip_requests = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ToolStripMenuItem_info = new System.Windows.Forms.ToolStripMenuItem();
-            this.отправитьЗаказToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_request_report = new System.Windows.Forms.ToolStripMenuItem();
             this.fKRequestMaterialsRequestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.materialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter();
-            this.ToolStripMenuItem_request_report = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestsBindingNavigator)).BeginInit();
@@ -144,7 +143,7 @@
             this.requestsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.requestsBindingNavigator.Name = "requestsBindingNavigator";
             this.requestsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.requestsBindingNavigator.Size = new System.Drawing.Size(800, 27);
+            this.requestsBindingNavigator.Size = new System.Drawing.Size(600, 27);
             this.requestsBindingNavigator.TabIndex = 0;
             this.requestsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -160,7 +159,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -201,7 +200,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -256,9 +255,10 @@
             this.requestsDataGridView.DataSource = this.requestsBindingSource;
             this.requestsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.requestsDataGridView.Location = new System.Drawing.Point(0, 27);
+            this.requestsDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.requestsDataGridView.Name = "requestsDataGridView";
             this.requestsDataGridView.RowTemplate.Height = 24;
-            this.requestsDataGridView.Size = new System.Drawing.Size(800, 423);
+            this.requestsDataGridView.Size = new System.Drawing.Size(600, 339);
             this.requestsDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -322,23 +322,23 @@
             this.contextMenuStrip_requests.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip_requests.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem_info,
-            this.отправитьЗаказToolStripMenuItem,
             this.ToolStripMenuItem_request_report});
             this.contextMenuStrip_requests.Name = "contextMenuStrip_requests";
-            this.contextMenuStrip_requests.Size = new System.Drawing.Size(237, 104);
+            this.contextMenuStrip_requests.Size = new System.Drawing.Size(200, 48);
             // 
             // ToolStripMenuItem_info
             // 
             this.ToolStripMenuItem_info.Name = "ToolStripMenuItem_info";
-            this.ToolStripMenuItem_info.Size = new System.Drawing.Size(236, 24);
+            this.ToolStripMenuItem_info.Size = new System.Drawing.Size(199, 22);
             this.ToolStripMenuItem_info.Text = "Содержание запросов";
             this.ToolStripMenuItem_info.Click += new System.EventHandler(this.ToolStripMenuItem_info_Click);
             // 
-            // отправитьЗаказToolStripMenuItem
+            // ToolStripMenuItem_request_report
             // 
-            this.отправитьЗаказToolStripMenuItem.Name = "отправитьЗаказToolStripMenuItem";
-            this.отправитьЗаказToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
-            this.отправитьЗаказToolStripMenuItem.Text = "Отправить заказ";
+            this.ToolStripMenuItem_request_report.Name = "ToolStripMenuItem_request_report";
+            this.ToolStripMenuItem_request_report.Size = new System.Drawing.Size(199, 22);
+            this.ToolStripMenuItem_request_report.Text = "Сформировать запрос";
+            this.ToolStripMenuItem_request_report.Click += new System.EventHandler(this.ToolStripMenuItem_request_report_Click);
             // 
             // fKRequestMaterialsRequestsBindingSource
             // 
@@ -349,20 +349,14 @@
             // 
             this.materialsTableAdapter.ClearBeforeFill = true;
             // 
-            // ToolStripMenuItem_request_report
-            // 
-            this.ToolStripMenuItem_request_report.Name = "ToolStripMenuItem_request_report";
-            this.ToolStripMenuItem_request_report.Size = new System.Drawing.Size(236, 24);
-            this.ToolStripMenuItem_request_report.Text = "Сформировать запрос";
-            this.ToolStripMenuItem_request_report.Click += new System.EventHandler(this.ToolStripMenuItem_request_report_Click);
-            // 
             // Form_requests
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.requestsDataGridView);
             this.Controls.Add(this.requestsBindingNavigator);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_requests";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Запросы на поставку сырья";
@@ -415,7 +409,6 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.ToolStripMenuItem отправитьЗаказToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_request_report;
     }
 }

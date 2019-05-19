@@ -281,6 +281,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cake_1.ico" />
+    <None Include="Resources\Form_main_img.jpg" />
+    <None Include="Resources\Discount_cards_img.jpg" />
     <None Include="Resources\background_login.JPG" />
   </ItemGroup>
   <ItemGroup>
