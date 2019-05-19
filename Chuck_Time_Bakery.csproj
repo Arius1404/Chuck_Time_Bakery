@@ -281,6 +281,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cake_1.ico" />
+    <None Include="Resources\Vendor_list_img.jpg" />
+    <None Include="Resources\Vendor_img.jpg" />
+    <None Include="Resources\Staff_img.jpg" />
+    <None Include="Resources\Receipe_img.jpg" />
+    <None Include="Resources\Raw_img.jpg" />
+    <None Include="Resources\Orders_img.jpg" />
+    <None Include="Resources\login_img.jpg" />
+    <None Include="Resources\Goods_img.jpg" />
+    <None Include="Resources\free-confectionery-vector20.jpg" />
+    <None Include="Resources\Echpochmack_goods.jpg" />
+    <None Include="Resources\Customers_img.jpg" />
+    <None Include="Resources\Cars_img.png" />
     <None Include="Resources\Form_main_img.jpg" />
     <None Include="Resources\Discount_cards_img.jpg" />
     <None Include="Resources\background_login.JPG" />

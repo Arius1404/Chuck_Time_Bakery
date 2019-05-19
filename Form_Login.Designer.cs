@@ -40,7 +40,7 @@
             // button_login_guest
             // 
             this.button_login_guest.Location = new System.Drawing.Point(190, 270);
-            this.button_login_guest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_login_guest.Margin = new System.Windows.Forms.Padding(2);
             this.button_login_guest.Name = "button_login_guest";
             this.button_login_guest.Size = new System.Drawing.Size(109, 24);
             this.button_login_guest.TabIndex = 14;
@@ -51,7 +51,7 @@
             // button_login
             // 
             this.button_login.Location = new System.Drawing.Point(119, 270);
-            this.button_login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_login.Margin = new System.Windows.Forms.Padding(2);
             this.button_login.Name = "button_login";
             this.button_login.Size = new System.Drawing.Size(56, 24);
             this.button_login.TabIndex = 13;
@@ -63,7 +63,7 @@
             // 
             this.textBox_password.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_password.Location = new System.Drawing.Point(119, 224);
-            this.textBox_password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_password.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_password.Name = "textBox_password";
             this.textBox_password.PasswordChar = '*';
             this.textBox_password.Size = new System.Drawing.Size(180, 26);
@@ -73,7 +73,7 @@
             // 
             this.textBox_login.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_login.Location = new System.Drawing.Point(119, 179);
-            this.textBox_login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_login.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_login.Name = "textBox_login";
             this.textBox_login.Size = new System.Drawing.Size(180, 26);
             this.textBox_login.TabIndex = 10;
@@ -119,7 +119,7 @@
             this.Controls.Add(this.label_login);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_login";
