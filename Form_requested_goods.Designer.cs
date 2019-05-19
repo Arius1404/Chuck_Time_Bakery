@@ -130,7 +130,7 @@
             this.requested_goodsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.requested_goodsBindingNavigator.Name = "requested_goodsBindingNavigator";
             this.requested_goodsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.requested_goodsBindingNavigator.Size = new System.Drawing.Size(800, 27);
+            this.requested_goodsBindingNavigator.Size = new System.Drawing.Size(600, 27);
             this.requested_goodsBindingNavigator.TabIndex = 0;
             this.requested_goodsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -146,7 +146,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -187,7 +187,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -231,6 +231,7 @@
             // requested_goodsDataGridView
             // 
             this.requested_goodsDataGridView.AutoGenerateColumns = false;
+            this.requested_goodsDataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.requested_goodsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.requested_goodsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -241,10 +242,12 @@
             this.Final_cost});
             this.requested_goodsDataGridView.DataSource = this.requested_goodsBindingSource;
             this.requested_goodsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.requested_goodsDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.requested_goodsDataGridView.Location = new System.Drawing.Point(0, 27);
+            this.requested_goodsDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.requested_goodsDataGridView.Name = "requested_goodsDataGridView";
             this.requested_goodsDataGridView.RowTemplate.Height = 24;
-            this.requested_goodsDataGridView.Size = new System.Drawing.Size(800, 423);
+            this.requested_goodsDataGridView.Size = new System.Drawing.Size(600, 339);
             this.requested_goodsDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -301,11 +304,14 @@
             // 
             // Form_requested_goods
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.requested_goodsDataGridView);
             this.Controls.Add(this.requested_goodsBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_requested_goods";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информация о заказе";

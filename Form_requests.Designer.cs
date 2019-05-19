@@ -244,6 +244,7 @@
             // requestsDataGridView
             // 
             this.requestsDataGridView.AutoGenerateColumns = false;
+            this.requestsDataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.requestsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.requestsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -254,8 +255,9 @@
             this.requestsDataGridView.ContextMenuStrip = this.contextMenuStrip_requests;
             this.requestsDataGridView.DataSource = this.requestsBindingSource;
             this.requestsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.requestsDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.requestsDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.requestsDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.requestsDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.requestsDataGridView.Name = "requestsDataGridView";
             this.requestsDataGridView.RowTemplate.Height = 24;
             this.requestsDataGridView.Size = new System.Drawing.Size(600, 339);
@@ -353,10 +355,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.requestsDataGridView);
             this.Controls.Add(this.requestsBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_requests";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Запросы на поставку сырья";

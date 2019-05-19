@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_recipes));
             System.Windows.Forms.Label full_nameLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_recipes));
             this.chuck_TimeDataSet = new Chuck_Time_Bakery.Chuck_TimeDataSet();
             this.recipesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.recipesTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.RecipesTableAdapter();
@@ -67,6 +67,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.staffBindingSource)).BeginInit();
             this.contextMenuStrip_recipes.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // full_nameLabel
+            // 
+            full_nameLabel.AutoSize = true;
+            full_nameLabel.Location = new System.Drawing.Point(7, 32);
+            full_nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            full_nameLabel.Name = "full_nameLabel";
+            full_nameLabel.Size = new System.Drawing.Size(57, 13);
+            full_nameLabel.TabIndex = 3;
+            full_nameLabel.Text = "Технолог:";
             // 
             // chuck_TimeDataSet
             // 
@@ -134,7 +144,7 @@
             this.recipesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.recipesBindingNavigator.Name = "recipesBindingNavigator";
             this.recipesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.recipesBindingNavigator.Size = new System.Drawing.Size(1034, 27);
+            this.recipesBindingNavigator.Size = new System.Drawing.Size(776, 27);
             this.recipesBindingNavigator.TabIndex = 0;
             this.recipesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -150,7 +160,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -191,7 +201,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -235,6 +245,7 @@
             // recipesDataGridView
             // 
             this.recipesDataGridView.AutoGenerateColumns = false;
+            this.recipesDataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.recipesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.recipesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -244,10 +255,12 @@
             this.recipesDataGridView.ContextMenuStrip = this.contextMenuStrip_recipes;
             this.recipesDataGridView.DataSource = this.recipesBindingSource;
             this.recipesDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.recipesDataGridView.Location = new System.Drawing.Point(0, 70);
+            this.recipesDataGridView.GridColor = System.Drawing.Color.PeachPuff;
+            this.recipesDataGridView.Location = new System.Drawing.Point(0, 57);
+            this.recipesDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.recipesDataGridView.Name = "recipesDataGridView";
             this.recipesDataGridView.RowTemplate.Height = 24;
-            this.recipesDataGridView.Size = new System.Drawing.Size(1034, 402);
+            this.recipesDataGridView.Size = new System.Drawing.Size(776, 327);
             this.recipesDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -294,23 +307,14 @@
             this.contextMenuStrip_recipes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem_materials});
             this.contextMenuStrip_recipes.Name = "contextMenuStrip_recipes";
-            this.contextMenuStrip_recipes.Size = new System.Drawing.Size(188, 28);
+            this.contextMenuStrip_recipes.Size = new System.Drawing.Size(161, 26);
             // 
             // ToolStripMenuItem_materials
             // 
             this.ToolStripMenuItem_materials.Name = "ToolStripMenuItem_materials";
-            this.ToolStripMenuItem_materials.Size = new System.Drawing.Size(187, 24);
+            this.ToolStripMenuItem_materials.Size = new System.Drawing.Size(160, 22);
             this.ToolStripMenuItem_materials.Text = "Состав изделий";
             this.ToolStripMenuItem_materials.Click += new System.EventHandler(this.СоставПродуктовToolStripMenuItem_Click);
-            // 
-            // full_nameLabel
-            // 
-            full_nameLabel.AutoSize = true;
-            full_nameLabel.Location = new System.Drawing.Point(9, 40);
-            full_nameLabel.Name = "full_nameLabel";
-            full_nameLabel.Size = new System.Drawing.Size(72, 17);
-            full_nameLabel.TabIndex = 3;
-            full_nameLabel.Text = "Технолог:";
             // 
             // full_nameComboBox
             // 
@@ -318,21 +322,25 @@
             this.full_nameComboBox.DataSource = this.staffBindingSource;
             this.full_nameComboBox.DisplayMember = "Full_name";
             this.full_nameComboBox.FormattingEnabled = true;
-            this.full_nameComboBox.Location = new System.Drawing.Point(88, 37);
+            this.full_nameComboBox.Location = new System.Drawing.Point(66, 30);
+            this.full_nameComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.full_nameComboBox.Name = "full_nameComboBox";
-            this.full_nameComboBox.Size = new System.Drawing.Size(241, 24);
+            this.full_nameComboBox.Size = new System.Drawing.Size(182, 21);
             this.full_nameComboBox.TabIndex = 4;
             this.full_nameComboBox.TextChanged += new System.EventHandler(this.Full_nameComboBox_TextChanged);
             // 
             // Form_recipes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 472);
+            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.ClientSize = new System.Drawing.Size(776, 384);
             this.Controls.Add(full_nameLabel);
             this.Controls.Add(this.full_nameComboBox);
             this.Controls.Add(this.recipesDataGridView);
             this.Controls.Add(this.recipesBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_recipes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Рецепты";

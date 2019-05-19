@@ -335,5 +335,9 @@ namespace Chuck_Time_Bakery
             Form_recipes_materials.frm.ShowForm();
         }
 
+        private void ИнформацияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Данный проект выполнен учащимися гр. 716 в качестве КР по БСБД\nDevelopers: Тахтеев Илья\nСеменков Алексей", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

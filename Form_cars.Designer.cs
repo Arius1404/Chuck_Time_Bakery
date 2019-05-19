@@ -38,21 +38,21 @@
             this.vehiclesTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.VehiclesTableAdapter();
             this.tableAdapterManager = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager();
             this.vehiclesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.plate_numberTextBox = new System.Windows.Forms.TextBox();
-            this.car_brandTextBox = new System.Windows.Forms.TextBox();
-            this.car_modelTextBox = new System.Windows.Forms.TextBox();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.vehiclesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.plate_numberTextBox = new System.Windows.Forms.TextBox();
+            this.car_brandTextBox = new System.Windows.Forms.TextBox();
+            this.car_modelTextBox = new System.Windows.Forms.TextBox();
             plate_numberLabel = new System.Windows.Forms.Label();
             car_brandLabel = new System.Windows.Forms.Label();
             car_modelLabel = new System.Windows.Forms.Label();
@@ -61,6 +61,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesBindingNavigator)).BeginInit();
             this.vehiclesBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // plate_numberLabel
+            // 
+            plate_numberLabel.AutoSize = true;
+            plate_numberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            plate_numberLabel.Location = new System.Drawing.Point(34, 57);
+            plate_numberLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            plate_numberLabel.Name = "plate_numberLabel";
+            plate_numberLabel.Size = new System.Drawing.Size(113, 17);
+            plate_numberLabel.TabIndex = 1;
+            plate_numberLabel.Text = "Номер машины:";
+            // 
+            // car_brandLabel
+            // 
+            car_brandLabel.AutoSize = true;
+            car_brandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            car_brandLabel.Location = new System.Drawing.Point(34, 94);
+            car_brandLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            car_brandLabel.Name = "car_brandLabel";
+            car_brandLabel.Size = new System.Drawing.Size(54, 17);
+            car_brandLabel.TabIndex = 3;
+            car_brandLabel.Text = "Марка:";
+            // 
+            // car_modelLabel
+            // 
+            car_modelLabel.AutoSize = true;
+            car_modelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            car_modelLabel.Location = new System.Drawing.Point(34, 134);
+            car_modelLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            car_modelLabel.Name = "car_modelLabel";
+            car_modelLabel.Size = new System.Drawing.Size(62, 17);
+            car_modelLabel.TabIndex = 5;
+            car_modelLabel.Text = "Модель:";
             // 
             // chuck_TimeDataSet
             // 
@@ -124,97 +157,9 @@
             this.vehiclesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.vehiclesBindingNavigator.Name = "vehiclesBindingNavigator";
             this.vehiclesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.vehiclesBindingNavigator.Size = new System.Drawing.Size(416, 27);
+            this.vehiclesBindingNavigator.Size = new System.Drawing.Size(312, 27);
             this.vehiclesBindingNavigator.TabIndex = 0;
             this.vehiclesBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
-            this.bindingNavigatorCountItem.Text = "из {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // plate_numberLabel
-            // 
-            plate_numberLabel.AutoSize = true;
-            plate_numberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            plate_numberLabel.Location = new System.Drawing.Point(45, 70);
-            plate_numberLabel.Name = "plate_numberLabel";
-            plate_numberLabel.Size = new System.Drawing.Size(142, 20);
-            plate_numberLabel.TabIndex = 1;
-            plate_numberLabel.Text = "Номер машины:";
-            // 
-            // plate_numberTextBox
-            // 
-            this.plate_numberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehiclesBindingSource, "Plate_number", true));
-            this.plate_numberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.plate_numberTextBox.Location = new System.Drawing.Point(203, 67);
-            this.plate_numberTextBox.Name = "plate_numberTextBox";
-            this.plate_numberTextBox.Size = new System.Drawing.Size(179, 27);
-            this.plate_numberTextBox.TabIndex = 2;
-            // 
-            // car_brandLabel
-            // 
-            car_brandLabel.AutoSize = true;
-            car_brandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            car_brandLabel.Location = new System.Drawing.Point(45, 116);
-            car_brandLabel.Name = "car_brandLabel";
-            car_brandLabel.Size = new System.Drawing.Size(67, 20);
-            car_brandLabel.TabIndex = 3;
-            car_brandLabel.Text = "Марка:";
-            // 
-            // car_brandTextBox
-            // 
-            this.car_brandTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehiclesBindingSource, "Car_brand", true));
-            this.car_brandTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.car_brandTextBox.Location = new System.Drawing.Point(203, 113);
-            this.car_brandTextBox.Name = "car_brandTextBox";
-            this.car_brandTextBox.Size = new System.Drawing.Size(179, 27);
-            this.car_brandTextBox.TabIndex = 4;
-            // 
-            // car_modelLabel
-            // 
-            car_modelLabel.AutoSize = true;
-            car_modelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            car_modelLabel.Location = new System.Drawing.Point(45, 165);
-            car_modelLabel.Name = "car_modelLabel";
-            car_modelLabel.Size = new System.Drawing.Size(80, 20);
-            car_modelLabel.TabIndex = 5;
-            car_modelLabel.Text = "Модель:";
-            // 
-            // car_modelTextBox
-            // 
-            this.car_modelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehiclesBindingSource, "Car_model", true));
-            this.car_modelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.car_modelTextBox.Location = new System.Drawing.Point(203, 162);
-            this.car_modelTextBox.Name = "car_modelTextBox";
-            this.car_modelTextBox.Size = new System.Drawing.Size(179, 27);
-            this.car_modelTextBox.TabIndex = 6;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -224,6 +169,13 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
+            this.bindingNavigatorCountItem.Text = "из {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -252,6 +204,25 @@
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -270,6 +241,11 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
             // vehiclesBindingNavigatorSaveItem
             // 
             this.vehiclesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -279,11 +255,42 @@
             this.vehiclesBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.vehiclesBindingNavigatorSaveItem.Click += new System.EventHandler(this.VehiclesBindingNavigatorSaveItem_Click);
             // 
+            // plate_numberTextBox
+            // 
+            this.plate_numberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehiclesBindingSource, "Plate_number", true));
+            this.plate_numberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.plate_numberTextBox.Location = new System.Drawing.Point(152, 54);
+            this.plate_numberTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.plate_numberTextBox.Name = "plate_numberTextBox";
+            this.plate_numberTextBox.Size = new System.Drawing.Size(135, 23);
+            this.plate_numberTextBox.TabIndex = 2;
+            // 
+            // car_brandTextBox
+            // 
+            this.car_brandTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehiclesBindingSource, "Car_brand", true));
+            this.car_brandTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.car_brandTextBox.Location = new System.Drawing.Point(152, 92);
+            this.car_brandTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.car_brandTextBox.Name = "car_brandTextBox";
+            this.car_brandTextBox.Size = new System.Drawing.Size(135, 23);
+            this.car_brandTextBox.TabIndex = 4;
+            // 
+            // car_modelTextBox
+            // 
+            this.car_modelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehiclesBindingSource, "Car_model", true));
+            this.car_modelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.car_modelTextBox.Location = new System.Drawing.Point(152, 132);
+            this.car_modelTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.car_modelTextBox.Name = "car_modelTextBox";
+            this.car_modelTextBox.Size = new System.Drawing.Size(135, 23);
+            this.car_modelTextBox.TabIndex = 6;
+            // 
             // Form_cars
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 232);
+            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.ClientSize = new System.Drawing.Size(312, 188);
             this.Controls.Add(plate_numberLabel);
             this.Controls.Add(this.plate_numberTextBox);
             this.Controls.Add(car_brandLabel);
@@ -291,6 +298,8 @@
             this.Controls.Add(car_modelLabel);
             this.Controls.Add(this.car_modelTextBox);
             this.Controls.Add(this.vehiclesBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_cars";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Автомобили";

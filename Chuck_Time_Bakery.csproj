@@ -281,6 +281,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cake_1.ico" />
+    <None Include="Resources\Info.jpg" />
+    <None Include="Resources\Help_img.jpg" />
+    <None Include="Resources\Info_img.png" />
     <None Include="Resources\Vendor_list_img.jpg" />
     <None Include="Resources\Vendor_img.jpg" />
     <None Include="Resources\Staff_img.jpg" />

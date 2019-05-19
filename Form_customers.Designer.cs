@@ -128,7 +128,7 @@
             this.customersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.customersBindingNavigator.Name = "customersBindingNavigator";
             this.customersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.customersBindingNavigator.Size = new System.Drawing.Size(1059, 27);
+            this.customersBindingNavigator.Size = new System.Drawing.Size(794, 27);
             this.customersBindingNavigator.TabIndex = 0;
             this.customersBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -144,7 +144,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -185,7 +185,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -229,6 +229,7 @@
             // customersDataGridView
             // 
             this.customersDataGridView.AutoGenerateColumns = false;
+            this.customersDataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.customersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.customersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -239,10 +240,12 @@
             this.customersDataGridView.ContextMenuStrip = this.contextMenuStrip_customers;
             this.customersDataGridView.DataSource = this.customersBindingSource;
             this.customersDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customersDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.customersDataGridView.Location = new System.Drawing.Point(0, 27);
+            this.customersDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.customersDataGridView.Name = "customersDataGridView";
             this.customersDataGridView.RowTemplate.Height = 24;
-            this.customersDataGridView.Size = new System.Drawing.Size(1059, 423);
+            this.customersDataGridView.Size = new System.Drawing.Size(794, 339);
             this.customersDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -296,12 +299,12 @@
             this.contextMenuStrip_customers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.списокКартToolStripMenuItem});
             this.contextMenuStrip_customers.Name = "contextMenuStrip_customers";
-            this.contextMenuStrip_customers.Size = new System.Drawing.Size(211, 56);
+            this.contextMenuStrip_customers.Size = new System.Drawing.Size(143, 26);
             // 
             // списокКартToolStripMenuItem
             // 
             this.списокКартToolStripMenuItem.Name = "списокКартToolStripMenuItem";
-            this.списокКартToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.списокКартToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.списокКартToolStripMenuItem.Text = "Список карт";
             this.списокКартToolStripMenuItem.Click += new System.EventHandler(this.СписокКартToolStripMenuItem_Click);
             // 
@@ -311,11 +314,14 @@
             // 
             // Form_customers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 450);
+            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.ClientSize = new System.Drawing.Size(794, 366);
             this.Controls.Add(this.customersDataGridView);
             this.Controls.Add(this.customersBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_customers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Покупатели";

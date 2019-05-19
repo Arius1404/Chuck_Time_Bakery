@@ -128,7 +128,7 @@
             this.discount_cardsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.discount_cardsBindingNavigator.Name = "discount_cardsBindingNavigator";
             this.discount_cardsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.discount_cardsBindingNavigator.Size = new System.Drawing.Size(857, 27);
+            this.discount_cardsBindingNavigator.Size = new System.Drawing.Size(643, 27);
             this.discount_cardsBindingNavigator.TabIndex = 0;
             this.discount_cardsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -144,7 +144,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -185,7 +185,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -229,6 +229,7 @@
             // discount_cardsDataGridView
             // 
             this.discount_cardsDataGridView.AutoGenerateColumns = false;
+            this.discount_cardsDataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.discount_cardsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.discount_cardsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -237,10 +238,10 @@
             this.dataGridViewCheckBoxColumn1});
             this.discount_cardsDataGridView.DataSource = this.discount_cardsBindingSource;
             this.discount_cardsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.discount_cardsDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.discount_cardsDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.discount_cardsDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.discount_cardsDataGridView.Name = "discount_cardsDataGridView";
-            this.discount_cardsDataGridView.Size = new System.Drawing.Size(857, 527);
+            this.discount_cardsDataGridView.Size = new System.Drawing.Size(643, 423);
             this.discount_cardsDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -283,12 +284,12 @@
             // 
             // Form_discount_cards
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 554);
+            this.ClientSize = new System.Drawing.Size(643, 450);
             this.Controls.Add(this.discount_cardsDataGridView);
             this.Controls.Add(this.discount_cardsBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_discount_cards";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Скидочные карты";

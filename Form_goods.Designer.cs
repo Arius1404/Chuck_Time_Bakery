@@ -125,7 +125,7 @@
             this.goodsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.goodsBindingNavigator.Name = "goodsBindingNavigator";
             this.goodsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.goodsBindingNavigator.Size = new System.Drawing.Size(1059, 27);
+            this.goodsBindingNavigator.Size = new System.Drawing.Size(794, 27);
             this.goodsBindingNavigator.TabIndex = 0;
             this.goodsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -141,7 +141,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -182,7 +182,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -226,6 +226,7 @@
             // goodsDataGridView
             // 
             this.goodsDataGridView.AutoGenerateColumns = false;
+            this.goodsDataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.goodsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.goodsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -236,10 +237,10 @@
             this.goodsDataGridView.ContextMenuStrip = this.contextMenuStrip_goods;
             this.goodsDataGridView.DataSource = this.goodsBindingSource;
             this.goodsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.goodsDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.goodsDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.goodsDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.goodsDataGridView.Name = "goodsDataGridView";
-            this.goodsDataGridView.Size = new System.Drawing.Size(1059, 527);
+            this.goodsDataGridView.Size = new System.Drawing.Size(794, 423);
             this.goodsDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -283,23 +284,23 @@
             this.contextMenuStrip_goods.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.составИзделийToolStripMenuItem});
             this.contextMenuStrip_goods.Name = "contextMenuStrip_goods";
-            this.contextMenuStrip_goods.Size = new System.Drawing.Size(188, 28);
+            this.contextMenuStrip_goods.Size = new System.Drawing.Size(161, 26);
             // 
             // составИзделийToolStripMenuItem
             // 
             this.составИзделийToolStripMenuItem.Name = "составИзделийToolStripMenuItem";
-            this.составИзделийToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.составИзделийToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.составИзделийToolStripMenuItem.Text = "Состав изделий";
             this.составИзделийToolStripMenuItem.Click += new System.EventHandler(this.СоставИзделийToolStripMenuItem_Click);
             // 
             // Form_goods
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 554);
+            this.ClientSize = new System.Drawing.Size(794, 450);
             this.Controls.Add(this.goodsDataGridView);
             this.Controls.Add(this.goodsBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_goods";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ассортимент";

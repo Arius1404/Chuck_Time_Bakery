@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_recipes_materials));
             System.Windows.Forms.Label title_RecipeLabel;
             System.Windows.Forms.Label title_MaterialLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_recipes_materials));
             this.chuck_TimeDataSet = new Chuck_Time_Bakery.Chuck_TimeDataSet();
             this.recipes_MaterialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.recipes_MaterialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.Recipes_MaterialsTableAdapter();
             this.tableAdapterManager = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.TableAdapterManager();
+            this.materialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter();
+            this.recipesTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.RecipesTableAdapter();
             this.recipes_MaterialsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.recipes_MaterialsDataGridView = new System.Windows.Forms.DataGridView();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.recipes_MaterialsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.recipesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.recipesTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.RecipesTableAdapter();
-            this.materialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.materialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter();
+            this.recipes_MaterialsDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.recipesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.materialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title_RecipeComboBox = new System.Windows.Forms.ComboBox();
             this.title_MaterialComboBox = new System.Windows.Forms.ComboBox();
@@ -70,6 +70,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.recipesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.materialsBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // title_RecipeLabel
+            // 
+            title_RecipeLabel.AutoSize = true;
+            title_RecipeLabel.Location = new System.Drawing.Point(9, 28);
+            title_RecipeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            title_RecipeLabel.Name = "title_RecipeLabel";
+            title_RecipeLabel.Size = new System.Drawing.Size(104, 13);
+            title_RecipeLabel.TabIndex = 2;
+            title_RecipeLabel.Text = "Название рецепта:";
+            // 
+            // title_MaterialLabel
+            // 
+            title_MaterialLabel.AutoSize = true;
+            title_MaterialLabel.Location = new System.Drawing.Point(267, 28);
+            title_MaterialLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            title_MaterialLabel.Name = "title_MaterialLabel";
+            title_MaterialLabel.Size = new System.Drawing.Size(60, 13);
+            title_MaterialLabel.TabIndex = 4;
+            title_MaterialLabel.Text = "Материал:";
             // 
             // chuck_TimeDataSet
             // 
@@ -105,6 +125,14 @@
             this.tableAdapterManager.VehiclesTableAdapter = null;
             this.tableAdapterManager.VendorTableAdapter = null;
             // 
+            // materialsTableAdapter
+            // 
+            this.materialsTableAdapter.ClearBeforeFill = true;
+            // 
+            // recipesTableAdapter
+            // 
+            this.recipesTableAdapter.ClearBeforeFill = true;
+            // 
             // recipes_MaterialsBindingNavigator
             // 
             this.recipes_MaterialsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -133,57 +161,9 @@
             this.recipes_MaterialsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.recipes_MaterialsBindingNavigator.Name = "recipes_MaterialsBindingNavigator";
             this.recipes_MaterialsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.recipes_MaterialsBindingNavigator.Size = new System.Drawing.Size(800, 27);
+            this.recipes_MaterialsBindingNavigator.Size = new System.Drawing.Size(600, 27);
             this.recipes_MaterialsBindingNavigator.TabIndex = 0;
             this.recipes_MaterialsBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
-            this.bindingNavigatorCountItem.Text = "из {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // recipes_MaterialsDataGridView
-            // 
-            this.recipes_MaterialsDataGridView.AutoGenerateColumns = false;
-            this.recipes_MaterialsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.recipes_MaterialsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.recipes_MaterialsDataGridView.DataSource = this.recipes_MaterialsBindingSource;
-            this.recipes_MaterialsDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.recipes_MaterialsDataGridView.Location = new System.Drawing.Point(0, 66);
-            this.recipes_MaterialsDataGridView.Name = "recipes_MaterialsDataGridView";
-            this.recipes_MaterialsDataGridView.RowTemplate.Height = 24;
-            this.recipes_MaterialsDataGridView.Size = new System.Drawing.Size(800, 430);
-            this.recipes_MaterialsDataGridView.TabIndex = 1;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -193,6 +173,13 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
+            this.bindingNavigatorCountItem.Text = "из {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -221,6 +208,25 @@
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -239,6 +245,11 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
             // recipes_MaterialsBindingNavigatorSaveItem
             // 
             this.recipes_MaterialsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -248,23 +259,25 @@
             this.recipes_MaterialsBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.recipes_MaterialsBindingNavigatorSaveItem.Click += new System.EventHandler(this.Recipes_MaterialsBindingNavigatorSaveItem_Click);
             // 
-            // recipesBindingSource
+            // recipes_MaterialsDataGridView
             // 
-            this.recipesBindingSource.DataMember = "Recipes";
-            this.recipesBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // recipesTableAdapter
-            // 
-            this.recipesTableAdapter.ClearBeforeFill = true;
-            // 
-            // materialsBindingSource
-            // 
-            this.materialsBindingSource.DataMember = "Materials";
-            this.materialsBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // materialsTableAdapter
-            // 
-            this.materialsTableAdapter.ClearBeforeFill = true;
+            this.recipes_MaterialsDataGridView.AutoGenerateColumns = false;
+            this.recipes_MaterialsDataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
+            this.recipes_MaterialsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.recipes_MaterialsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.recipes_MaterialsDataGridView.DataSource = this.recipes_MaterialsBindingSource;
+            this.recipes_MaterialsDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.recipes_MaterialsDataGridView.GridColor = System.Drawing.Color.PeachPuff;
+            this.recipes_MaterialsDataGridView.Location = new System.Drawing.Point(0, 54);
+            this.recipes_MaterialsDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.recipes_MaterialsDataGridView.Name = "recipes_MaterialsDataGridView";
+            this.recipes_MaterialsDataGridView.RowTemplate.Height = 24;
+            this.recipes_MaterialsDataGridView.Size = new System.Drawing.Size(600, 349);
+            this.recipes_MaterialsDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -284,6 +297,11 @@
             this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewTextBoxColumn2.Width = 200;
             // 
+            // recipesBindingSource
+            // 
+            this.recipesBindingSource.DataMember = "Recipes";
+            this.recipesBindingSource.DataSource = this.chuck_TimeDataSet;
+            // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Title_Material";
@@ -295,20 +313,16 @@
             this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewTextBoxColumn3.Width = 200;
             // 
+            // materialsBindingSource
+            // 
+            this.materialsBindingSource.DataMember = "Materials";
+            this.materialsBindingSource.DataSource = this.chuck_TimeDataSet;
+            // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Quantity";
             this.dataGridViewTextBoxColumn4.HeaderText = "Количество";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // title_RecipeLabel
-            // 
-            title_RecipeLabel.AutoSize = true;
-            title_RecipeLabel.Location = new System.Drawing.Point(12, 35);
-            title_RecipeLabel.Name = "title_RecipeLabel";
-            title_RecipeLabel.Size = new System.Drawing.Size(135, 17);
-            title_RecipeLabel.TabIndex = 2;
-            title_RecipeLabel.Text = "Название рецепта:";
             // 
             // title_RecipeComboBox
             // 
@@ -316,20 +330,12 @@
             this.title_RecipeComboBox.DataSource = this.recipesBindingSource;
             this.title_RecipeComboBox.DisplayMember = "Title_Recipe";
             this.title_RecipeComboBox.FormattingEnabled = true;
-            this.title_RecipeComboBox.Location = new System.Drawing.Point(153, 32);
+            this.title_RecipeComboBox.Location = new System.Drawing.Point(115, 26);
+            this.title_RecipeComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.title_RecipeComboBox.Name = "title_RecipeComboBox";
-            this.title_RecipeComboBox.Size = new System.Drawing.Size(191, 24);
+            this.title_RecipeComboBox.Size = new System.Drawing.Size(144, 21);
             this.title_RecipeComboBox.TabIndex = 3;
             this.title_RecipeComboBox.TextChanged += new System.EventHandler(this.Title_RecipeComboBox_TextChanged);
-            // 
-            // title_MaterialLabel
-            // 
-            title_MaterialLabel.AutoSize = true;
-            title_MaterialLabel.Location = new System.Drawing.Point(356, 35);
-            title_MaterialLabel.Name = "title_MaterialLabel";
-            title_MaterialLabel.Size = new System.Drawing.Size(78, 17);
-            title_MaterialLabel.TabIndex = 4;
-            title_MaterialLabel.Text = "Материал:";
             // 
             // title_MaterialComboBox
             // 
@@ -337,23 +343,27 @@
             this.title_MaterialComboBox.DataSource = this.recipes_MaterialsBindingSource;
             this.title_MaterialComboBox.DisplayMember = "Title_Material";
             this.title_MaterialComboBox.FormattingEnabled = true;
-            this.title_MaterialComboBox.Location = new System.Drawing.Point(440, 32);
+            this.title_MaterialComboBox.Location = new System.Drawing.Point(330, 26);
+            this.title_MaterialComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.title_MaterialComboBox.Name = "title_MaterialComboBox";
-            this.title_MaterialComboBox.Size = new System.Drawing.Size(191, 24);
+            this.title_MaterialComboBox.Size = new System.Drawing.Size(144, 21);
             this.title_MaterialComboBox.TabIndex = 5;
             this.title_MaterialComboBox.TextChanged += new System.EventHandler(this.Title_MaterialComboBox_TextChanged);
             // 
             // Form_recipes_materials
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 496);
+            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.ClientSize = new System.Drawing.Size(600, 403);
             this.Controls.Add(title_MaterialLabel);
             this.Controls.Add(this.title_MaterialComboBox);
             this.Controls.Add(title_RecipeLabel);
             this.Controls.Add(this.title_RecipeComboBox);
             this.Controls.Add(this.recipes_MaterialsDataGridView);
             this.Controls.Add(this.recipes_MaterialsBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_recipes_materials";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Состав";

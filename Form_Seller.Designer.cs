@@ -138,7 +138,7 @@
             this.salesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.salesBindingNavigator.Name = "salesBindingNavigator";
             this.salesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.salesBindingNavigator.Size = new System.Drawing.Size(1109, 27);
+            this.salesBindingNavigator.Size = new System.Drawing.Size(832, 27);
             this.salesBindingNavigator.TabIndex = 0;
             this.salesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -154,7 +154,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 24);
             this.bindingNavigatorCountItem.Text = "из {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -195,7 +195,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
@@ -239,6 +239,7 @@
             // salesDataGridView
             // 
             this.salesDataGridView.AutoGenerateColumns = false;
+            this.salesDataGridView.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.salesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.salesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -250,10 +251,10 @@
             this.salesDataGridView.ContextMenuStrip = this.contextMenuStrip_seller;
             this.salesDataGridView.DataSource = this.salesBindingSource;
             this.salesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.salesDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.salesDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.salesDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.salesDataGridView.Name = "salesDataGridView";
-            this.salesDataGridView.Size = new System.Drawing.Size(1109, 527);
+            this.salesDataGridView.Size = new System.Drawing.Size(832, 423);
             this.salesDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -324,26 +325,26 @@
             this.ToolStripMenuItem_staff_sales,
             this.созданиеОтчетаToolStripMenuItem});
             this.contextMenuStrip_seller.Name = "contextMenuStrip_seller";
-            this.contextMenuStrip_seller.Size = new System.Drawing.Size(225, 76);
+            this.contextMenuStrip_seller.Size = new System.Drawing.Size(188, 70);
             // 
             // toolStripMenuItem_info
             // 
             this.toolStripMenuItem_info.Name = "toolStripMenuItem_info";
-            this.toolStripMenuItem_info.Size = new System.Drawing.Size(224, 24);
+            this.toolStripMenuItem_info.Size = new System.Drawing.Size(187, 22);
             this.toolStripMenuItem_info.Text = "Подробнее о заказе";
             this.toolStripMenuItem_info.Click += new System.EventHandler(this.ToolStripMenuItem_info_Click);
             // 
             // ToolStripMenuItem_staff_sales
             // 
             this.ToolStripMenuItem_staff_sales.Name = "ToolStripMenuItem_staff_sales";
-            this.ToolStripMenuItem_staff_sales.Size = new System.Drawing.Size(224, 24);
+            this.ToolStripMenuItem_staff_sales.Size = new System.Drawing.Size(187, 22);
             this.ToolStripMenuItem_staff_sales.Text = "Продажи продавцов";
             this.ToolStripMenuItem_staff_sales.Click += new System.EventHandler(this.ToolStripMenuItem_staff_sales_Click);
             // 
             // созданиеОтчетаToolStripMenuItem
             // 
             this.созданиеОтчетаToolStripMenuItem.Name = "созданиеОтчетаToolStripMenuItem";
-            this.созданиеОтчетаToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.созданиеОтчетаToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.созданиеОтчетаToolStripMenuItem.Text = "Создание отчета";
             this.созданиеОтчетаToolStripMenuItem.Click += new System.EventHandler(this.СозданиеОтчетаToolStripMenuItem_Click);
             // 
@@ -353,12 +354,13 @@
             // 
             // Form_seller
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1109, 554);
+            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.ClientSize = new System.Drawing.Size(832, 450);
             this.Controls.Add(this.salesDataGridView);
             this.Controls.Add(this.salesBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_seller";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Заказы";
