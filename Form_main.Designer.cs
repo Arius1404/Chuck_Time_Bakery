@@ -222,7 +222,7 @@
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            descriptionLabel.Location = new System.Drawing.Point(13, 128);
+            descriptionLabel.Location = new System.Drawing.Point(346, 39);
             descriptionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             descriptionLabel.Name = "descriptionLabel";
             descriptionLabel.Size = new System.Drawing.Size(68, 16);
@@ -233,7 +233,7 @@
             // 
             photoLabel.AutoSize = true;
             photoLabel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            photoLabel.Location = new System.Drawing.Point(349, 18);
+            photoLabel.Location = new System.Drawing.Point(195, 138);
             photoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             photoLabel.Name = "photoLabel";
             photoLabel.Size = new System.Drawing.Size(89, 16);
@@ -460,6 +460,7 @@
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
             this.помощьToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.помощьToolStripMenuItem.Text = "Помощь";
+            this.помощьToolStripMenuItem.Click += new System.EventHandler(this.ПомощьToolStripMenuItem_Click);
             // 
             // chuck_TimeDataSet
             // 
@@ -1036,6 +1037,7 @@
             // 
             // panel_customer_main
             // 
+            this.panel_customer_main.BackColor = System.Drawing.Color.PeachPuff;
             this.panel_customer_main.Controls.Add(this.button_image);
             this.panel_customer_main.Controls.Add(this.descriptionRichTextBox);
             this.panel_customer_main.Controls.Add(descriptionLabel);
@@ -1056,7 +1058,7 @@
             // 
             // button_image
             // 
-            this.button_image.Location = new System.Drawing.Point(434, 12);
+            this.button_image.Location = new System.Drawing.Point(190, 166);
             this.button_image.Margin = new System.Windows.Forms.Padding(2);
             this.button_image.Name = "button_image";
             this.button_image.Size = new System.Drawing.Size(94, 23);
@@ -1068,10 +1070,10 @@
             // descriptionRichTextBox
             // 
             this.descriptionRichTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.goodsBindingSource, "Description", true));
-            this.descriptionRichTextBox.Location = new System.Drawing.Point(94, 128);
+            this.descriptionRichTextBox.Location = new System.Drawing.Point(418, 36);
             this.descriptionRichTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.descriptionRichTextBox.Name = "descriptionRichTextBox";
-            this.descriptionRichTextBox.Size = new System.Drawing.Size(216, 151);
+            this.descriptionRichTextBox.Size = new System.Drawing.Size(325, 83);
             this.descriptionRichTextBox.TabIndex = 20;
             this.descriptionRichTextBox.Text = "";
             // 
@@ -1216,10 +1218,10 @@
             this.photoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.photoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.photoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.goodsBindingSource, "Photo", true));
-            this.photoPictureBox.Location = new System.Drawing.Point(347, 38);
+            this.photoPictureBox.Location = new System.Drawing.Point(288, 123);
             this.photoPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.photoPictureBox.Name = "photoPictureBox";
-            this.photoPictureBox.Size = new System.Drawing.Size(427, 240);
+            this.photoPictureBox.Size = new System.Drawing.Size(455, 295);
             this.photoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.photoPictureBox.TabIndex = 15;
             this.photoPictureBox.TabStop = false;

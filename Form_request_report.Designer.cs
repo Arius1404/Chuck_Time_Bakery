@@ -306,7 +306,7 @@
             this.textBox_path_req.Name = "textBox_path_req";
             this.textBox_path_req.Size = new System.Drawing.Size(168, 20);
             this.textBox_path_req.TabIndex = 16;
-            this.textBox_path_req.Text = "C:\\Users\\Arius\\Desktop\\";
+            this.textBox_path_req.Text = "D:\\";
             // 
             // label5
             // 

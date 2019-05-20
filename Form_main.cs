@@ -121,13 +121,13 @@ namespace Chuck_Time_Bakery
                 tabControl_main.TabPages.Remove(tabPage_delivery);
                 tabControl_main.TabPages.Remove(tabPage_hr);
                 tabControl_main.TabPages.Remove(tabPage_tech);
-                tabControl_main.TabPages.Remove(tabPage_customer);
+                //tabControl_main.TabPages.Remove(tabPage_customer);
             }
             else
                 if (status == "Администратор") // админ
             {
                 рецептыToolStripMenuItem.Visible = false;
-                tabControl_main.TabPages.Remove(tabPage_customer);
+                //tabControl_main.TabPages.Remove(tabPage_customer);
                 tabControl_main.TabPages.Remove(tabPage_seller);
                 tabControl_main.TabPages.Remove(tabPage_cook);
                 tabControl_main.TabPages.Remove(tabPage_delivery);
@@ -338,6 +338,18 @@ namespace Chuck_Time_Bakery
         private void ИнформацияToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Данный проект выполнен учащимися гр. 716 в качестве КР по БСБД\nDevelopers: Тахтеев Илья\nСеменков Алексей", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ПомощьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(Application.StartupPath + @"\Manual.pdf");
+            }
+            catch
+            {
+                MessageBox.Show("Упс! Не удалось открыть нужный файл", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
