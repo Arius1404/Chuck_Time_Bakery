@@ -70,6 +70,7 @@ namespace Chuck_Time_Bakery
             var material = raw_titleTextBox.Text;
             var quantity = quantityTextBox.Text;
             var request_date = request_dateTimePicker.Value.ToShortDateString();
+            var signreq = textBox_sign.Text;
 
             var wordApp = new Word.Application();
             wordApp.Visible = false;
@@ -82,6 +83,7 @@ namespace Chuck_Time_Bakery
                 ReplaceWordStub("{material}", material, wordDocument);
                 ReplaceWordStub("{quantity}", quantity, wordDocument);
                 ReplaceWordStub("{reqdate}", request_date, wordDocument);
+                ReplaceWordStub("{signman}", signreq, wordDocument);
 
                 wordDocument.SaveAs(textBox_path_req.Text + textBox_name_req.Text);
                 wordApp.Visible = true;

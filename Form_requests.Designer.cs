@@ -50,18 +50,18 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.requestsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.requestsDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.materialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.vendorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip_requests = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ToolStripMenuItem_info = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_request_report = new System.Windows.Forms.ToolStripMenuItem();
             this.fKRequestMaterialsRequestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.materialsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestsBindingNavigator)).BeginInit();
@@ -263,61 +263,15 @@
             this.requestsDataGridView.Size = new System.Drawing.Size(600, 339);
             this.requestsDataGridView.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Request_ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "№ запроса";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Raw_title";
-            this.dataGridViewTextBoxColumn2.DataSource = this.materialsBindingSource;
-            this.dataGridViewTextBoxColumn2.DisplayMember = "Title_Material";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Сырье";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn2.ValueMember = "Title_Material";
-            this.dataGridViewTextBoxColumn2.Visible = false;
-            this.dataGridViewTextBoxColumn2.Width = 150;
-            // 
             // materialsBindingSource
             // 
             this.materialsBindingSource.DataMember = "Materials";
             this.materialsBindingSource.DataSource = this.chuck_TimeDataSet;
             // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Vendor_Title";
-            this.dataGridViewTextBoxColumn5.DataSource = this.vendorBindingSource;
-            this.dataGridViewTextBoxColumn5.DisplayMember = "Vendor_Title";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Поставщик";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn5.ValueMember = "Vendor_Title";
-            this.dataGridViewTextBoxColumn5.Width = 150;
-            // 
             // vendorBindingSource
             // 
             this.vendorBindingSource.DataMember = "Vendor";
             this.vendorBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Quantity";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Количество";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Create_date";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Дата создания запроса";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 200;
             // 
             // contextMenuStrip_requests
             // 
@@ -350,6 +304,52 @@
             // materialsTableAdapter
             // 
             this.materialsTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Request_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "№ запроса";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Raw_title";
+            this.dataGridViewTextBoxColumn2.DataSource = this.materialsBindingSource;
+            this.dataGridViewTextBoxColumn2.DisplayMember = "Title_Material";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Сырье";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn2.ValueMember = "Title_Material";
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            this.dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Vendor_Title";
+            this.dataGridViewTextBoxColumn5.DataSource = this.vendorBindingSource;
+            this.dataGridViewTextBoxColumn5.DisplayMember = "Vendor_Title";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Поставщик";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn5.ValueMember = "Vendor_Title";
+            this.dataGridViewTextBoxColumn5.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Quantity";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Количество";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Create_date";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Дата создания запроса";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 210;
             // 
             // Form_requests
             // 
@@ -408,11 +408,11 @@
         private Chuck_TimeDataSetTableAdapters.MaterialsTableAdapter materialsTableAdapter;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip_requests;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_info;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_request_report;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_request_report;
     }
 }

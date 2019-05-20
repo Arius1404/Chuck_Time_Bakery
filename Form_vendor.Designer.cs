@@ -231,7 +231,7 @@
             this.vendorDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.vendorDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.vendorDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.vendorDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendorDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.vendorDataGridView.Name = "vendorDataGridView";
             this.vendorDataGridView.RowTemplate.Height = 24;
             this.vendorDataGridView.Size = new System.Drawing.Size(600, 339);
@@ -242,7 +242,7 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Vendor_Title";
             this.dataGridViewTextBoxColumn1.HeaderText = "Название поставщика";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 150;
+            this.dataGridViewTextBoxColumn1.Width = 200;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -256,7 +256,7 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Address";
             this.dataGridViewTextBoxColumn3.HeaderText = "Адрес";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
+            this.dataGridViewTextBoxColumn3.Width = 210;
             // 
             // Form_vendor
             // 
@@ -267,7 +267,7 @@
             this.Controls.Add(this.vendorDataGridView);
             this.Controls.Add(this.vendorBindingNavigator);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_vendor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Поставщики";

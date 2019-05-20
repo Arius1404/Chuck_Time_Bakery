@@ -48,13 +48,13 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.goodsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.goodsDataGridView = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip_goods = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.составИзделийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contextMenuStrip_goods = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.составИзделийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodsBindingNavigator)).BeginInit();
@@ -125,7 +125,7 @@
             this.goodsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.goodsBindingNavigator.Name = "goodsBindingNavigator";
             this.goodsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.goodsBindingNavigator.Size = new System.Drawing.Size(794, 27);
+            this.goodsBindingNavigator.Size = new System.Drawing.Size(792, 27);
             this.goodsBindingNavigator.TabIndex = 0;
             this.goodsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -240,8 +240,23 @@
             this.goodsDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.goodsDataGridView.Location = new System.Drawing.Point(0, 27);
             this.goodsDataGridView.Name = "goodsDataGridView";
-            this.goodsDataGridView.Size = new System.Drawing.Size(794, 423);
+            this.goodsDataGridView.Size = new System.Drawing.Size(792, 423);
             this.goodsDataGridView.TabIndex = 1;
+            // 
+            // contextMenuStrip_goods
+            // 
+            this.contextMenuStrip_goods.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip_goods.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.составИзделийToolStripMenuItem});
+            this.contextMenuStrip_goods.Name = "contextMenuStrip_goods";
+            this.contextMenuStrip_goods.Size = new System.Drawing.Size(161, 26);
+            // 
+            // составИзделийToolStripMenuItem
+            // 
+            this.составИзделийToolStripMenuItem.Name = "составИзделийToolStripMenuItem";
+            this.составИзделийToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.составИзделийToolStripMenuItem.Text = "Состав изделий";
+            this.составИзделийToolStripMenuItem.Click += new System.EventHandler(this.СоставИзделийToolStripMenuItem_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -249,6 +264,7 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "Название";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 150;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -276,28 +292,13 @@
             this.dataGridViewTextBoxColumn5.HeaderText = "Описание";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 300;
-            // 
-            // contextMenuStrip_goods
-            // 
-            this.contextMenuStrip_goods.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip_goods.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.составИзделийToolStripMenuItem});
-            this.contextMenuStrip_goods.Name = "contextMenuStrip_goods";
-            this.contextMenuStrip_goods.Size = new System.Drawing.Size(161, 26);
-            // 
-            // составИзделийToolStripMenuItem
-            // 
-            this.составИзделийToolStripMenuItem.Name = "составИзделийToolStripMenuItem";
-            this.составИзделийToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.составИзделийToolStripMenuItem.Text = "Состав изделий";
-            this.составИзделийToolStripMenuItem.Click += new System.EventHandler(this.СоставИзделийToolStripMenuItem_Click);
+            this.dataGridViewTextBoxColumn5.Width = 400;
             // 
             // Form_goods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 450);
+            this.ClientSize = new System.Drawing.Size(792, 450);
             this.Controls.Add(this.goodsDataGridView);
             this.Controls.Add(this.goodsBindingNavigator);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -335,14 +336,14 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.DataGridView goodsDataGridView;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_goods;
+        private System.Windows.Forms.ToolStripMenuItem составИзделийToolStripMenuItem;
+        public System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        public System.Windows.Forms.ToolStripButton goodsBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_goods;
-        private System.Windows.Forms.ToolStripMenuItem составИзделийToolStripMenuItem;
-        public System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        public System.Windows.Forms.ToolStripButton goodsBindingNavigatorSaveItem;
     }
 }

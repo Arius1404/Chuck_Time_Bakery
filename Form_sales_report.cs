@@ -50,9 +50,7 @@ namespace Chuck_Time_Bakery
             var startDate = dateTimePicker_start.Value.ToShortDateString();
             var endDate = dateTimePicker_end.Value.ToShortDateString();
             var income = income_external;
-            string fao = "Мелякова А.Ю.";
-            string ceo1 = "Тахтеев И.А.";
-            string ceo2 = "Семенков А.А.";
+            string fao = textBox_sign.Text;
             DateTime signdate = new DateTime();
             signdate = DateTime.Now;
 
@@ -65,9 +63,7 @@ namespace Chuck_Time_Bakery
                 ReplaceWordStub("{startdate}", startDate, wordDocument);
                 ReplaceWordStub("{enddate}", endDate, wordDocument);
                 ReplaceWordStub("{income}", income, wordDocument);
-                ReplaceWordStub("{FAO}", fao, wordDocument);
-                ReplaceWordStub("{CEO1}", ceo1, wordDocument);
-                ReplaceWordStub("{CEO2}", ceo2, wordDocument);
+                ReplaceWordStub("{signman}", fao, wordDocument);
                 ReplaceWordStub("{signdate}", signdate.ToString(), wordDocument);
                 /*saveFileDialog_report.Title = "Сохранение отчета";
                 saveFileDialog_report.InitialDirectory = @"C:\Users\Arius\Desktop\";

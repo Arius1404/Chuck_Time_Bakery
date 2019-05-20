@@ -120,7 +120,7 @@
             this.materialsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.materialsBindingNavigator.Name = "materialsBindingNavigator";
             this.materialsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.materialsBindingNavigator.Size = new System.Drawing.Size(600, 27);
+            this.materialsBindingNavigator.Size = new System.Drawing.Size(543, 27);
             this.materialsBindingNavigator.TabIndex = 0;
             this.materialsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -231,10 +231,10 @@
             this.materialsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialsDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.materialsDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.materialsDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.materialsDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.materialsDataGridView.Name = "materialsDataGridView";
             this.materialsDataGridView.RowTemplate.Height = 24;
-            this.materialsDataGridView.Size = new System.Drawing.Size(600, 339);
+            this.materialsDataGridView.Size = new System.Drawing.Size(543, 339);
             this.materialsDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -255,18 +255,18 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Maker";
             this.dataGridViewTextBoxColumn3.HeaderText = "Поставщик";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 150;
+            this.dataGridViewTextBoxColumn3.Width = 250;
             // 
             // Form_materials
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(543, 366);
             this.Controls.Add(this.materialsDataGridView);
             this.Controls.Add(this.materialsBindingNavigator);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_materials";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Материалы";

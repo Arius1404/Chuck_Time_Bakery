@@ -48,15 +48,15 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.customersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.customersDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.discountcardsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip_customers = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.списокКартToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.discount_cardsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.Discount_cardsTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingNavigator)).BeginInit();
@@ -242,56 +242,16 @@
             this.customersDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customersDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.customersDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.customersDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customersDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.customersDataGridView.Name = "customersDataGridView";
             this.customersDataGridView.RowTemplate.Height = 24;
             this.customersDataGridView.Size = new System.Drawing.Size(794, 339);
             this.customersDataGridView.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_Customer";
-            this.dataGridViewTextBoxColumn1.HeaderText = "№ покупателя";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 120;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Card_ID";
-            this.dataGridViewTextBoxColumn2.DataSource = this.discountcardsBindingSource;
-            this.dataGridViewTextBoxColumn2.DisplayMember = "Card_ID";
-            this.dataGridViewTextBoxColumn2.HeaderText = "№ дисконтной карты";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn2.ValueMember = "Card_ID";
-            this.dataGridViewTextBoxColumn2.Width = 200;
-            // 
             // discountcardsBindingSource
             // 
             this.discountcardsBindingSource.DataMember = "Discount_cards";
             this.discountcardsBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn3.HeaderText = "ФИО";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Address";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Город проживания";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Phone_number";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Номер телефона";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 150;
             // 
             // contextMenuStrip_customers
             // 
@@ -312,6 +272,46 @@
             // 
             this.discount_cardsTableAdapter.ClearBeforeFill = true;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_Customer";
+            this.dataGridViewTextBoxColumn1.HeaderText = "№ покупателя";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Card_ID";
+            this.dataGridViewTextBoxColumn2.DataSource = this.discountcardsBindingSource;
+            this.dataGridViewTextBoxColumn2.DisplayMember = "Card_ID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "№ дисконтной карты";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn2.ValueMember = "Card_ID";
+            this.dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn3.HeaderText = "ФИО";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Address";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Адрес проживания";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Phone_number";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Номер телефона";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 150;
+            // 
             // Form_customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,7 +321,7 @@
             this.Controls.Add(this.customersDataGridView);
             this.Controls.Add(this.customersBindingNavigator);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_customers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Покупатели";
@@ -361,12 +361,12 @@
         private System.Windows.Forms.DataGridView customersDataGridView;
         private System.Windows.Forms.BindingSource discountcardsBindingSource;
         private Chuck_TimeDataSetTableAdapters.Discount_cardsTableAdapter discount_cardsTableAdapter;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_customers;
+        private System.Windows.Forms.ToolStripMenuItem списокКартToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip_customers;
-        private System.Windows.Forms.ToolStripMenuItem списокКартToolStripMenuItem;
     }
 }

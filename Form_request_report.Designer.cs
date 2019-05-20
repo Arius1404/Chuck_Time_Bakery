@@ -35,6 +35,7 @@
             System.Windows.Forms.Label create_dateLabel;
             System.Windows.Forms.Label vendor_TitleLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_request_report));
+            System.Windows.Forms.Label label1;
             this.chuck_TimeDataSet = new Chuck_Time_Bakery.Chuck_TimeDataSet();
             this.requestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.requestsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.RequestsTableAdapter();
@@ -48,6 +49,10 @@
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.requestsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.materialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vendorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.raw_titleTextBox = new System.Windows.Forms.TextBox();
@@ -58,15 +63,13 @@
             this.textBox_path_req = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox_name_req = new System.Windows.Forms.TextBox();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.textBox_sign = new System.Windows.Forms.TextBox();
             request_IDLabel = new System.Windows.Forms.Label();
             raw_titleLabel = new System.Windows.Forms.Label();
             quantityLabel = new System.Windows.Forms.Label();
             create_dateLabel = new System.Windows.Forms.Label();
             vendor_TitleLabel = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chuck_TimeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestsBindingNavigator)).BeginInit();
@@ -78,7 +81,7 @@
             // request_IDLabel
             // 
             request_IDLabel.AutoSize = true;
-            request_IDLabel.Location = new System.Drawing.Point(13, 43);
+            request_IDLabel.Location = new System.Drawing.Point(7, 42);
             request_IDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             request_IDLabel.Name = "request_IDLabel";
             request_IDLabel.Size = new System.Drawing.Size(66, 13);
@@ -88,7 +91,7 @@
             // raw_titleLabel
             // 
             raw_titleLabel.AutoSize = true;
-            raw_titleLabel.Location = new System.Drawing.Point(13, 67);
+            raw_titleLabel.Location = new System.Drawing.Point(7, 67);
             raw_titleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             raw_titleLabel.Name = "raw_titleLabel";
             raw_titleLabel.Size = new System.Drawing.Size(60, 13);
@@ -98,7 +101,7 @@
             // quantityLabel
             // 
             quantityLabel.AutoSize = true;
-            quantityLabel.Location = new System.Drawing.Point(13, 90);
+            quantityLabel.Location = new System.Drawing.Point(7, 91);
             quantityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             quantityLabel.Name = "quantityLabel";
             quantityLabel.Size = new System.Drawing.Size(69, 13);
@@ -108,7 +111,7 @@
             // create_dateLabel
             // 
             create_dateLabel.AutoSize = true;
-            create_dateLabel.Location = new System.Drawing.Point(13, 114);
+            create_dateLabel.Location = new System.Drawing.Point(7, 113);
             create_dateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             create_dateLabel.Name = "create_dateLabel";
             create_dateLabel.Size = new System.Drawing.Size(87, 13);
@@ -118,7 +121,7 @@
             // vendor_TitleLabel
             // 
             vendor_TitleLabel.AutoSize = true;
-            vendor_TitleLabel.Location = new System.Drawing.Point(13, 137);
+            vendor_TitleLabel.Location = new System.Drawing.Point(7, 138);
             vendor_TitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             vendor_TitleLabel.Name = "vendor_TitleLabel";
             vendor_TitleLabel.Size = new System.Drawing.Size(68, 13);
@@ -241,92 +244,6 @@
             this.requestsBindingNavigator.TabIndex = 0;
             this.requestsBindingNavigator.Text = "bindingNavigator1";
             // 
-            // materialsBindingSource
-            // 
-            this.materialsBindingSource.DataMember = "Materials";
-            this.materialsBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // vendorBindingSource
-            // 
-            this.vendorBindingSource.DataMember = "Vendor";
-            this.vendorBindingSource.DataSource = this.chuck_TimeDataSet;
-            // 
-            // raw_titleTextBox
-            // 
-            this.raw_titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Raw_title", true));
-            this.raw_titleTextBox.Location = new System.Drawing.Point(98, 63);
-            this.raw_titleTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.raw_titleTextBox.Name = "raw_titleTextBox";
-            this.raw_titleTextBox.ReadOnly = true;
-            this.raw_titleTextBox.Size = new System.Drawing.Size(151, 20);
-            this.raw_titleTextBox.TabIndex = 10;
-            // 
-            // vendor_TitleTextBox
-            // 
-            this.vendor_TitleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Vendor_Title", true));
-            this.vendor_TitleTextBox.Location = new System.Drawing.Point(98, 135);
-            this.vendor_TitleTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.vendor_TitleTextBox.Name = "vendor_TitleTextBox";
-            this.vendor_TitleTextBox.ReadOnly = true;
-            this.vendor_TitleTextBox.Size = new System.Drawing.Size(151, 20);
-            this.vendor_TitleTextBox.TabIndex = 12;
-            // 
-            // button_request_report
-            // 
-            this.button_request_report.Location = new System.Drawing.Point(146, 177);
-            this.button_request_report.Margin = new System.Windows.Forms.Padding(2);
-            this.button_request_report.Name = "button_request_report";
-            this.button_request_report.Size = new System.Drawing.Size(103, 27);
-            this.button_request_report.TabIndex = 13;
-            this.button_request_report.Text = "Создать запрос";
-            this.button_request_report.UseVisualStyleBackColor = true;
-            this.button_request_report.Click += new System.EventHandler(this.Button_request_report_Click);
-            // 
-            // request_dateTimePicker
-            // 
-            this.request_dateTimePicker.Location = new System.Drawing.Point(98, 110);
-            this.request_dateTimePicker.Name = "request_dateTimePicker";
-            this.request_dateTimePicker.Size = new System.Drawing.Size(151, 20);
-            this.request_dateTimePicker.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 219);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 13);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Путь сохранения отчета";
-            // 
-            // textBox_path_req
-            // 
-            this.textBox_path_req.Location = new System.Drawing.Point(146, 216);
-            this.textBox_path_req.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_path_req.Name = "textBox_path_req";
-            this.textBox_path_req.Size = new System.Drawing.Size(168, 20);
-            this.textBox_path_req.TabIndex = 16;
-            this.textBox_path_req.Text = "D:\\";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 246);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Имя файла";
-            // 
-            // textBox_name_req
-            // 
-            this.textBox_name_req.Location = new System.Drawing.Point(146, 243);
-            this.textBox_name_req.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_name_req.Name = "textBox_name_req";
-            this.textBox_name_req.Size = new System.Drawing.Size(168, 20);
-            this.textBox_name_req.TabIndex = 18;
-            this.textBox_name_req.Text = "Запрос на поставку.docx";
-            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -363,12 +280,117 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
+            // materialsBindingSource
+            // 
+            this.materialsBindingSource.DataMember = "Materials";
+            this.materialsBindingSource.DataSource = this.chuck_TimeDataSet;
+            // 
+            // vendorBindingSource
+            // 
+            this.vendorBindingSource.DataMember = "Vendor";
+            this.vendorBindingSource.DataSource = this.chuck_TimeDataSet;
+            // 
+            // raw_titleTextBox
+            // 
+            this.raw_titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Raw_title", true));
+            this.raw_titleTextBox.Location = new System.Drawing.Point(98, 63);
+            this.raw_titleTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.raw_titleTextBox.Name = "raw_titleTextBox";
+            this.raw_titleTextBox.ReadOnly = true;
+            this.raw_titleTextBox.Size = new System.Drawing.Size(151, 20);
+            this.raw_titleTextBox.TabIndex = 10;
+            // 
+            // vendor_TitleTextBox
+            // 
+            this.vendor_TitleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.requestsBindingSource, "Vendor_Title", true));
+            this.vendor_TitleTextBox.Location = new System.Drawing.Point(98, 135);
+            this.vendor_TitleTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.vendor_TitleTextBox.Name = "vendor_TitleTextBox";
+            this.vendor_TitleTextBox.ReadOnly = true;
+            this.vendor_TitleTextBox.Size = new System.Drawing.Size(151, 20);
+            this.vendor_TitleTextBox.TabIndex = 12;
+            // 
+            // button_request_report
+            // 
+            this.button_request_report.Location = new System.Drawing.Point(139, 265);
+            this.button_request_report.Margin = new System.Windows.Forms.Padding(2);
+            this.button_request_report.Name = "button_request_report";
+            this.button_request_report.Size = new System.Drawing.Size(103, 27);
+            this.button_request_report.TabIndex = 13;
+            this.button_request_report.Text = "Создать запрос";
+            this.button_request_report.UseVisualStyleBackColor = true;
+            this.button_request_report.Click += new System.EventHandler(this.Button_request_report_Click);
+            // 
+            // request_dateTimePicker
+            // 
+            this.request_dateTimePicker.Location = new System.Drawing.Point(98, 110);
+            this.request_dateTimePicker.Name = "request_dateTimePicker";
+            this.request_dateTimePicker.Size = new System.Drawing.Size(151, 20);
+            this.request_dateTimePicker.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 215);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Путь сохранения отчета";
+            // 
+            // textBox_path_req
+            // 
+            this.textBox_path_req.Location = new System.Drawing.Point(140, 212);
+            this.textBox_path_req.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_path_req.Name = "textBox_path_req";
+            this.textBox_path_req.Size = new System.Drawing.Size(168, 20);
+            this.textBox_path_req.TabIndex = 16;
+            this.textBox_path_req.Text = "D:\\";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 242);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Имя файла";
+            // 
+            // textBox_name_req
+            // 
+            this.textBox_name_req.Location = new System.Drawing.Point(140, 239);
+            this.textBox_name_req.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_name_req.Name = "textBox_name_req";
+            this.textBox_name_req.Size = new System.Drawing.Size(168, 20);
+            this.textBox_name_req.TabIndex = 18;
+            this.textBox_name_req.Text = "Запрос на поставку.docx";
+            // 
+            // textBox_sign
+            // 
+            this.textBox_sign.Location = new System.Drawing.Point(98, 161);
+            this.textBox_sign.Name = "textBox_sign";
+            this.textBox_sign.Size = new System.Drawing.Size(151, 20);
+            this.textBox_sign.TabIndex = 19;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(7, 164);
+            label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(51, 13);
+            label1.TabIndex = 20;
+            label1.Text = "Подпись";
+            // 
             // Form_request_report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(319, 268);
+            this.ClientSize = new System.Drawing.Size(319, 297);
+            this.Controls.Add(label1);
+            this.Controls.Add(this.textBox_sign);
             this.Controls.Add(this.textBox_name_req);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox_path_req);
@@ -435,5 +457,6 @@
         private System.Windows.Forms.TextBox textBox_path_req;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_name_req;
+        private System.Windows.Forms.TextBox textBox_sign;
     }
 }
