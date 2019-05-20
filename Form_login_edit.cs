@@ -19,9 +19,17 @@ namespace Chuck_Time_Bakery
 
         private void LoginBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.loginBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
+            try
+            {
+                this.Validate();
+                this.loginBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
+            }
+            catch(Exception Error)
+            {
+                MessageBox.Show(Error.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
         }
 

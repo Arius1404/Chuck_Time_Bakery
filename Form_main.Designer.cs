@@ -449,7 +449,7 @@
             this.информацияToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.информацияToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Info;
             this.информацияToolStripMenuItem.Name = "информацияToolStripMenuItem";
-            this.информацияToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.информацияToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.информацияToolStripMenuItem.Text = "Информация";
             this.информацияToolStripMenuItem.Click += new System.EventHandler(this.ИнформацияToolStripMenuItem_Click);
             // 
@@ -458,7 +458,7 @@
             this.помощьToolStripMenuItem.BackColor = System.Drawing.Color.PeachPuff;
             this.помощьToolStripMenuItem.Image = global::Chuck_Time_Bakery.Properties.Resources.Help_img;
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.помощьToolStripMenuItem.Text = "Помощь";
             this.помощьToolStripMenuItem.Click += new System.EventHandler(this.ПомощьToolStripMenuItem_Click);
             // 
@@ -1401,11 +1401,11 @@
             this.recipesDataGridView.ContextMenuStrip = this.contextMenuStrip_recipes;
             this.recipesDataGridView.DataSource = this.recipesBindingSource;
             this.recipesDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.recipesDataGridView.Location = new System.Drawing.Point(0, 146);
+            this.recipesDataGridView.Location = new System.Drawing.Point(0, 29);
             this.recipesDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.recipesDataGridView.Name = "recipesDataGridView";
             this.recipesDataGridView.RowTemplate.Height = 24;
-            this.recipesDataGridView.Size = new System.Drawing.Size(774, 280);
+            this.recipesDataGridView.Size = new System.Drawing.Size(774, 397);
             this.recipesDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1

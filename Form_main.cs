@@ -76,9 +76,16 @@ namespace Chuck_Time_Bakery
 
         private void GoodsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.goodsBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
+            try
+            {
+                this.Validate();
+                this.goodsBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
+            }
+            catch (Exception Error)
+            {
+                MessageBox.Show(Error.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
@@ -121,13 +128,13 @@ namespace Chuck_Time_Bakery
                 tabControl_main.TabPages.Remove(tabPage_delivery);
                 tabControl_main.TabPages.Remove(tabPage_hr);
                 tabControl_main.TabPages.Remove(tabPage_tech);
-                //tabControl_main.TabPages.Remove(tabPage_customer);
+                tabControl_main.TabPages.Remove(tabPage_customer);
             }
             else
                 if (status == "Администратор") // админ
             {
                 рецептыToolStripMenuItem.Visible = false;
-                //tabControl_main.TabPages.Remove(tabPage_customer);
+                tabControl_main.TabPages.Remove(tabPage_customer);
                 tabControl_main.TabPages.Remove(tabPage_seller);
                 tabControl_main.TabPages.Remove(tabPage_cook);
                 tabControl_main.TabPages.Remove(tabPage_delivery);
@@ -136,7 +143,7 @@ namespace Chuck_Time_Bakery
                 tabControl_main.TabPages.Remove(tabPage_tech);
             }
             else
-                if (status == "Покупатель") // админ
+                if (status == "Покупатель") 
             {
                 title_GoodTextBox.ReadOnly = true;
                 weightTextBox.ReadOnly = true;
@@ -157,7 +164,7 @@ namespace Chuck_Time_Bakery
                 tabControl_main.TabPages.Remove(tabPage_admin);
             }
             else
-                if (status == "Технолог") // админ
+                if (status == "Технолог")
             {
                 автомобилиToolStripMenuItem.Visible = false;
                 дисконтныеКартыToolStripMenuItem.Visible = false;
@@ -177,7 +184,7 @@ namespace Chuck_Time_Bakery
                 tabControl_main.TabPages.Remove(tabPage_admin);
             }
             else
-                if (status == "Доставщик") // админ
+                if (status == "Доставщик")
             {
                 дисконтныеКартыToolStripMenuItem.Visible = true;
                 покупателиToolStripMenuItem.Visible = true;
@@ -201,7 +208,7 @@ namespace Chuck_Time_Bakery
                 tabControl_main.TabPages.Remove(tabPage_tech);
             }
             else
-                if (status == "Пекарь") // админ
+                if (status == "Пекарь")
             {
                 дисконтныеКартыToolStripMenuItem.Visible = false;
                 покупателиToolStripMenuItem.Visible = false;
@@ -225,7 +232,7 @@ namespace Chuck_Time_Bakery
                 tabControl_main.TabPages.Remove(tabPage_delivery);
             }
             else
-                if (status == "Продавец-кассир") // продавец-кассир
+                if (status == "Продавец-кассир")
             {
                 дисконтныеКартыToolStripMenuItem.Visible = true;//
                 покупателиToolStripMenuItem.Visible = false;
@@ -248,7 +255,7 @@ namespace Chuck_Time_Bakery
                 tabControl_main.TabPages.Remove(tabPage_cook);
             }                     
             else
-                if (status == "Кадровый отдел") // админ
+                if (status == "Кадровый отдел")
             {
                 таблицыToolStripMenuItem.Visible = false;
                 tabControl_main.TabPages.Remove(tabPage_customer);

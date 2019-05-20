@@ -35,9 +35,17 @@ namespace Chuck_Time_Bakery
 
         private void Discount_cardsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.discount_cardsBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
+            try
+            {
+                this.Validate();
+                this.discount_cardsBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.chuck_TimeDataSet);
+            }
+            catch (Exception Error)
+            {
+                MessageBox.Show(Error.Message, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
 
         }
 

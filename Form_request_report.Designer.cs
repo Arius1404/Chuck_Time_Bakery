@@ -34,8 +34,8 @@
             System.Windows.Forms.Label quantityLabel;
             System.Windows.Forms.Label create_dateLabel;
             System.Windows.Forms.Label vendor_TitleLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_request_report));
             System.Windows.Forms.Label label1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_request_report));
             this.chuck_TimeDataSet = new Chuck_Time_Bakery.Chuck_TimeDataSet();
             this.requestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.requestsTableAdapter = new Chuck_Time_Bakery.Chuck_TimeDataSetTableAdapters.RequestsTableAdapter();
@@ -58,12 +58,12 @@
             this.raw_titleTextBox = new System.Windows.Forms.TextBox();
             this.vendor_TitleTextBox = new System.Windows.Forms.TextBox();
             this.button_request_report = new System.Windows.Forms.Button();
-            this.request_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox_path_req = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox_name_req = new System.Windows.Forms.TextBox();
             this.textBox_sign = new System.Windows.Forms.TextBox();
+            this.request_DateTimePicker = new System.Windows.Forms.DateTimePicker();
             request_IDLabel = new System.Windows.Forms.Label();
             raw_titleLabel = new System.Windows.Forms.Label();
             quantityLabel = new System.Windows.Forms.Label();
@@ -127,6 +127,16 @@
             vendor_TitleLabel.Size = new System.Drawing.Size(68, 13);
             vendor_TitleLabel.TabIndex = 9;
             vendor_TitleLabel.Text = "Поставщик:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(7, 164);
+            label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(51, 13);
+            label1.TabIndex = 20;
+            label1.Text = "Подпись";
             // 
             // chuck_TimeDataSet
             // 
@@ -240,7 +250,7 @@
             this.requestsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.requestsBindingNavigator.Name = "requestsBindingNavigator";
             this.requestsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.requestsBindingNavigator.Size = new System.Drawing.Size(319, 27);
+            this.requestsBindingNavigator.Size = new System.Drawing.Size(416, 27);
             this.requestsBindingNavigator.TabIndex = 0;
             this.requestsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -321,13 +331,6 @@
             this.button_request_report.UseVisualStyleBackColor = true;
             this.button_request_report.Click += new System.EventHandler(this.Button_request_report_Click);
             // 
-            // request_dateTimePicker
-            // 
-            this.request_dateTimePicker.Location = new System.Drawing.Point(98, 110);
-            this.request_dateTimePicker.Name = "request_dateTimePicker";
-            this.request_dateTimePicker.Size = new System.Drawing.Size(151, 20);
-            this.request_dateTimePicker.TabIndex = 14;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -373,29 +376,28 @@
             this.textBox_sign.Size = new System.Drawing.Size(151, 20);
             this.textBox_sign.TabIndex = 19;
             // 
-            // label1
+            // request_DateTimePicker
             // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(7, 164);
-            label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(51, 13);
-            label1.TabIndex = 20;
-            label1.Text = "Подпись";
+            this.request_DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.requestsBindingSource, "Create_date", true));
+            this.request_DateTimePicker.Enabled = false;
+            this.request_DateTimePicker.Location = new System.Drawing.Point(98, 110);
+            this.request_DateTimePicker.Name = "request_DateTimePicker";
+            this.request_DateTimePicker.Size = new System.Drawing.Size(151, 20);
+            this.request_DateTimePicker.TabIndex = 21;
             // 
             // Form_request_report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(319, 297);
+            this.ClientSize = new System.Drawing.Size(416, 312);
+            this.Controls.Add(this.request_DateTimePicker);
             this.Controls.Add(label1);
             this.Controls.Add(this.textBox_sign);
             this.Controls.Add(this.textBox_name_req);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox_path_req);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.request_dateTimePicker);
             this.Controls.Add(this.button_request_report);
             this.Controls.Add(this.vendor_TitleTextBox);
             this.Controls.Add(this.raw_titleTextBox);
@@ -452,11 +454,11 @@
         private System.Windows.Forms.TextBox raw_titleTextBox;
         private System.Windows.Forms.TextBox vendor_TitleTextBox;
         private System.Windows.Forms.Button button_request_report;
-        private System.Windows.Forms.DateTimePicker request_dateTimePicker;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox_path_req;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_name_req;
         private System.Windows.Forms.TextBox textBox_sign;
+        private System.Windows.Forms.DateTimePicker request_DateTimePicker;
     }
 }

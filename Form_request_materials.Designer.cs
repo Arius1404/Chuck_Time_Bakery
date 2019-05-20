@@ -231,7 +231,7 @@
             this.request_MaterialsBindingNavigatorSaveItem.Name = "request_MaterialsBindingNavigatorSaveItem";
             this.request_MaterialsBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
             this.request_MaterialsBindingNavigatorSaveItem.Text = "Сохранить данные";
-            this.request_MaterialsBindingNavigatorSaveItem.Click += new System.EventHandler(this.Request_MaterialsBindingNavigatorSaveItem_Click_1);
+            this.request_MaterialsBindingNavigatorSaveItem.Click += new System.EventHandler(this.Request_MaterialsBindingNavigatorSaveItem_Click);
             // 
             // request_MaterialsDataGridView
             // 
@@ -247,7 +247,7 @@
             this.request_MaterialsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.request_MaterialsDataGridView.GridColor = System.Drawing.Color.PeachPuff;
             this.request_MaterialsDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.request_MaterialsDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.request_MaterialsDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.request_MaterialsDataGridView.Name = "request_MaterialsDataGridView";
             this.request_MaterialsDataGridView.RowTemplate.Height = 24;
             this.request_MaterialsDataGridView.Size = new System.Drawing.Size(600, 339);
@@ -307,7 +307,7 @@
             this.Controls.Add(this.request_MaterialsDataGridView);
             this.Controls.Add(this.request_MaterialsBindingNavigator);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_request_materials";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Запрошенные материалы";

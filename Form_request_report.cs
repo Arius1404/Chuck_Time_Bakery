@@ -69,7 +69,7 @@ namespace Chuck_Time_Bakery
             var vendor = vendor_TitleTextBox.Text;
             var material = raw_titleTextBox.Text;
             var quantity = quantityTextBox.Text;
-            var request_date = request_dateTimePicker.Value.ToShortDateString();
+            var request_date = request_DateTimePicker.Value.ToShortDateString();
             var signreq = textBox_sign.Text;
 
             var wordApp = new Word.Application();
